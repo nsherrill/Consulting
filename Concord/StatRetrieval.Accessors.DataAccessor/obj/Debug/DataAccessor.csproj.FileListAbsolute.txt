@@ -1,0 +1,14 @@
+C:\Workspace\Concord\StatRetrieval.Accessors.DataAccessor\bin\Debug\StatRetrieval.Accessors.DataAccessor.dll
+C:\Workspace\Concord\StatRetrieval.Accessors.DataAccessor\bin\Debug\StatRetrieval.Accessors.DataAccessor.pdb
+C:\Workspace\Concord\StatRetrieval.Accessors.DataAccessor\bin\Debug\StatRetrieval.Shared.Common.dll
+C:\Workspace\Concord\StatRetrieval.Accessors.DataAccessor\bin\Debug\StatRetrieval.Shared.Common.pdb
+C:\Workspace\Concord\StatRetrieval.Accessors.DataAccessor\obj\Debug\DataAccessor.csprojResolveAssemblyReference.cache
+C:\Workspace\Concord\StatRetrieval.Accessors.DataAccessor\obj\Debug\StatRetrieval.Accessors.DataAccessor.dll
+C:\Workspace\Concord\StatRetrieval.Accessors.DataAccessor\obj\Debug\StatRetrieval.Accessors.DataAccessor.pdb
+C:\workspaces\Concord\StatRetrieval.Accessors.DataAccessor\bin\Debug\StatRetrieval.Accessors.DataAccessor.dll
+C:\workspaces\Concord\StatRetrieval.Accessors.DataAccessor\bin\Debug\StatRetrieval.Accessors.DataAccessor.pdb
+C:\workspaces\Concord\StatRetrieval.Accessors.DataAccessor\bin\Debug\StatRetrieval.Shared.Common.dll
+C:\workspaces\Concord\StatRetrieval.Accessors.DataAccessor\bin\Debug\StatRetrieval.Shared.Common.pdb
+C:\workspaces\Concord\StatRetrieval.Accessors.DataAccessor\obj\Debug\DataAccessor.csprojResolveAssemblyReference.cache
+C:\workspaces\Concord\StatRetrieval.Accessors.DataAccessor\obj\Debug\StatRetrieval.Accessors.DataAccessor.dll
+C:\workspaces\Concord\StatRetrieval.Accessors.DataAccessor\obj\Debug\StatRetrieval.Accessors.DataAccessor.pdb

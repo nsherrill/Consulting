@@ -1,0 +1,1142 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>StatRetrieval.Shared.Common.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:StatRetrieval.Shared.Common.Contracts.Fakes.StubIBaseService">
+            <summary>Stub type of StatRetrieval.Shared.Common.Contracts.IBaseService</summary>
+        </member>
+        <member name="M:StatRetrieval.Shared.Common.Contracts.Fakes.StubIBaseService.#ctor">
+            <summary>Initializes a new instance of type StubIBaseService</summary>
+        </member>
+        <member name="M:StatRetrieval.Shared.Common.Contracts.Fakes.StubIBaseService.srsc::StatRetrieval#Shared#Common#Contracts#IBaseService#TestMe(System.String)">
+            <summary>Sets the stub of IBaseService.TestMe(String param)</summary>
+        </member>
+        <member name="F:StatRetrieval.Shared.Common.Contracts.Fakes.StubIBaseService.TestMeString">
+            <summary>Sets the stub of IBaseService.TestMe(String param)</summary>
+        </member>
+        <member name="T:StatRetrieval.Shared.Common.Contracts.Fakes.StubICycleManager">
+            <summary>Stub type of StatRetrieval.Shared.Common.Contracts.ICycleManager</summary>
+        </member>
+        <member name="M:StatRetrieval.Shared.Common.Contracts.Fakes.StubICycleManager.#ctor">
+            <summary>Initializes a new instance of type StubICycleManager</summary>
+        </member>
+        <member name="F:StatRetrieval.Shared.Common.Contracts.Fakes.StubICycleManager.InitFirstRun">
+            <summary>Sets the stub of ICycleManager.InitFirstRun()</summary>
+        </member>
+        <member name="F:StatRetrieval.Shared.Common.Contracts.Fakes.StubICycleManager.RunCycle">
+            <summary>Sets the stub of ICycleManager.RunCycle()</summary>
+        </member>
+        <member name="F:StatRetrieval.Shared.Common.Contracts.Fakes.StubICycleManager.RunTests">
+            <summary>Sets the stub of ICycleManager.RunTests()</summary>
+        </member>
+        <member name="M:StatRetrieval.Shared.Common.Contracts.Fakes.StubICycleManager.srsc::StatRetrieval#Shared#Common#Contracts#IBaseService#TestMe(System.String)">
+            <summary>Sets the stub of IBaseService.TestMe(String param)</summary>
+        </member>
+        <member name="M:StatRetrieval.Shared.Common.Contracts.Fakes.StubICycleManager.srsc::StatRetrieval#Shared#Common#Contracts#ICycleManager#InitFirstRun">
+            <summary>Sets the stub of ICycleManager.InitFirstRun()</summary>
+        </member>
+        <member name="M:StatRetrieval.Shared.Common.Contracts.Fakes.StubICycleManager.srsc::StatRetrieval#Shared#Common#Contracts#ICycleManager#RunCycle">
+            <summary>Sets the stub of ICycleManager.RunCycle()</summary>
+        </member>
+        <member name="M:StatRetrieval.Shared.Common.Contracts.Fakes.StubICycleManager.srsc::StatRetrieval#Shared#Common#Contracts#ICycleManager#RunTests">
+            <summary>Sets the stub of ICycleManager.RunTests()</summary>
+        </member>
+        <member name="F:StatRetrieval.Shared.Common.Contracts.Fakes.StubICycleManager.TestMeString">
+            <summary>Sets the stub of IBaseService.TestMe(String param)</summary>
+        </member>
+        <member name="T:StatRetrieval.Shared.Common.Contracts.Fakes.StubIDbAccessor">
+            <summary>Stub type of StatRetrieval.Shared.Common.Contracts.IDbAccessor</summary>
+        </member>
+        <member name="M:StatRetrieval.Shared.Common.Contracts.Fakes.StubIDbAccessor.#ctor">
+            <summary>Initializes a new instance of type StubIDbAccessor</summary>
+        </member>
+        <member name="F:StatRetrieval.Shared.Common.Contracts.Fakes.StubIDbAccessor.GetEmployees">
+            <summary>Sets the stub of IDbAccessor.GetEmployees()</summary>
+        </member>
+        <member name="F:StatRetrieval.Shared.Common.Contracts.Fakes.StubIDbAccessor.HitDatabaseQueryRequestBooleanOutDateTimeOut">
+            <summary>Sets the stub of IDbAccessor.HitDatabase(QueryRequest request, Boolean&amp; goodData, DateTime&amp; exactQueryTime)</summary>
+        </member>
+        <member name="M:StatRetrieval.Shared.Common.Contracts.Fakes.StubIDbAccessor.srsc::StatRetrieval#Shared#Common#Contracts#IBaseService#TestMe(System.String)">
+            <summary>Sets the stub of IBaseService.TestMe(String param)</summary>
+        </member>
+        <member name="M:StatRetrieval.Shared.Common.Contracts.Fakes.StubIDbAccessor.srsc::StatRetrieval#Shared#Common#Contracts#IDbAccessor#GetEmployees">
+            <summary>Sets the stub of IDbAccessor.GetEmployees()</summary>
+        </member>
+        <member name="M:StatRetrieval.Shared.Common.Contracts.Fakes.StubIDbAccessor.srsc::StatRetrieval#Shared#Common#Contracts#IDbAccessor#HitDatabase(StatRetrieval.Shared.Common.DataContracts.QueryRequest,System.Boolean@,System.DateTime@)">
+            <summary>Sets the stub of IDbAccessor.HitDatabase(QueryRequest request, Boolean&amp; goodData, DateTime&amp; exactQueryTime)</summary>
+        </member>
+        <member name="F:StatRetrieval.Shared.Common.Contracts.Fakes.StubIDbAccessor.TestMeString">
+            <summary>Sets the stub of IBaseService.TestMe(String param)</summary>
+        </member>
+        <member name="T:StatRetrieval.Shared.Common.Contracts.Fakes.StubIFileAccessor">
+            <summary>Stub type of StatRetrieval.Shared.Common.Contracts.IFileAccessor</summary>
+        </member>
+        <member name="M:StatRetrieval.Shared.Common.Contracts.Fakes.StubIFileAccessor.#ctor">
+            <summary>Initializes a new instance of type StubIFileAccessor</summary>
+        </member>
+        <member name="F:StatRetrieval.Shared.Common.Contracts.Fakes.StubIFileAccessor.HitBasicFileQueryRequestBooleanOutDateTimeOut">
+            <summary>Sets the stub of IFileAccessor.HitBasicFile(QueryRequest query, Boolean&amp; goodData, DateTime&amp; exactQueryTime)</summary>
+        </member>
+        <member name="F:StatRetrieval.Shared.Common.Contracts.Fakes.StubIFileAccessor.HitBinaryFileQueryRequestBooleanOutDateTimeOut">
+            <summary>Sets the stub of IFileAccessor.HitBinaryFile(QueryRequest query, Boolean&amp; goodData, DateTime&amp; exactQueryTime)</summary>
+        </member>
+        <member name="M:StatRetrieval.Shared.Common.Contracts.Fakes.StubIFileAccessor.srsc::StatRetrieval#Shared#Common#Contracts#IBaseService#TestMe(System.String)">
+            <summary>Sets the stub of IBaseService.TestMe(String param)</summary>
+        </member>
+        <member name="M:StatRetrieval.Shared.Common.Contracts.Fakes.StubIFileAccessor.srsc::StatRetrieval#Shared#Common#Contracts#IFileAccessor#HitBasicFile(StatRetrieval.Shared.Common.DataContracts.QueryRequest,System.Boolean@,System.DateTime@)">
+            <summary>Sets the stub of IFileAccessor.HitBasicFile(QueryRequest query, Boolean&amp; goodData, DateTime&amp; exactQueryTime)</summary>
+        </member>
+        <member name="M:StatRetrieval.Shared.Common.Contracts.Fakes.StubIFileAccessor.srsc::StatRetrieval#Shared#Common#Contracts#IFileAccessor#HitBinaryFile(StatRetrieval.Shared.Common.DataContracts.QueryRequest,System.Boolean@,System.DateTime@)">
+            <summary>Sets the stub of IFileAccessor.HitBinaryFile(QueryRequest query, Boolean&amp; goodData, DateTime&amp; exactQueryTime)</summary>
+        </member>
+        <member name="F:StatRetrieval.Shared.Common.Contracts.Fakes.StubIFileAccessor.TestMeString">
+            <summary>Sets the stub of IBaseService.TestMe(String param)</summary>
+        </member>
+        <member name="T:StatRetrieval.Shared.Common.Contracts.Fakes.StubILocalConfigAccessor">
+            <summary>Stub type of StatRetrieval.Shared.Common.Contracts.ILocalConfigAccessor</summary>
+        </member>
+        <member name="M:StatRetrieval.Shared.Common.Contracts.Fakes.StubILocalConfigAccessor.#ctor">
+            <summary>Initializes a new instance of type StubILocalConfigAccessor</summary>
+        </member>
+        <member name="F:StatRetrieval.Shared.Common.Contracts.Fakes.StubILocalConfigAccessor.GetLocalData">
+            <summary>Sets the stub of ILocalConfigAccessor.GetLocalData()</summary>
+        </member>
+        <member name="M:StatRetrieval.Shared.Common.Contracts.Fakes.StubILocalConfigAccessor.srsc::StatRetrieval#Shared#Common#Contracts#IBaseService#TestMe(System.String)">
+            <summary>Sets the stub of IBaseService.TestMe(String param)</summary>
+        </member>
+        <member name="M:StatRetrieval.Shared.Common.Contracts.Fakes.StubILocalConfigAccessor.srsc::StatRetrieval#Shared#Common#Contracts#ILocalConfigAccessor#GetLocalData">
+            <summary>Sets the stub of ILocalConfigAccessor.GetLocalData()</summary>
+        </member>
+        <member name="F:StatRetrieval.Shared.Common.Contracts.Fakes.StubILocalConfigAccessor.TestMeString">
+            <summary>Sets the stub of IBaseService.TestMe(String param)</summary>
+        </member>
+        <member name="T:StatRetrieval.Shared.Common.Contracts.Fakes.StubIPostErrorAccessor">
+            <summary>Stub type of StatRetrieval.Shared.Common.Contracts.IPostErrorAccessor</summary>
+        </member>
+        <member name="M:StatRetrieval.Shared.Common.Contracts.Fakes.StubIPostErrorAccessor.#ctor">
+            <summary>Initializes a new instance of type StubIPostErrorAccessor</summary>
+        </member>
+        <member name="F:StatRetrieval.Shared.Common.Contracts.Fakes.StubIPostErrorAccessor.PostErrorStringLogLocation">
+            <summary>Sets the stub of IPostErrorAccessor.PostError(String text, LogLocation logLoc)</summary>
+        </member>
+        <member name="M:StatRetrieval.Shared.Common.Contracts.Fakes.StubIPostErrorAccessor.srsc::StatRetrieval#Shared#Common#Contracts#IBaseService#TestMe(System.String)">
+            <summary>Sets the stub of IBaseService.TestMe(String param)</summary>
+        </member>
+        <member name="M:StatRetrieval.Shared.Common.Contracts.Fakes.StubIPostErrorAccessor.srsc::StatRetrieval#Shared#Common#Contracts#IPostErrorAccessor#PostError(System.String,StatRetrieval.Shared.Common.DataContracts.LogLocation)">
+            <summary>Sets the stub of IPostErrorAccessor.PostError(String text, LogLocation logLoc)</summary>
+        </member>
+        <member name="F:StatRetrieval.Shared.Common.Contracts.Fakes.StubIPostErrorAccessor.TestMeString">
+            <summary>Sets the stub of IBaseService.TestMe(String param)</summary>
+        </member>
+        <member name="T:StatRetrieval.Shared.Common.Contracts.Fakes.StubIPostResultAccessor">
+            <summary>Stub type of StatRetrieval.Shared.Common.Contracts.IPostResultAccessor</summary>
+        </member>
+        <member name="M:StatRetrieval.Shared.Common.Contracts.Fakes.StubIPostResultAccessor.#ctor">
+            <summary>Initializes a new instance of type StubIPostResultAccessor</summary>
+        </member>
+        <member name="F:StatRetrieval.Shared.Common.Contracts.Fakes.StubIPostResultAccessor.PostResultStringInt64">
+            <summary>Sets the stub of IPostResultAccessor.PostResult(String data, Int64 timeStamp)</summary>
+        </member>
+        <member name="M:StatRetrieval.Shared.Common.Contracts.Fakes.StubIPostResultAccessor.srsc::StatRetrieval#Shared#Common#Contracts#IBaseService#TestMe(System.String)">
+            <summary>Sets the stub of IBaseService.TestMe(String param)</summary>
+        </member>
+        <member name="M:StatRetrieval.Shared.Common.Contracts.Fakes.StubIPostResultAccessor.srsc::StatRetrieval#Shared#Common#Contracts#IPostResultAccessor#PostResult(System.String,System.Int64)">
+            <summary>Sets the stub of IPostResultAccessor.PostResult(String data, Int64 timeStamp)</summary>
+        </member>
+        <member name="F:StatRetrieval.Shared.Common.Contracts.Fakes.StubIPostResultAccessor.TestMeString">
+            <summary>Sets the stub of IBaseService.TestMe(String param)</summary>
+        </member>
+        <member name="T:StatRetrieval.Shared.Common.Contracts.Fakes.StubIQueryRequestAccessor">
+            <summary>Stub type of StatRetrieval.Shared.Common.Contracts.IQueryRequestAccessor</summary>
+        </member>
+        <member name="M:StatRetrieval.Shared.Common.Contracts.Fakes.StubIQueryRequestAccessor.#ctor">
+            <summary>Initializes a new instance of type StubIQueryRequestAccessor</summary>
+        </member>
+        <member name="F:StatRetrieval.Shared.Common.Contracts.Fakes.StubIQueryRequestAccessor.GetQueries">
+            <summary>Sets the stub of IQueryRequestAccessor.GetQueries()</summary>
+        </member>
+        <member name="M:StatRetrieval.Shared.Common.Contracts.Fakes.StubIQueryRequestAccessor.srsc::StatRetrieval#Shared#Common#Contracts#IBaseService#TestMe(System.String)">
+            <summary>Sets the stub of IBaseService.TestMe(String param)</summary>
+        </member>
+        <member name="M:StatRetrieval.Shared.Common.Contracts.Fakes.StubIQueryRequestAccessor.srsc::StatRetrieval#Shared#Common#Contracts#IQueryRequestAccessor#GetQueries">
+            <summary>Sets the stub of IQueryRequestAccessor.GetQueries()</summary>
+        </member>
+        <member name="F:StatRetrieval.Shared.Common.Contracts.Fakes.StubIQueryRequestAccessor.TestMeString">
+            <summary>Sets the stub of IBaseService.TestMe(String param)</summary>
+        </member>
+        <member name="T:StatRetrieval.Shared.Common.Contracts.Fakes.StubIRemoteConfigAccessor">
+            <summary>Stub type of StatRetrieval.Shared.Common.Contracts.IRemoteConfigAccessor</summary>
+        </member>
+        <member name="M:StatRetrieval.Shared.Common.Contracts.Fakes.StubIRemoteConfigAccessor.#ctor">
+            <summary>Initializes a new instance of type StubIRemoteConfigAccessor</summary>
+        </member>
+        <member name="F:StatRetrieval.Shared.Common.Contracts.Fakes.StubIRemoteConfigAccessor.GetConfigs">
+            <summary>Sets the stub of IRemoteConfigAccessor.GetConfigs()</summary>
+        </member>
+        <member name="M:StatRetrieval.Shared.Common.Contracts.Fakes.StubIRemoteConfigAccessor.srsc::StatRetrieval#Shared#Common#Contracts#IBaseService#TestMe(System.String)">
+            <summary>Sets the stub of IBaseService.TestMe(String param)</summary>
+        </member>
+        <member name="M:StatRetrieval.Shared.Common.Contracts.Fakes.StubIRemoteConfigAccessor.srsc::StatRetrieval#Shared#Common#Contracts#IRemoteConfigAccessor#GetConfigs">
+            <summary>Sets the stub of IRemoteConfigAccessor.GetConfigs()</summary>
+        </member>
+        <member name="F:StatRetrieval.Shared.Common.Contracts.Fakes.StubIRemoteConfigAccessor.TestMeString">
+            <summary>Sets the stub of IBaseService.TestMe(String param)</summary>
+        </member>
+        <member name="T:StatRetrieval.Shared.Common.Contracts.Fakes.StubIResultProcessorEng">
+            <summary>Stub type of StatRetrieval.Shared.Common.Contracts.IResultProcessorEng</summary>
+        </member>
+        <member name="M:StatRetrieval.Shared.Common.Contracts.Fakes.StubIResultProcessorEng.#ctor">
+            <summary>Initializes a new instance of type StubIResultProcessorEng</summary>
+        </member>
+        <member name="F:StatRetrieval.Shared.Common.Contracts.Fakes.StubIResultProcessorEng.PostResultLocalResult">
+            <summary>Sets the stub of IResultProcessorEng.PostResult(LocalResult resultTable)</summary>
+        </member>
+        <member name="M:StatRetrieval.Shared.Common.Contracts.Fakes.StubIResultProcessorEng.srsc::StatRetrieval#Shared#Common#Contracts#IBaseService#TestMe(System.String)">
+            <summary>Sets the stub of IBaseService.TestMe(String param)</summary>
+        </member>
+        <member name="M:StatRetrieval.Shared.Common.Contracts.Fakes.StubIResultProcessorEng.srsc::StatRetrieval#Shared#Common#Contracts#IResultProcessorEng#PostResult(StatRetrieval.Shared.Common.DataContracts.LocalResult)">
+            <summary>Sets the stub of IResultProcessorEng.PostResult(LocalResult resultTable)</summary>
+        </member>
+        <member name="F:StatRetrieval.Shared.Common.Contracts.Fakes.StubIResultProcessorEng.TestMeString">
+            <summary>Sets the stub of IBaseService.TestMe(String param)</summary>
+        </member>
+        <member name="T:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimConfigResult">
+            <summary>Shim type of StatRetrieval.Shared.Common.DataContracts.ConfigResult</summary>
+        </member>
+        <member name="M:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimConfigResult.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimConfigResult.#ctor(StatRetrieval.Shared.Common.DataContracts.ConfigResult)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimConfigResult.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimConfigResult.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimConfigResult.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimConfigResult.ConfigValuesGet">
+            <summary>Sets the shim of ConfigResult.get_ConfigValues()</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimConfigResult.ConfigValuesSetValuePairArray">
+            <summary>Sets the shim of ConfigResult.set_ConfigValues(ValuePair[] value)</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimConfigResult.Constructor">
+            <summary>Sets the shim of ConfigResult.ConfigResult()</summary>
+        </member>
+        <member name="T:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimConfigResult.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimConfigResult.AllInstances.ConfigValuesGet">
+            <summary>Sets the shim of ConfigResult.get_ConfigValues()</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimConfigResult.AllInstances.ConfigValuesSetValuePairArray">
+            <summary>Sets the shim of ConfigResult.set_ConfigValues(ValuePair[] value)</summary>
+        </member>
+        <member name="T:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimEmployeeData">
+            <summary>Shim type of StatRetrieval.Shared.Common.DataContracts.EmployeeData</summary>
+        </member>
+        <member name="M:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimEmployeeData.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimEmployeeData.#ctor(StatRetrieval.Shared.Common.DataContracts.EmployeeData)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimEmployeeData.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimEmployeeData.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimEmployeeData.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimEmployeeData.Constructor">
+            <summary>Sets the shim of EmployeeData.EmployeeData()</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimEmployeeData.EmployeeIdGet">
+            <summary>Sets the shim of EmployeeData.get_EmployeeId()</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimEmployeeData.EmployeeIdSetString">
+            <summary>Sets the shim of EmployeeData.set_EmployeeId(String value)</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimEmployeeData.NameGet">
+            <summary>Sets the shim of EmployeeData.get_Name()</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimEmployeeData.NameSetString">
+            <summary>Sets the shim of EmployeeData.set_Name(String value)</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimEmployeeData.SSNGet">
+            <summary>Sets the shim of EmployeeData.get_SSN()</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimEmployeeData.SSNSetString">
+            <summary>Sets the shim of EmployeeData.set_SSN(String value)</summary>
+        </member>
+        <member name="T:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimEmployeeData.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimEmployeeData.AllInstances.EmployeeIdGet">
+            <summary>Sets the shim of EmployeeData.get_EmployeeId()</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimEmployeeData.AllInstances.EmployeeIdSetString">
+            <summary>Sets the shim of EmployeeData.set_EmployeeId(String value)</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimEmployeeData.AllInstances.NameGet">
+            <summary>Sets the shim of EmployeeData.get_Name()</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimEmployeeData.AllInstances.NameSetString">
+            <summary>Sets the shim of EmployeeData.set_Name(String value)</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimEmployeeData.AllInstances.SSNGet">
+            <summary>Sets the shim of EmployeeData.get_SSN()</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimEmployeeData.AllInstances.SSNSetString">
+            <summary>Sets the shim of EmployeeData.set_SSN(String value)</summary>
+        </member>
+        <member name="T:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimFileLastLine">
+            <summary>Shim type of StatRetrieval.Shared.Common.DataContracts.FileLastLine</summary>
+        </member>
+        <member name="M:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimFileLastLine.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimFileLastLine.#ctor(StatRetrieval.Shared.Common.DataContracts.FileLastLine)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimFileLastLine.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimFileLastLine.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimFileLastLine.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimFileLastLine.Constructor">
+            <summary>Sets the shim of FileLastLine.FileLastLine()</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimFileLastLine.FilePathGet">
+            <summary>Sets the shim of FileLastLine.get_FilePath()</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimFileLastLine.FilePathSetString">
+            <summary>Sets the shim of FileLastLine.set_FilePath(String value)</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimFileLastLine.LastLineGet">
+            <summary>Sets the shim of FileLastLine.get_LastLine()</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimFileLastLine.LastLineSetInt32">
+            <summary>Sets the shim of FileLastLine.set_LastLine(Int32 value)</summary>
+        </member>
+        <member name="T:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimFileLastLine.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimFileLastLine.AllInstances.FilePathGet">
+            <summary>Sets the shim of FileLastLine.get_FilePath()</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimFileLastLine.AllInstances.FilePathSetString">
+            <summary>Sets the shim of FileLastLine.set_FilePath(String value)</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimFileLastLine.AllInstances.LastLineGet">
+            <summary>Sets the shim of FileLastLine.get_LastLine()</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimFileLastLine.AllInstances.LastLineSetInt32">
+            <summary>Sets the shim of FileLastLine.set_LastLine(Int32 value)</summary>
+        </member>
+        <member name="T:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimLocalData">
+            <summary>Shim type of StatRetrieval.Shared.Common.DataContracts.LocalData</summary>
+        </member>
+        <member name="M:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimLocalData.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimLocalData.#ctor(StatRetrieval.Shared.Common.DataContracts.LocalData)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimLocalData.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimLocalData.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimLocalData.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimLocalData.Constructor">
+            <summary>Sets the shim of LocalData.LocalData()</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimLocalData.HostNameGet">
+            <summary>Sets the shim of LocalData.get_HostName()</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimLocalData.HostNameSetString">
+            <summary>Sets the shim of LocalData.set_HostName(String value)</summary>
+        </member>
+        <member name="T:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimLocalData.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimLocalData.AllInstances.HostNameGet">
+            <summary>Sets the shim of LocalData.get_HostName()</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimLocalData.AllInstances.HostNameSetString">
+            <summary>Sets the shim of LocalData.set_HostName(String value)</summary>
+        </member>
+        <member name="T:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimLocalResult">
+            <summary>Shim type of StatRetrieval.Shared.Common.DataContracts.LocalResult</summary>
+        </member>
+        <member name="M:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimLocalResult.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimLocalResult.#ctor(StatRetrieval.Shared.Common.DataContracts.LocalResult)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimLocalResult.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimLocalResult.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimLocalResult.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimLocalResult.Constructor">
+            <summary>Sets the shim of LocalResult.LocalResult()</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimLocalResult.ConstructorStringQueryRequestDataTableDateTimeBoolean">
+            <summary>Sets the shim of LocalResult.LocalResult(String uniqueKey, QueryRequest request, DataTable results, DateTime queryTime, Boolean posted)</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimLocalResult.FailedFileNameGet">
+            <summary>Sets the shim of LocalResult.get_FailedFileName()</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimLocalResult.FailedFileNameSetString">
+            <summary>Sets the shim of LocalResult.set_FailedFileName(String value)</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimLocalResult.PostedGet">
+            <summary>Sets the shim of LocalResult.get_Posted()</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimLocalResult.PostedSetBoolean">
+            <summary>Sets the shim of LocalResult.set_Posted(Boolean value)</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimLocalResult.RequestGet">
+            <summary>Sets the shim of LocalResult.get_Request()</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimLocalResult.RequestSetQueryRequest">
+            <summary>Sets the shim of LocalResult.set_Request(QueryRequest value)</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimLocalResult.ResultsGet">
+            <summary>Sets the shim of LocalResult.get_Results()</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimLocalResult.ResultsSetDataTable">
+            <summary>Sets the shim of LocalResult.set_Results(DataTable value)</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimLocalResult.TimeGet">
+            <summary>Sets the shim of LocalResult.get_Time()</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimLocalResult.TimeSetDateTime">
+            <summary>Sets the shim of LocalResult.set_Time(DateTime value)</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimLocalResult.UniqueKeyGet">
+            <summary>Sets the shim of LocalResult.get_UniqueKey()</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimLocalResult.UniqueKeySetString">
+            <summary>Sets the shim of LocalResult.set_UniqueKey(String value)</summary>
+        </member>
+        <member name="T:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimLocalResult.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimLocalResult.AllInstances.FailedFileNameGet">
+            <summary>Sets the shim of LocalResult.get_FailedFileName()</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimLocalResult.AllInstances.FailedFileNameSetString">
+            <summary>Sets the shim of LocalResult.set_FailedFileName(String value)</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimLocalResult.AllInstances.PostedGet">
+            <summary>Sets the shim of LocalResult.get_Posted()</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimLocalResult.AllInstances.PostedSetBoolean">
+            <summary>Sets the shim of LocalResult.set_Posted(Boolean value)</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimLocalResult.AllInstances.RequestGet">
+            <summary>Sets the shim of LocalResult.get_Request()</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimLocalResult.AllInstances.RequestSetQueryRequest">
+            <summary>Sets the shim of LocalResult.set_Request(QueryRequest value)</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimLocalResult.AllInstances.ResultsGet">
+            <summary>Sets the shim of LocalResult.get_Results()</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimLocalResult.AllInstances.ResultsSetDataTable">
+            <summary>Sets the shim of LocalResult.set_Results(DataTable value)</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimLocalResult.AllInstances.TimeGet">
+            <summary>Sets the shim of LocalResult.get_Time()</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimLocalResult.AllInstances.TimeSetDateTime">
+            <summary>Sets the shim of LocalResult.set_Time(DateTime value)</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimLocalResult.AllInstances.UniqueKeyGet">
+            <summary>Sets the shim of LocalResult.get_UniqueKey()</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimLocalResult.AllInstances.UniqueKeySetString">
+            <summary>Sets the shim of LocalResult.set_UniqueKey(String value)</summary>
+        </member>
+        <member name="T:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimQueryRequest">
+            <summary>Shim type of StatRetrieval.Shared.Common.DataContracts.QueryRequest</summary>
+        </member>
+        <member name="M:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimQueryRequest.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimQueryRequest.#ctor(StatRetrieval.Shared.Common.DataContracts.QueryRequest)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimQueryRequest.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimQueryRequest.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimQueryRequest.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimQueryRequest.Constructor">
+            <summary>Sets the shim of QueryRequest.QueryRequest()</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimQueryRequest.DateToUseGet">
+            <summary>Sets the shim of QueryRequest.get_DateToUse()</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimQueryRequest.DateToUseSetDateTime">
+            <summary>Sets the shim of QueryRequest.set_DateToUse(DateTime value)</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimQueryRequest.IntervalGet">
+            <summary>Sets the shim of QueryRequest.get_Interval()</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimQueryRequest.IntervalSetInt32">
+            <summary>Sets the shim of QueryRequest.set_Interval(Int32 value)</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimQueryRequest.QueryGet">
+            <summary>Sets the shim of QueryRequest.get_Query()</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimQueryRequest.QuerySetString">
+            <summary>Sets the shim of QueryRequest.set_Query(String value)</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimQueryRequest.ResultPathGet">
+            <summary>Sets the shim of QueryRequest.get_ResultPath()</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimQueryRequest.ResultPathSetString">
+            <summary>Sets the shim of QueryRequest.set_ResultPath(String value)</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimQueryRequest.TypeGet">
+            <summary>Sets the shim of QueryRequest.get_Type()</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimQueryRequest.TypeSetQueryType">
+            <summary>Sets the shim of QueryRequest.set_Type(QueryType value)</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimQueryRequest.UniqueKeyGet">
+            <summary>Sets the shim of QueryRequest.get_UniqueKey()</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimQueryRequest.UniqueKeySetString">
+            <summary>Sets the shim of QueryRequest.set_UniqueKey(String value)</summary>
+        </member>
+        <member name="T:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimQueryRequest.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimQueryRequest.AllInstances.DateToUseGet">
+            <summary>Sets the shim of QueryRequest.get_DateToUse()</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimQueryRequest.AllInstances.DateToUseSetDateTime">
+            <summary>Sets the shim of QueryRequest.set_DateToUse(DateTime value)</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimQueryRequest.AllInstances.IntervalGet">
+            <summary>Sets the shim of QueryRequest.get_Interval()</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimQueryRequest.AllInstances.IntervalSetInt32">
+            <summary>Sets the shim of QueryRequest.set_Interval(Int32 value)</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimQueryRequest.AllInstances.QueryGet">
+            <summary>Sets the shim of QueryRequest.get_Query()</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimQueryRequest.AllInstances.QuerySetString">
+            <summary>Sets the shim of QueryRequest.set_Query(String value)</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimQueryRequest.AllInstances.ResultPathGet">
+            <summary>Sets the shim of QueryRequest.get_ResultPath()</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimQueryRequest.AllInstances.ResultPathSetString">
+            <summary>Sets the shim of QueryRequest.set_ResultPath(String value)</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimQueryRequest.AllInstances.TypeGet">
+            <summary>Sets the shim of QueryRequest.get_Type()</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimQueryRequest.AllInstances.TypeSetQueryType">
+            <summary>Sets the shim of QueryRequest.set_Type(QueryType value)</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimQueryRequest.AllInstances.UniqueKeyGet">
+            <summary>Sets the shim of QueryRequest.get_UniqueKey()</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimQueryRequest.AllInstances.UniqueKeySetString">
+            <summary>Sets the shim of QueryRequest.set_UniqueKey(String value)</summary>
+        </member>
+        <member name="T:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimQueryRequestResult">
+            <summary>Shim type of StatRetrieval.Shared.Common.DataContracts.QueryRequestResult</summary>
+        </member>
+        <member name="M:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimQueryRequestResult.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimQueryRequestResult.#ctor(StatRetrieval.Shared.Common.DataContracts.QueryRequestResult)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimQueryRequestResult.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimQueryRequestResult.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimQueryRequestResult.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimQueryRequestResult.Constructor">
+            <summary>Sets the shim of QueryRequestResult.QueryRequestResult()</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimQueryRequestResult.RequestsGet">
+            <summary>Sets the shim of QueryRequestResult.get_Requests()</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimQueryRequestResult.RequestsSetQueryRequestArray">
+            <summary>Sets the shim of QueryRequestResult.set_Requests(QueryRequest[] value)</summary>
+        </member>
+        <member name="T:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimQueryRequestResult.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimQueryRequestResult.AllInstances.RequestsGet">
+            <summary>Sets the shim of QueryRequestResult.get_Requests()</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimQueryRequestResult.AllInstances.RequestsSetQueryRequestArray">
+            <summary>Sets the shim of QueryRequestResult.set_Requests(QueryRequest[] value)</summary>
+        </member>
+        <member name="T:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimRemoteResultObject">
+            <summary>Shim type of StatRetrieval.Shared.Common.DataContracts.RemoteResultObject</summary>
+        </member>
+        <member name="M:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimRemoteResultObject.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimRemoteResultObject.#ctor(StatRetrieval.Shared.Common.DataContracts.RemoteResultObject)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimRemoteResultObject.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimRemoteResultObject.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimRemoteResultObject.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimRemoteResultObject.Constructor">
+            <summary>Sets the shim of RemoteResultObject.RemoteResultObject()</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimRemoteResultObject.IDGet">
+            <summary>Sets the shim of RemoteResultObject.get_ID()</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimRemoteResultObject.IDSetString">
+            <summary>Sets the shim of RemoteResultObject.set_ID(String value)</summary>
+        </member>
+        <member name="T:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimRemoteResultObject.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimRemoteResultObject.AllInstances.IDGet">
+            <summary>Sets the shim of RemoteResultObject.get_ID()</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimRemoteResultObject.AllInstances.IDSetString">
+            <summary>Sets the shim of RemoteResultObject.set_ID(String value)</summary>
+        </member>
+        <member name="T:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimValuePair">
+            <summary>Shim type of StatRetrieval.Shared.Common.DataContracts.ValuePair</summary>
+        </member>
+        <member name="M:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimValuePair.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimValuePair.#ctor(StatRetrieval.Shared.Common.DataContracts.ValuePair)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimValuePair.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimValuePair.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimValuePair.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimValuePair.ConstructorStringString">
+            <summary>Sets the shim of ValuePair.ValuePair(String key, String Value)</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimValuePair.KeyGet">
+            <summary>Sets the shim of ValuePair.get_Key()</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimValuePair.KeySetString">
+            <summary>Sets the shim of ValuePair.set_Key(String value)</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimValuePair.ToString">
+            <summary>Sets the shim of ValuePair.ToString()</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimValuePair.ValueGet">
+            <summary>Sets the shim of ValuePair.get_Value()</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimValuePair.ValueSetString">
+            <summary>Sets the shim of ValuePair.set_Value(String value)</summary>
+        </member>
+        <member name="T:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimValuePair.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimValuePair.AllInstances.KeyGet">
+            <summary>Sets the shim of ValuePair.get_Key()</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimValuePair.AllInstances.KeySetString">
+            <summary>Sets the shim of ValuePair.set_Key(String value)</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimValuePair.AllInstances.ToString01">
+            <summary>Sets the shim of ValuePair.ToString()</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimValuePair.AllInstances.ValueGet">
+            <summary>Sets the shim of ValuePair.get_Value()</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.ShimValuePair.AllInstances.ValueSetString">
+            <summary>Sets the shim of ValuePair.set_Value(String value)</summary>
+        </member>
+        <member name="T:StatRetrieval.Shared.Common.DataContracts.Fakes.StubConfigResult">
+            <summary>Stub type of StatRetrieval.Shared.Common.DataContracts.ConfigResult</summary>
+        </member>
+        <member name="M:StatRetrieval.Shared.Common.DataContracts.Fakes.StubConfigResult.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:StatRetrieval.Shared.Common.DataContracts.Fakes.StubConfigResult.InitializeStub">
+            <summary>Initializes a new instance of type StubConfigResult</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.StubConfigResult.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.StubConfigResult.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.StubConfigResult.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:StatRetrieval.Shared.Common.DataContracts.Fakes.StubEmployeeData">
+            <summary>Stub type of StatRetrieval.Shared.Common.DataContracts.EmployeeData</summary>
+        </member>
+        <member name="M:StatRetrieval.Shared.Common.DataContracts.Fakes.StubEmployeeData.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:StatRetrieval.Shared.Common.DataContracts.Fakes.StubEmployeeData.InitializeStub">
+            <summary>Initializes a new instance of type StubEmployeeData</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.StubEmployeeData.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.StubEmployeeData.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.StubEmployeeData.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:StatRetrieval.Shared.Common.DataContracts.Fakes.StubFileLastLine">
+            <summary>Stub type of StatRetrieval.Shared.Common.DataContracts.FileLastLine</summary>
+        </member>
+        <member name="M:StatRetrieval.Shared.Common.DataContracts.Fakes.StubFileLastLine.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:StatRetrieval.Shared.Common.DataContracts.Fakes.StubFileLastLine.InitializeStub">
+            <summary>Initializes a new instance of type StubFileLastLine</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.StubFileLastLine.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.StubFileLastLine.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.StubFileLastLine.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:StatRetrieval.Shared.Common.DataContracts.Fakes.StubLocalData">
+            <summary>Stub type of StatRetrieval.Shared.Common.DataContracts.LocalData</summary>
+        </member>
+        <member name="M:StatRetrieval.Shared.Common.DataContracts.Fakes.StubLocalData.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:StatRetrieval.Shared.Common.DataContracts.Fakes.StubLocalData.InitializeStub">
+            <summary>Initializes a new instance of type StubLocalData</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.StubLocalData.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.StubLocalData.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.StubLocalData.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:StatRetrieval.Shared.Common.DataContracts.Fakes.StubLocalResult">
+            <summary>Stub type of StatRetrieval.Shared.Common.DataContracts.LocalResult</summary>
+        </member>
+        <member name="M:StatRetrieval.Shared.Common.DataContracts.Fakes.StubLocalResult.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:StatRetrieval.Shared.Common.DataContracts.Fakes.StubLocalResult.#ctor(System.String,StatRetrieval.Shared.Common.DataContracts.QueryRequest,System.Data.DataTable,System.DateTime,System.Boolean)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:StatRetrieval.Shared.Common.DataContracts.Fakes.StubLocalResult.InitializeStub">
+            <summary>Initializes a new instance of type StubLocalResult</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.StubLocalResult.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.StubLocalResult.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.StubLocalResult.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:StatRetrieval.Shared.Common.DataContracts.Fakes.StubQueryRequest">
+            <summary>Stub type of StatRetrieval.Shared.Common.DataContracts.QueryRequest</summary>
+        </member>
+        <member name="M:StatRetrieval.Shared.Common.DataContracts.Fakes.StubQueryRequest.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:StatRetrieval.Shared.Common.DataContracts.Fakes.StubQueryRequest.InitializeStub">
+            <summary>Initializes a new instance of type StubQueryRequest</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.StubQueryRequest.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.StubQueryRequest.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.StubQueryRequest.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:StatRetrieval.Shared.Common.DataContracts.Fakes.StubQueryRequestResult">
+            <summary>Stub type of StatRetrieval.Shared.Common.DataContracts.QueryRequestResult</summary>
+        </member>
+        <member name="M:StatRetrieval.Shared.Common.DataContracts.Fakes.StubQueryRequestResult.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:StatRetrieval.Shared.Common.DataContracts.Fakes.StubQueryRequestResult.InitializeStub">
+            <summary>Initializes a new instance of type StubQueryRequestResult</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.StubQueryRequestResult.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.StubQueryRequestResult.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.StubQueryRequestResult.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:StatRetrieval.Shared.Common.DataContracts.Fakes.StubRemoteResultObject">
+            <summary>Stub type of StatRetrieval.Shared.Common.DataContracts.RemoteResultObject</summary>
+        </member>
+        <member name="M:StatRetrieval.Shared.Common.DataContracts.Fakes.StubRemoteResultObject.#ctor">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:StatRetrieval.Shared.Common.DataContracts.Fakes.StubRemoteResultObject.InitializeStub">
+            <summary>Initializes a new instance of type StubRemoteResultObject</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.StubRemoteResultObject.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.StubRemoteResultObject.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.StubRemoteResultObject.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:StatRetrieval.Shared.Common.DataContracts.Fakes.StubValuePair">
+            <summary>Stub type of StatRetrieval.Shared.Common.DataContracts.ValuePair</summary>
+        </member>
+        <member name="M:StatRetrieval.Shared.Common.DataContracts.Fakes.StubValuePair.#ctor(System.String,System.String)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:StatRetrieval.Shared.Common.DataContracts.Fakes.StubValuePair.InitializeStub">
+            <summary>Initializes a new instance of type StubValuePair</summary>
+        </member>
+        <member name="M:StatRetrieval.Shared.Common.DataContracts.Fakes.StubValuePair.ToString">
+            <summary>Sets the stub of ValuePair.ToString()</summary>
+        </member>
+        <member name="F:StatRetrieval.Shared.Common.DataContracts.Fakes.StubValuePair.ToString01">
+            <summary>Sets the stub of ValuePair.ToString()</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.StubValuePair.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.StubValuePair.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.DataContracts.Fakes.StubValuePair.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+        <member name="T:StatRetrieval.Shared.Common.Fakes.ShimConfigHelper">
+            <summary>Shim type of StatRetrieval.Shared.Common.ConfigHelper</summary>
+        </member>
+        <member name="M:StatRetrieval.Shared.Common.Fakes.ShimConfigHelper.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:StatRetrieval.Shared.Common.Fakes.ShimConfigHelper.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:StatRetrieval.Shared.Common.Fakes.ShimConfigHelper.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.Fakes.ShimConfigHelper.BackupDatabaseAddressGet">
+            <summary>Sets the shim of ConfigHelper.get_BackupDatabaseAddress()</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.Fakes.ShimConfigHelper.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.Fakes.ShimConfigHelper.CycleFrequency_MillisecondsGet">
+            <summary>Sets the shim of ConfigHelper.get_CycleFrequency_Milliseconds()</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.Fakes.ShimConfigHelper.CycleFrequency_MillisecondsSetInt32">
+            <summary>Sets the shim of ConfigHelper.set_CycleFrequency_Milliseconds(Int32 value)</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.Fakes.ShimConfigHelper.CycleFrequency_SecondsGet">
+            <summary>Sets the shim of ConfigHelper.get_CycleFrequency_Seconds()</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.Fakes.ShimConfigHelper.CycleFrequency_SecondsSetInt32">
+            <summary>Sets the shim of ConfigHelper.set_CycleFrequency_Seconds(Int32 value)</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.Fakes.ShimConfigHelper.DBPasswordGet">
+            <summary>Sets the shim of ConfigHelper.get_DBPassword()</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.Fakes.ShimConfigHelper.DBUserGet">
+            <summary>Sets the shim of ConfigHelper.get_DBUser()</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.Fakes.ShimConfigHelper.DatabaseAddressGet">
+            <summary>Sets the shim of ConfigHelper.get_DatabaseAddress()</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.Fakes.ShimConfigHelper.ErrorUrlGet">
+            <summary>Sets the shim of ConfigHelper.get_ErrorUrl()</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.Fakes.ShimConfigHelper.GetBoolStringBoolean">
+            <summary>Sets the shim of ConfigHelper.GetBool(String key, Boolean dft)</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.Fakes.ShimConfigHelper.GetDateTimeString">
+            <summary>Sets the shim of ConfigHelper.GetDateTime(String key)</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.Fakes.ShimConfigHelper.GetIntStringInt32">
+            <summary>Sets the shim of ConfigHelper.GetInt(String key, Int32 dft)</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.Fakes.ShimConfigHelper.GetStringStringString">
+            <summary>Sets the shim of ConfigHelper.GetString(String key, String dft)</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.Fakes.ShimConfigHelper.HostNameGet">
+            <summary>Sets the shim of ConfigHelper.get_HostName()</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.Fakes.ShimConfigHelper.HostNameSetString">
+            <summary>Sets the shim of ConfigHelper.set_HostName(String value)</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.Fakes.ShimConfigHelper.LineTrackerFilePathGet">
+            <summary>Sets the shim of ConfigHelper.get_LineTrackerFilePath()</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.Fakes.ShimConfigHelper.LocalResultsPathGet">
+            <summary>Sets the shim of ConfigHelper.get_LocalResultsPath()</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.Fakes.ShimConfigHelper.LogExtraVerboseGet">
+            <summary>Sets the shim of ConfigHelper.get_LogExtraVerbose()</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.Fakes.ShimConfigHelper.LogPathGet">
+            <summary>Sets the shim of ConfigHelper.get_LogPath()</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.Fakes.ShimConfigHelper.LogVerboseGet">
+            <summary>Sets the shim of ConfigHelper.get_LogVerbose()</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.Fakes.ShimConfigHelper.NitroApiKeyGet">
+            <summary>Sets the shim of ConfigHelper.get_NitroApiKey()</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.Fakes.ShimConfigHelper.NitroSecretKeyGet">
+            <summary>Sets the shim of ConfigHelper.get_NitroSecretKey()</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.Fakes.ShimConfigHelper.PostWithSecretKeyGet">
+            <summary>Sets the shim of ConfigHelper.get_PostWithSecretKey()</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.Fakes.ShimConfigHelper.QueryUrlGet">
+            <summary>Sets the shim of ConfigHelper.get_QueryUrl()</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.Fakes.ShimConfigHelper.ResultsUrlGet">
+            <summary>Sets the shim of ConfigHelper.get_ResultsUrl()</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.Fakes.ShimConfigHelper.StaticConstructor">
+            <summary>Sets the shim of ConfigHelper.ConfigHelper()</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.Fakes.ShimConfigHelper.StoreIdGet">
+            <summary>Sets the shim of ConfigHelper.get_StoreId()</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.Fakes.ShimConfigHelper.StoreIdSetInt32">
+            <summary>Sets the shim of ConfigHelper.set_StoreId(Int32 value)</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.Fakes.ShimConfigHelper.TESTDATEGet">
+            <summary>Sets the shim of ConfigHelper.get_TESTDATE()</summary>
+        </member>
+        <member name="T:StatRetrieval.Shared.Common.Fakes.ShimErrorEventArgs">
+            <summary>Shim type of StatRetrieval.Shared.Common.ErrorEventArgs</summary>
+        </member>
+        <member name="M:StatRetrieval.Shared.Common.Fakes.ShimErrorEventArgs.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:StatRetrieval.Shared.Common.Fakes.ShimErrorEventArgs.#ctor(StatRetrieval.Shared.Common.ErrorEventArgs)">
+            <summary>Initializes a new shim for the given instance</summary>
+        </member>
+        <member name="M:StatRetrieval.Shared.Common.Fakes.ShimErrorEventArgs.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:StatRetrieval.Shared.Common.Fakes.ShimErrorEventArgs.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.Fakes.ShimErrorEventArgs.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.Fakes.ShimErrorEventArgs.ConstructorStringLogLocation">
+            <summary>Sets the shim of ErrorEventArgs.ErrorEventArgs(String logText, LogLocation logLoc)</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.Fakes.ShimErrorEventArgs.LogLocGet">
+            <summary>Sets the shim of ErrorEventArgs.get_LogLoc()</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.Fakes.ShimErrorEventArgs.LogLocSetLogLocation">
+            <summary>Sets the shim of ErrorEventArgs.set_LogLoc(LogLocation value)</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.Fakes.ShimErrorEventArgs.LogTextGet">
+            <summary>Sets the shim of ErrorEventArgs.get_LogText()</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.Fakes.ShimErrorEventArgs.LogTextSetString">
+            <summary>Sets the shim of ErrorEventArgs.set_LogText(String value)</summary>
+        </member>
+        <member name="T:StatRetrieval.Shared.Common.Fakes.ShimErrorEventArgs.AllInstances">
+            <summary>Define shims for all instances members</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.Fakes.ShimErrorEventArgs.AllInstances.LogLocGet">
+            <summary>Sets the shim of ErrorEventArgs.get_LogLoc()</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.Fakes.ShimErrorEventArgs.AllInstances.LogLocSetLogLocation">
+            <summary>Sets the shim of ErrorEventArgs.set_LogLoc(LogLocation value)</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.Fakes.ShimErrorEventArgs.AllInstances.LogTextGet">
+            <summary>Sets the shim of ErrorEventArgs.get_LogText()</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.Fakes.ShimErrorEventArgs.AllInstances.LogTextSetString">
+            <summary>Sets the shim of ErrorEventArgs.set_LogText(String value)</summary>
+        </member>
+        <member name="T:StatRetrieval.Shared.Common.Fakes.ShimGenericExtensions">
+            <summary>Shim type of StatRetrieval.Shared.Common.GenericExtensions</summary>
+        </member>
+        <member name="M:StatRetrieval.Shared.Common.Fakes.ShimGenericExtensions.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:StatRetrieval.Shared.Common.Fakes.ShimGenericExtensions.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:StatRetrieval.Shared.Common.Fakes.ShimGenericExtensions.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:StatRetrieval.Shared.Common.Fakes.ShimGenericExtensions.DeserializeJsonOf1String``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{System.String,``0})">
+            <summary>Sets the shim of GenericExtensions.DeserializeJson(String resultStr)</summary>
+        </member>
+        <member name="M:StatRetrieval.Shared.Common.Fakes.ShimGenericExtensions.DeserializeOf1String``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{System.String,``0})">
+            <summary>Sets the shim of GenericExtensions.Deserialize(String source)</summary>
+        </member>
+        <member name="M:StatRetrieval.Shared.Common.Fakes.ShimGenericExtensions.GetValueOf1ValuePairArrayStringM0``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{StatRetrieval.Shared.Common.DataContracts.ValuePair[],System.String,``0,``0})">
+            <summary>Sets the shim of GenericExtensions.GetValue(ValuePair[] source, String key, !!0 defaultVal)</summary>
+        </member>
+        <member name="M:StatRetrieval.Shared.Common.Fakes.ShimGenericExtensions.ParseValueOf1StringM0Out``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.OutFunc{System.String,``0,System.Boolean})">
+            <summary>Sets the shim of GenericExtensions.ParseValue(String sourceVal, !!0&amp; tempResult)</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.Fakes.ShimGenericExtensions.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.Fakes.ShimGenericExtensions.DateTimeToUnixTimeStampDateTime">
+            <summary>Sets the shim of GenericExtensions.DateTimeToUnixTimeStamp(DateTime dateTime)</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.Fakes.ShimGenericExtensions.SerializeJsonObject">
+            <summary>Sets the shim of GenericExtensions.SerializeJson(Object obj)</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.Fakes.ShimGenericExtensions.SerializeObject">
+            <summary>Sets the shim of GenericExtensions.Serialize(Object obj)</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.Fakes.ShimGenericExtensions.StringReplaceStringStringString">
+            <summary>Sets the shim of GenericExtensions.StringReplace(String source, String sourceReplaceString, String replaceString)</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.Fakes.ShimGenericExtensions.UnixTimeStampToDateTimeDouble">
+            <summary>Sets the shim of GenericExtensions.UnixTimeStampToDateTime(Double unixTimeStamp)</summary>
+        </member>
+        <member name="T:StatRetrieval.Shared.Common.Fakes.ShimLogHelper">
+            <summary>Shim type of StatRetrieval.Shared.Common.LogHelper</summary>
+        </member>
+        <member name="M:StatRetrieval.Shared.Common.Fakes.ShimLogHelper.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:StatRetrieval.Shared.Common.Fakes.ShimLogHelper.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:StatRetrieval.Shared.Common.Fakes.ShimLogHelper.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.Fakes.ShimLogHelper.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.Fakes.ShimLogHelper.ErrorFiredGet">
+            <summary>Sets the shim of LogHelper.get_ErrorFired()</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.Fakes.ShimLogHelper.ErrorFiredSetEventHandlerOfErrorEventArgs">
+            <summary>Sets the shim of LogHelper.set_ErrorFired(EventHandler`1&lt;ErrorEventArgs&gt; value)</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.Fakes.ShimLogHelper.LogStringLogLocationLogType">
+            <summary>Sets the shim of LogHelper.Log(String text, LogLocation logLoc, LogType logType)</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.Fakes.ShimLogHelper.StaticConstructor">
+            <summary>Sets the shim of LogHelper.LogHelper()</summary>
+        </member>
+        <member name="T:StatRetrieval.Shared.Common.Fakes.ShimSecretKeyGenerator">
+            <summary>Shim type of StatRetrieval.Shared.Common.SecretKeyGenerator</summary>
+        </member>
+        <member name="M:StatRetrieval.Shared.Common.Fakes.ShimSecretKeyGenerator.#ctor">
+            <summary>Initializes a new shim instance</summary>
+        </member>
+        <member name="M:StatRetrieval.Shared.Common.Fakes.ShimSecretKeyGenerator.BehaveAsCurrent">
+            <summary>Assigns the &apos;Current&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="M:StatRetrieval.Shared.Common.Fakes.ShimSecretKeyGenerator.BehaveAsNotImplemented">
+            <summary>Assigns the &apos;NotImplemented&apos; behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.Fakes.ShimSecretKeyGenerator.Behavior">
+            <summary>Assigns the behavior for all methods of the shimmed type</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.Fakes.ShimSecretKeyGenerator.CalculateMD5HashString">
+            <summary>Sets the shim of SecretKeyGenerator.CalculateMD5Hash(String input)</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.Fakes.ShimSecretKeyGenerator.GenerateKeyDateTime">
+            <summary>Sets the shim of SecretKeyGenerator.GenerateKey(DateTime dateTime)</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.Fakes.ShimSecretKeyGenerator.GenerateKeyInt64">
+            <summary>Sets the shim of SecretKeyGenerator.GenerateKey(Int64 dateStamp)</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.Fakes.ShimSecretKeyGenerator.GenerateKeyStringStringInt64String">
+            <summary>Sets the shim of SecretKeyGenerator.GenerateKey(String apiKey, String secretKey, Int64 dateStamp, String storeId)</summary>
+        </member>
+        <member name="T:StatRetrieval.Shared.Common.Fakes.StubErrorEventArgs">
+            <summary>Stub type of StatRetrieval.Shared.Common.ErrorEventArgs</summary>
+        </member>
+        <member name="M:StatRetrieval.Shared.Common.Fakes.StubErrorEventArgs.#ctor(System.String,StatRetrieval.Shared.Common.DataContracts.LogLocation)">
+            <summary>Initializes a new instance</summary>
+        </member>
+        <member name="M:StatRetrieval.Shared.Common.Fakes.StubErrorEventArgs.InitializeStub">
+            <summary>Initializes a new instance of type StubErrorEventArgs</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.Fakes.StubErrorEventArgs.CallBase">
+            <summary>Gets or sets a value that indicates if the base method should be called instead of the fallback behavior</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.Fakes.StubErrorEventArgs.InstanceBehavior">
+            <summary>Gets or sets the instance behavior.</summary>
+        </member>
+        <member name="P:StatRetrieval.Shared.Common.Fakes.StubErrorEventArgs.InstanceObserver">
+            <summary>Gets or sets the instance observer.</summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,16 @@
+C:\Workspace\Concord\FileUpdater\bin\Release\FileUpdater.exe.config
+C:\Workspace\Concord\FileUpdater\bin\Release\FileUpdater.exe
+C:\Workspace\Concord\FileUpdater\bin\Release\FileUpdater.XmlSerializers.dll
+C:\Workspace\Concord\FileUpdater\bin\Release\FileUpdater.pdb
+C:\Workspace\Concord\FileUpdater\obj\Release\FileUpdater.csprojResolveAssemblyReference.cache
+C:\Workspace\Concord\FileUpdater\obj\Release\FileUpdater.exe
+C:\Workspace\Concord\FileUpdater\obj\Release\FileUpdater.pdb
+C:\Workspace\Concord\FileUpdater\obj\Release\FileUpdater.XmlSerializers.dll
+C:\workspaces\Concord\FileUpdater\bin\Release\FileUpdater.exe.config
+C:\workspaces\Concord\FileUpdater\bin\Release\FileUpdater.exe
+C:\workspaces\Concord\FileUpdater\bin\Release\FileUpdater.XmlSerializers.dll
+C:\workspaces\Concord\FileUpdater\bin\Release\FileUpdater.pdb
+C:\workspaces\Concord\FileUpdater\obj\Release\FileUpdater.csprojResolveAssemblyReference.cache
+C:\workspaces\Concord\FileUpdater\obj\Release\FileUpdater.exe
+C:\workspaces\Concord\FileUpdater\obj\Release\FileUpdater.pdb
+C:\workspaces\Concord\FileUpdater\obj\Release\FileUpdater.XmlSerializers.dll

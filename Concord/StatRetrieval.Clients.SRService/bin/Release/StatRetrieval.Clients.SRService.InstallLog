@@ -1,0 +1,43 @@
+﻿Installing assembly 'c:\Workspace\Concord\StatRetrieval.Clients.SRService\bin\Release\StatRetrieval.Clients.SRService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = c:\Workspace\Concord\StatRetrieval.Clients.SRService\bin\Release\StatRetrieval.Clients.SRService.exe
+   logfile = c:\Workspace\Concord\StatRetrieval.Clients.SRService\bin\Release\StatRetrieval.Clients.SRService.InstallLog
+Installing service StatRetrieverSvc...
+Service StatRetrieverSvc has been successfully installed.
+Creating EventLog source StatRetrieverSvc in log Application...
+Committing assembly 'c:\Workspace\Concord\StatRetrieval.Clients.SRService\bin\Release\StatRetrieval.Clients.SRService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = c:\Workspace\Concord\StatRetrieval.Clients.SRService\bin\Release\StatRetrieval.Clients.SRService.exe
+   logfile = c:\Workspace\Concord\StatRetrieval.Clients.SRService\bin\Release\StatRetrieval.Clients.SRService.InstallLog
+Uninstalling assembly 'c:\Workspace\Concord\StatRetrieval.Clients.SRService\bin\Release\StatRetrieval.Clients.SRService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = c:\Workspace\Concord\StatRetrieval.Clients.SRService\bin\Release\StatRetrieval.Clients.SRService.exe
+   logfile = c:\Workspace\Concord\StatRetrieval.Clients.SRService\bin\Release\StatRetrieval.Clients.SRService.InstallLog
+Removing EventLog source StatRetrieverSvc.
+Service StatRetrieverSvc is being removed from the system...
+Service StatRetrieverSvc was successfully removed from the system.
+Attempt to stop service StatRetrieverSvc.
+Installing assembly 'c:\Workspace\Concord\StatRetrieval.Clients.SRService\bin\Release\StatRetrieval.Clients.SRService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = c:\Workspace\Concord\StatRetrieval.Clients.SRService\bin\Release\StatRetrieval.Clients.SRService.exe
+   logfile = c:\Workspace\Concord\StatRetrieval.Clients.SRService\bin\Release\StatRetrieval.Clients.SRService.InstallLog
+Installing service StatRetrieverSvc...
+Service StatRetrieverSvc has been successfully installed.
+Creating EventLog source StatRetrieverSvc in log Application...
+Committing assembly 'c:\Workspace\Concord\StatRetrieval.Clients.SRService\bin\Release\StatRetrieval.Clients.SRService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = c:\Workspace\Concord\StatRetrieval.Clients.SRService\bin\Release\StatRetrieval.Clients.SRService.exe
+   logfile = c:\Workspace\Concord\StatRetrieval.Clients.SRService\bin\Release\StatRetrieval.Clients.SRService.InstallLog
+Uninstalling assembly 'c:\Workspace\Concord\StatRetrieval.Clients.SRService\bin\Release\StatRetrieval.Clients.SRService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   assemblypath = c:\Workspace\Concord\StatRetrieval.Clients.SRService\bin\Release\StatRetrieval.Clients.SRService.exe
+   logfile = c:\Workspace\Concord\StatRetrieval.Clients.SRService\bin\Release\StatRetrieval.Clients.SRService.InstallLog
+Removing EventLog source StatRetrieverSvc.
+Service StatRetrieverSvc is being removed from the system...
+Service StatRetrieverSvc was successfully removed from the system.

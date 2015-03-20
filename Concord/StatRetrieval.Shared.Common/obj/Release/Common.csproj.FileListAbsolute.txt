@@ -1,0 +1,10 @@
+C:\Workspace\Concord\StatRetrieval.Shared.Common\bin\Release\StatRetrieval.Shared.Common.dll
+C:\Workspace\Concord\StatRetrieval.Shared.Common\bin\Release\StatRetrieval.Shared.Common.pdb
+C:\Workspace\Concord\StatRetrieval.Shared.Common\obj\Release\StatRetrieval.Shared.Common.dll
+C:\Workspace\Concord\StatRetrieval.Shared.Common\obj\Release\StatRetrieval.Shared.Common.pdb
+C:\Workspace\Concord\StatRetrieval.Shared.Common\obj\Release\Common.csprojResolveAssemblyReference.cache
+C:\workspaces\Concord\StatRetrieval.Shared.Common\bin\Release\StatRetrieval.Shared.Common.dll
+C:\workspaces\Concord\StatRetrieval.Shared.Common\bin\Release\StatRetrieval.Shared.Common.pdb
+C:\workspaces\Concord\StatRetrieval.Shared.Common\obj\Release\Common.csprojResolveAssemblyReference.cache
+C:\workspaces\Concord\StatRetrieval.Shared.Common\obj\Release\StatRetrieval.Shared.Common.dll
+C:\workspaces\Concord\StatRetrieval.Shared.Common\obj\Release\StatRetrieval.Shared.Common.pdb

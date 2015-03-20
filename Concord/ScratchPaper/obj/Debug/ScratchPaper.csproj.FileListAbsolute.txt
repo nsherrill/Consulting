@@ -1,0 +1,6 @@
+C:\ts\Tipshare\ScratchPaper\bin\Debug\ScratchPaper.exe
+C:\ts\Tipshare\ScratchPaper\bin\Debug\ScratchPaper.pdb
+C:\ts\Tipshare\ScratchPaper\obj\Debug\ResolveAssemblyReference.cache
+C:\ts\Tipshare\ScratchPaper\obj\Debug\ScratchPaper.exe
+C:\ts\Tipshare\ScratchPaper\obj\Debug\ScratchPaper.pdb
+C:\ts\Tipshare\ScratchPaper\bin\Debug\ScratchPaper.exe.config

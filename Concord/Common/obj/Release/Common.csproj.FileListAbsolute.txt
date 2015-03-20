@@ -1,0 +1,10 @@
+C:\Workspace\Concord\Common\bin\Release\Common.dll
+C:\Workspace\Concord\Common\bin\Release\Common.pdb
+C:\Workspace\Concord\Common\obj\Release\Common.csprojResolveAssemblyReference.cache
+C:\Workspace\Concord\Common\obj\Release\Common.dll
+C:\Workspace\Concord\Common\obj\Release\Common.pdb
+C:\workspaces\Concord\Common\bin\Release\Common.dll
+C:\workspaces\Concord\Common\bin\Release\Common.pdb
+C:\workspaces\Concord\Common\obj\Release\Common.csprojResolveAssemblyReference.cache
+C:\workspaces\Concord\Common\obj\Release\Common.dll
+C:\workspaces\Concord\Common\obj\Release\Common.pdb

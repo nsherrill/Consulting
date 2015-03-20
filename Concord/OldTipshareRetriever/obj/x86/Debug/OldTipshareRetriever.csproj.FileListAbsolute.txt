@@ -1,0 +1,11 @@
+C:\Workspace\Concord\OldTipshareRetriever\bin\Debug\OldTipshareRetriever.exe
+C:\Workspace\Concord\OldTipshareRetriever\bin\Debug\OldTipshareRetriever.pdb
+C:\Workspace\Concord\OldTipshareRetriever\obj\x86\Debug\OldTipshareRetriever.exe
+C:\Workspace\Concord\OldTipshareRetriever\obj\x86\Debug\OldTipshareRetriever.pdb
+C:\Workspace\Concord\OldTipshareRetriever\bin\Debug\OldTipshareRetriever.exe.config
+C:\workspaces\Concord\OldTipshareRetriever\bin\Debug\OldTipshareRetriever.exe.config
+C:\workspaces\Concord\OldTipshareRetriever\bin\Debug\OldTipshareRetriever.exe
+C:\workspaces\Concord\OldTipshareRetriever\bin\Debug\OldTipshareRetriever.pdb
+C:\workspaces\Concord\OldTipshareRetriever\obj\x86\Debug\OldTipshareRetriever.csprojResolveAssemblyReference.cache
+C:\workspaces\Concord\OldTipshareRetriever\obj\x86\Debug\OldTipshareRetriever.exe
+C:\workspaces\Concord\OldTipshareRetriever\obj\x86\Debug\OldTipshareRetriever.pdb

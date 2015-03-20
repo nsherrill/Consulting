@@ -1,0 +1,14 @@
+C:\concord\ConcordWeb\ProjectManager\bin\ProjectManager.dll
+C:\concord\ConcordWeb\ProjectManager\bin\ProjectManager.pdb
+C:\concord\ConcordWeb\ProjectManager\obj\Debug\ResolveAssemblyReference.cache
+C:\concord\ConcordWeb\ProjectManager\obj\Debug\ProjectManager.dll
+C:\concord\ConcordWeb\ProjectManager\obj\Debug\ProjectManager.pdb
+C:\concord\ConcordWeb\ProjectManager\bin\Common.dll
+C:\concord\ConcordWeb\ProjectManager\bin\Common.pdb
+C:\ts\ConcordWeb\ProjectManager\bin\ProjectManager.dll
+C:\ts\ConcordWeb\ProjectManager\bin\ProjectManager.pdb
+C:\ts\ConcordWeb\ProjectManager\bin\Common.dll
+C:\ts\ConcordWeb\ProjectManager\bin\Common.pdb
+C:\ts\ConcordWeb\ProjectManager\obj\Debug\ResolveAssemblyReference.cache
+C:\ts\ConcordWeb\ProjectManager\obj\Debug\ProjectManager.dll
+C:\ts\ConcordWeb\ProjectManager\obj\Debug\ProjectManager.pdb

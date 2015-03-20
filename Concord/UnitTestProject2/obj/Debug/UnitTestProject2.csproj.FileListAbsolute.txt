@@ -1,0 +1,4 @@
+C:\Workspace\Concord\UnitTestProject2\bin\Debug\UnitTestProject2.dll
+C:\Workspace\Concord\UnitTestProject2\bin\Debug\UnitTestProject2.pdb
+C:\Workspace\Concord\UnitTestProject2\obj\Debug\UnitTestProject2.dll
+C:\Workspace\Concord\UnitTestProject2\obj\Debug\UnitTestProject2.pdb

@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="GetTipshareVersion">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetTipshareVersionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetTipshareVersionResult" type="tns:Version" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Version" />
+      <s:element name="GetProgramUsage">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DateStart" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="UserPass" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetProgramUsageResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetProgramUsageResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="RecordProgramUsage">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="StoreName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RecordProgramUsageResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RecordProgramUsageResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUndistributedStores">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetUndistributedStoresResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetUndistributedStoresResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetRequests">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ShortStoreName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetRequestsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetRequestsResult" type="tns:ArrayOfSPRequest" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfSPRequest">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="SPRequest" nillable="true" type="tns:SPRequest" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="SPRequest">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Id" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="StoreId" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Status" type="tns:SPRequestStatus" />
+          <s:element minOccurs="1" maxOccurs="1" name="SubmitDate" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="Source" type="tns:SPSource" />
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="SPRequestStatus">
+        <s:restriction base="s:string">
+          <s:enumeration value="Requested" />
+          <s:enumeration value="Pending" />
+          <s:enumeration value="Errored" />
+          <s:enumeration value="Complete" />
+        </s:restriction>
+      </s:simpleType>
+      <s:simpleType name="SPSource">
+        <s:restriction base="s:string">
+          <s:enumeration value="Store" />
+          <s:enumeration value="Website" />
+          <s:enumeration value="Scheduled" />
+          <s:enumeration value="Manual" />
+        </s:restriction>
+      </s:simpleType>
+      <s:element name="UpdateRequest">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="newRequest" type="tns:SPRequest" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateRequestResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="UpdateRequestResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetRecentCompleted">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ShortStoreName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetRecentCompletedResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetRecentCompletedResult" type="tns:SPResults" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="SPResults">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Id" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="StoreId" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="RequestId" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="CompletedDate" type="s:dateTime" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="InsertResults">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="newResults" type="tns:SPResults" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertResultsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="InsertResultsResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LastCompletedResultDate">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ShortStoreName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LastCompletedResultDateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LastCompletedResultDateResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetTipshareVersionSoapIn">
+    <wsdl:part name="parameters" element="tns:GetTipshareVersion" />
+  </wsdl:message>
+  <wsdl:message name="GetTipshareVersionSoapOut">
+    <wsdl:part name="parameters" element="tns:GetTipshareVersionResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetProgramUsageSoapIn">
+    <wsdl:part name="parameters" element="tns:GetProgramUsage" />
+  </wsdl:message>
+  <wsdl:message name="GetProgramUsageSoapOut">
+    <wsdl:part name="parameters" element="tns:GetProgramUsageResponse" />
+  </wsdl:message>
+  <wsdl:message name="RecordProgramUsageSoapIn">
+    <wsdl:part name="parameters" element="tns:RecordProgramUsage" />
+  </wsdl:message>
+  <wsdl:message name="RecordProgramUsageSoapOut">
+    <wsdl:part name="parameters" element="tns:RecordProgramUsageResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetUndistributedStoresSoapIn">
+    <wsdl:part name="parameters" element="tns:GetUndistributedStores" />
+  </wsdl:message>
+  <wsdl:message name="GetUndistributedStoresSoapOut">
+    <wsdl:part name="parameters" element="tns:GetUndistributedStoresResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetRequestsSoapIn">
+    <wsdl:part name="parameters" element="tns:GetRequests" />
+  </wsdl:message>
+  <wsdl:message name="GetRequestsSoapOut">
+    <wsdl:part name="parameters" element="tns:GetRequestsResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateRequestSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateRequest" />
+  </wsdl:message>
+  <wsdl:message name="UpdateRequestSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateRequestResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetRecentCompletedSoapIn">
+    <wsdl:part name="parameters" element="tns:GetRecentCompleted" />
+  </wsdl:message>
+  <wsdl:message name="GetRecentCompletedSoapOut">
+    <wsdl:part name="parameters" element="tns:GetRecentCompletedResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertResultsSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertResults" />
+  </wsdl:message>
+  <wsdl:message name="InsertResultsSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertResultsResponse" />
+  </wsdl:message>
+  <wsdl:message name="LastCompletedResultDateSoapIn">
+    <wsdl:part name="parameters" element="tns:LastCompletedResultDate" />
+  </wsdl:message>
+  <wsdl:message name="LastCompletedResultDateSoapOut">
+    <wsdl:part name="parameters" element="tns:LastCompletedResultDateResponse" />
+  </wsdl:message>
+  <wsdl:portType name="TipshareWSSoap">
+    <wsdl:operation name="GetTipshareVersion">
+      <wsdl:input message="tns:GetTipshareVersionSoapIn" />
+      <wsdl:output message="tns:GetTipshareVersionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProgramUsage">
+      <wsdl:input message="tns:GetProgramUsageSoapIn" />
+      <wsdl:output message="tns:GetProgramUsageSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RecordProgramUsage">
+      <wsdl:input message="tns:RecordProgramUsageSoapIn" />
+      <wsdl:output message="tns:RecordProgramUsageSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUndistributedStores">
+      <wsdl:input message="tns:GetUndistributedStoresSoapIn" />
+      <wsdl:output message="tns:GetUndistributedStoresSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRequests">
+      <wsdl:input message="tns:GetRequestsSoapIn" />
+      <wsdl:output message="tns:GetRequestsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateRequest">
+      <wsdl:input message="tns:UpdateRequestSoapIn" />
+      <wsdl:output message="tns:UpdateRequestSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetRecentCompleted">
+      <wsdl:input message="tns:GetRecentCompletedSoapIn" />
+      <wsdl:output message="tns:GetRecentCompletedSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertResults">
+      <wsdl:input message="tns:InsertResultsSoapIn" />
+      <wsdl:output message="tns:InsertResultsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LastCompletedResultDate">
+      <wsdl:input message="tns:LastCompletedResultDateSoapIn" />
+      <wsdl:output message="tns:LastCompletedResultDateSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="TipshareWSSoap" type="tns:TipshareWSSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetTipshareVersion">
+      <soap:operation soapAction="http://tempuri.org/GetTipshareVersion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProgramUsage">
+      <soap:operation soapAction="http://tempuri.org/GetProgramUsage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RecordProgramUsage">
+      <soap:operation soapAction="http://tempuri.org/RecordProgramUsage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUndistributedStores">
+      <soap:operation soapAction="http://tempuri.org/GetUndistributedStores" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRequests">
+      <soap:operation soapAction="http://tempuri.org/GetRequests" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateRequest">
+      <soap:operation soapAction="http://tempuri.org/UpdateRequest" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRecentCompleted">
+      <soap:operation soapAction="http://tempuri.org/GetRecentCompleted" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertResults">
+      <soap:operation soapAction="http://tempuri.org/InsertResults" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LastCompletedResultDate">
+      <soap:operation soapAction="http://tempuri.org/LastCompletedResultDate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="TipshareWSSoap12" type="tns:TipshareWSSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetTipshareVersion">
+      <soap12:operation soapAction="http://tempuri.org/GetTipshareVersion" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProgramUsage">
+      <soap12:operation soapAction="http://tempuri.org/GetProgramUsage" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RecordProgramUsage">
+      <soap12:operation soapAction="http://tempuri.org/RecordProgramUsage" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUndistributedStores">
+      <soap12:operation soapAction="http://tempuri.org/GetUndistributedStores" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRequests">
+      <soap12:operation soapAction="http://tempuri.org/GetRequests" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateRequest">
+      <soap12:operation soapAction="http://tempuri.org/UpdateRequest" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetRecentCompleted">
+      <soap12:operation soapAction="http://tempuri.org/GetRecentCompleted" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertResults">
+      <soap12:operation soapAction="http://tempuri.org/InsertResults" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LastCompletedResultDate">
+      <soap12:operation soapAction="http://tempuri.org/LastCompletedResultDate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="TipshareWS">
+    <wsdl:port name="TipshareWSSoap" binding="tns:TipshareWSSoap">
+      <soap:address location="http://tipsharews.concordei.com/tipsharews.asmx" />
+    </wsdl:port>
+    <wsdl:port name="TipshareWSSoap12" binding="tns:TipshareWSSoap12">
+      <soap12:address location="http://tipsharews.concordei.com/tipsharews.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

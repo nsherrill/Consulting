@@ -1,0 +1,100 @@
+<%@ Master Language="C#" Inherits="System.Web.Mvc.ViewMasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head runat="server">
+        <title><asp:ContentPlaceHolder ID="TitleContent" runat="server" /></title>
+        <%--<link href="../../Content/Site.css" rel="stylesheet" type="text/css" />--%>
+        <link href="/Content/css/style.css" rel="stylesheet" type="text/css" />
+    </head>
+    <% Common.Users currUser = Common.Users.Find(Page.User.Identity.Name); %>
+    <body>
+        <div id="main"><!-- Main starts here -->
+            <div id="header"><!-- Header starts here -->
+            <%--
+	            <div class="searchBar">
+                    <div class="search">
+        	            <div class="txt"><input type="text" /></div>
+                        <div class="searchBt"><input type="button" value="search" /></div>
+                    </div>
+    	            <div class="signIn">sign in</div>
+                </div>--%>
+                <div class="searchBar">
+                    <br />
+                    <div id="logindisplay">
+                        <font style="color:#69523b; background-color:White; padding: 4px 4px 4px 4px;">
+                            <% Html.RenderPartial("LogOnUserControl"); %></font>
+                    </div>
+                </div>
+                
+                <div class="logo">
+                    <p style="font-size:24pt; color:White;">Concord Web</p>
+    	                    <%--<a href="#"><img src="/Content/images/logo.png" alt="" /></a>--%>
+                </div>
+                
+                <div class="menu">
+    	            <ul id="menu">
+        	            <li class="home"><a href="/">Home</a></li>
+        	            <%if (currUser!=null && (int)currUser.UserGroup>=Common.Permissions.TipshareLevel)
+                            { %>
+        	                <li class="organic"><a href="/Tipshare">Tipshare</a></li>
+        	            <%  } %>
+        	            <%if (currUser != null && (int)currUser.UserGroup >= Common.Permissions.IssuesLevel)
+                            { %>
+        	                <li class="home"><a href="/Issues">Issues</a></li>
+        	            <%  } %>
+        	            <%if (currUser != null && (int)currUser.UserGroup >= Common.Permissions.ProjectsLevel)
+                            { %>
+        	            <li class="organic"><a href="/Projects">Projects</a></li>
+        	            <%  } %>
+        	            <%if (currUser != null && (int)currUser.UserGroup >= Common.Permissions.UsersLevel)
+                            { %>
+        	            <li class="organic"><a href="/Users">Users</a></li>
+        	            <%  } %>
+    	            </ul>
+                </div>
+                <%--
+                <div class="subs">
+    	            <p>SUBCRIBE to RSS</p><img src="/Content/images/rss.png" alt="" />
+                </div>--%>
+            </div><!-- Header ends here -->
+
+            <div class="clear"></div>
+
+            <div id="contentTop"></div><!-- Content starts here -->
+            
+            <div id="content">
+                <div style="padding: 20px 20px 20px 20px;">
+                    <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+                </div>
+                <div class="clear"></div>
+
+                <div class="hr"></div>
+                <div class="space"></div>
+                <div id="footer"><!-- Footer starts here -->
+
+                    <div class="contactHeading">Contact</div>
+                    <div class="footerHolder">
+	                    <div class="footerLeft">
+    	                    <p class="left">Brian Farr</p>
+    	                    <br />
+                            <p class="right">bfarr@concordei.com</p>
+                        </div>
+                        
+                        <div class="footerLeft">
+    	                    <p class="left">Nick Sherrill</p>
+    	                    <br />
+	                        <p class="right">nick@the-sherrills.com</p>
+                        </div>
+                    </div>
+                </div><!-- Footer ends here -->
+            </div>
+            <div id="contentBottom"></div><!-- Content ends here -->
+
+            <div class="bottomHolder">
+            <div class="copy">Copyright 2010 Concord</div>
+            <div class="design"><a href="http://studio7designs.com">Design by STUDIO7DESIGNS</a></div>
+            </div>
+        </div><!-- Main ends here -->
+    </body>
+</html>

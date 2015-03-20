@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="GetTipshareVersion">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetTipshareVersionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetTipshareVersionResult" type="tns:Version" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Version" />
+      <s:element name="GetProgramUsage">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DateStart" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="UserPass" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetProgramUsageResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetProgramUsageResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="RecordProgramUsage">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="StoreName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RecordProgramUsageResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RecordProgramUsageResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetTipshareVersionSoapIn">
+    <wsdl:part name="parameters" element="tns:GetTipshareVersion" />
+  </wsdl:message>
+  <wsdl:message name="GetTipshareVersionSoapOut">
+    <wsdl:part name="parameters" element="tns:GetTipshareVersionResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetProgramUsageSoapIn">
+    <wsdl:part name="parameters" element="tns:GetProgramUsage" />
+  </wsdl:message>
+  <wsdl:message name="GetProgramUsageSoapOut">
+    <wsdl:part name="parameters" element="tns:GetProgramUsageResponse" />
+  </wsdl:message>
+  <wsdl:message name="RecordProgramUsageSoapIn">
+    <wsdl:part name="parameters" element="tns:RecordProgramUsage" />
+  </wsdl:message>
+  <wsdl:message name="RecordProgramUsageSoapOut">
+    <wsdl:part name="parameters" element="tns:RecordProgramUsageResponse" />
+  </wsdl:message>
+  <wsdl:portType name="TipshareWSSoap">
+    <wsdl:operation name="GetTipshareVersion">
+      <wsdl:input message="tns:GetTipshareVersionSoapIn" />
+      <wsdl:output message="tns:GetTipshareVersionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProgramUsage">
+      <wsdl:input message="tns:GetProgramUsageSoapIn" />
+      <wsdl:output message="tns:GetProgramUsageSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RecordProgramUsage">
+      <wsdl:input message="tns:RecordProgramUsageSoapIn" />
+      <wsdl:output message="tns:RecordProgramUsageSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="TipshareWSSoap" type="tns:TipshareWSSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetTipshareVersion">
+      <soap:operation soapAction="http://tempuri.org/GetTipshareVersion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProgramUsage">
+      <soap:operation soapAction="http://tempuri.org/GetProgramUsage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RecordProgramUsage">
+      <soap:operation soapAction="http://tempuri.org/RecordProgramUsage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="TipshareWSSoap12" type="tns:TipshareWSSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetTipshareVersion">
+      <soap12:operation soapAction="http://tempuri.org/GetTipshareVersion" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProgramUsage">
+      <soap12:operation soapAction="http://tempuri.org/GetProgramUsage" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RecordProgramUsage">
+      <soap12:operation soapAction="http://tempuri.org/RecordProgramUsage" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="TipshareWS">
+    <wsdl:port name="TipshareWSSoap" binding="tns:TipshareWSSoap">
+      <soap:address location="http://tipsharews.concordei.com/tipsharews.asmx" />
+    </wsdl:port>
+    <wsdl:port name="TipshareWSSoap12" binding="tns:TipshareWSSoap12">
+      <soap12:address location="http://tipsharews.concordei.com/tipsharews.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

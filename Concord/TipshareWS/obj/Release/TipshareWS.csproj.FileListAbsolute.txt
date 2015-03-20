@@ -1,0 +1,15 @@
+C:\Workspace\Concord\TipshareWS\bin\TipshareWS.dll
+C:\Workspace\Concord\TipshareWS\bin\TipshareWS.pdb
+C:\Workspace\Concord\TipshareWS\bin\Common.dll
+C:\Workspace\Concord\TipshareWS\bin\Common.pdb
+C:\Workspace\Concord\TipshareWS\obj\Release\TipshareWS.csprojResolveAssemblyReference.cache
+C:\Workspace\Concord\TipshareWS\obj\Release\TipshareWS.dll
+C:\Workspace\Concord\TipshareWS\obj\Release\TipshareWS.pdb
+C:\workspaces\Concord\TipshareWS\bin\TipshareWS.dll.config
+C:\workspaces\Concord\TipshareWS\bin\TipshareWS.dll
+C:\workspaces\Concord\TipshareWS\bin\TipshareWS.pdb
+C:\workspaces\Concord\TipshareWS\bin\Common.dll
+C:\workspaces\Concord\TipshareWS\bin\Common.pdb
+C:\workspaces\Concord\TipshareWS\obj\Release\TipshareWS.csprojResolveAssemblyReference.cache
+C:\workspaces\Concord\TipshareWS\obj\Release\TipshareWS.dll
+C:\workspaces\Concord\TipshareWS\obj\Release\TipshareWS.pdb
