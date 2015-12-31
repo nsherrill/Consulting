@@ -8,6 +8,11 @@ namespace Tipshare
 {
     public static class ConfigHelper
     {
+        public static string[] ServerJobCodes { get { return GetStringArray("ServerJobCodes", null); } }
+        public static string[] HostJobCodes { get { return GetStringArray("HostJobCodes", null); } }
+        public static string[] BarJobCodes { get { return GetStringArray("BarJobCodes", null); } } 
+        public static string[] OtherJobCodes { get { return GetStringArray("OtherJobCodes", null); } } 
+
         public static bool AllowUndistributed { get; set; }
 
         public static bool bTest = ConfigurationManager.AppSettings["setting"].Contains("test");

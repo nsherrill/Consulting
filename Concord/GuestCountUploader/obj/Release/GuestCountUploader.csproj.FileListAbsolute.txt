@@ -20,3 +20,14 @@ C:\workspaces\Concord\GuestCountUploader\bin\Release\Common.pdb
 C:\workspaces\Concord\GuestCountUploader\obj\Release\GuestCountUploader.csprojResolveAssemblyReference.cache
 C:\workspaces\Concord\GuestCountUploader\obj\Release\GuestCountUploader.exe
 C:\workspaces\Concord\GuestCountUploader\obj\Release\GuestCountUploader.pdb
+C:\Code\Consulting\Concord\GuestCountUploader\bin\Release\ElstarHistory.sql
+C:\Code\Consulting\Concord\GuestCountUploader\bin\Release\Elstar.sql
+C:\Code\Consulting\Concord\GuestCountUploader\bin\Release\StoreList.txt
+C:\Code\Consulting\Concord\GuestCountUploader\bin\Release\GuestCountUploader.exe.config
+C:\Code\Consulting\Concord\GuestCountUploader\bin\Release\GuestCountUploader.exe
+C:\Code\Consulting\Concord\GuestCountUploader\bin\Release\GuestCountUploader.pdb
+C:\Code\Consulting\Concord\GuestCountUploader\bin\Release\Common.dll
+C:\Code\Consulting\Concord\GuestCountUploader\bin\Release\Common.pdb
+C:\Code\Consulting\Concord\GuestCountUploader\obj\Release\GuestCountUploader.csprojResolveAssemblyReference.cache
+C:\Code\Consulting\Concord\GuestCountUploader\obj\Release\GuestCountUploader.exe
+C:\Code\Consulting\Concord\GuestCountUploader\obj\Release\GuestCountUploader.pdb

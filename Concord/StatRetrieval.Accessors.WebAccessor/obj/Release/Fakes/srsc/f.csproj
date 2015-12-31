@@ -8,7 +8,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>9.0.21022</ProductVersion>
-    <ProjectGuid>cab307de-5045-4d6d-b0a2-dba8ce733df4</ProjectGuid>
+    <ProjectGuid>c83146e1-b8ff-4480-97b0-53a56d451afe</ProjectGuid>
     <!-- update GUID here -->
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -50,7 +50,7 @@
       <Aliases>mqttf</Aliases>
     </Reference>
     <Reference Include="StatRetrieval.Shared.Common">
-      <HintPath>C:\workspaces\Concord\StatRetrieval.Shared.Common\bin\Release\StatRetrieval.Shared.Common.dll</HintPath>
+      <HintPath>C:\Code\Consulting\Concord\StatRetrieval.Shared.Common\bin\Release\StatRetrieval.Shared.Common.dll</HintPath>
       <Aliases>srsc</Aliases>
       <EmbedInteropTypes>False</EmbedInteropTypes>
     </Reference>

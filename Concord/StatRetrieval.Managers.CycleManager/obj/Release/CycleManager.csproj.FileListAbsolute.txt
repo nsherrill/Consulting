@@ -24,3 +24,16 @@ C:\workspaces\Concord\StatRetrieval.Managers.CycleManager\bin\Release\StatRetrie
 C:\workspaces\Concord\StatRetrieval.Managers.CycleManager\obj\Release\CycleManager.csprojResolveAssemblyReference.cache
 C:\workspaces\Concord\StatRetrieval.Managers.CycleManager\obj\Release\StatRetrieval.Managers.CycleManager.dll
 C:\workspaces\Concord\StatRetrieval.Managers.CycleManager\obj\Release\StatRetrieval.Managers.CycleManager.pdb
+C:\Code\Consulting\Concord\StatRetrieval.Managers.CycleManager\bin\Release\StatRetrieval.Managers.CycleManager.dll
+C:\Code\Consulting\Concord\StatRetrieval.Managers.CycleManager\bin\Release\StatRetrieval.Managers.CycleManager.pdb
+C:\Code\Consulting\Concord\StatRetrieval.Managers.CycleManager\bin\Release\StatRetrieval.Accessors.DataAccessor.dll
+C:\Code\Consulting\Concord\StatRetrieval.Managers.CycleManager\bin\Release\StatRetrieval.Accessors.WebAccessor.dll
+C:\Code\Consulting\Concord\StatRetrieval.Managers.CycleManager\bin\Release\StatRetrieval.Engines.DataProcessorEngine.cs.dll
+C:\Code\Consulting\Concord\StatRetrieval.Managers.CycleManager\bin\Release\StatRetrieval.Shared.Common.dll
+C:\Code\Consulting\Concord\StatRetrieval.Managers.CycleManager\bin\Release\StatRetrieval.Accessors.DataAccessor.pdb
+C:\Code\Consulting\Concord\StatRetrieval.Managers.CycleManager\bin\Release\StatRetrieval.Accessors.WebAccessor.pdb
+C:\Code\Consulting\Concord\StatRetrieval.Managers.CycleManager\bin\Release\StatRetrieval.Engines.DataProcessorEngine.cs.pdb
+C:\Code\Consulting\Concord\StatRetrieval.Managers.CycleManager\bin\Release\StatRetrieval.Shared.Common.pdb
+C:\Code\Consulting\Concord\StatRetrieval.Managers.CycleManager\obj\Release\CycleManager.csprojResolveAssemblyReference.cache
+C:\Code\Consulting\Concord\StatRetrieval.Managers.CycleManager\obj\Release\StatRetrieval.Managers.CycleManager.dll
+C:\Code\Consulting\Concord\StatRetrieval.Managers.CycleManager\obj\Release\StatRetrieval.Managers.CycleManager.pdb

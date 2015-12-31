@@ -12,3 +12,10 @@ C:\workspaces\Concord\StatRetrieval.Accessors.DataAccessor\bin\Release\StatRetri
 C:\workspaces\Concord\StatRetrieval.Accessors.DataAccessor\obj\Release\DataAccessor.csprojResolveAssemblyReference.cache
 C:\workspaces\Concord\StatRetrieval.Accessors.DataAccessor\obj\Release\StatRetrieval.Accessors.DataAccessor.dll
 C:\workspaces\Concord\StatRetrieval.Accessors.DataAccessor\obj\Release\StatRetrieval.Accessors.DataAccessor.pdb
+C:\Code\Consulting\Concord\StatRetrieval.Accessors.DataAccessor\bin\Release\StatRetrieval.Accessors.DataAccessor.dll
+C:\Code\Consulting\Concord\StatRetrieval.Accessors.DataAccessor\bin\Release\StatRetrieval.Accessors.DataAccessor.pdb
+C:\Code\Consulting\Concord\StatRetrieval.Accessors.DataAccessor\bin\Release\StatRetrieval.Shared.Common.dll
+C:\Code\Consulting\Concord\StatRetrieval.Accessors.DataAccessor\bin\Release\StatRetrieval.Shared.Common.pdb
+C:\Code\Consulting\Concord\StatRetrieval.Accessors.DataAccessor\obj\Release\DataAccessor.csprojResolveAssemblyReference.cache
+C:\Code\Consulting\Concord\StatRetrieval.Accessors.DataAccessor\obj\Release\StatRetrieval.Accessors.DataAccessor.dll
+C:\Code\Consulting\Concord\StatRetrieval.Accessors.DataAccessor\obj\Release\StatRetrieval.Accessors.DataAccessor.pdb

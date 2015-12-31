@@ -36,87 +36,106 @@ namespace Tipshare
             }
         }
 
+
+        private static string[] _barJobCodes = null;
         public static string[] BarJobCodes
         {
             get
             {
-                string[] result = new string[] { };
-                switch (PosType)
+                if (_barJobCodes == null)
                 {
-                    case POSType.AppleOne:
-                        result = new string[] { "7", "19" };
-                        break;
-                    case POSType.Aloha:
-                        result = new string[] { "31" };
-                        break;
-                    case POSType.Unknown:
-                    default:
-                        break;
+                    if (ConfigHelper.BarJobCodes == null)
+                    {
+                        switch (PosType)
+                        {
+                            case POSType.AppleOne:
+                                _barJobCodes = new string[] { "7", "19" };
+                                break;
+                            case POSType.Aloha:
+                                _barJobCodes = new string[] { "31" };
+                                break;
+                            case POSType.Unknown:
+                            default:
+                                break;
+                        }
+                    }
+                    else _barJobCodes = ConfigHelper.BarJobCodes;
                 }
-                return result;
+                return _barJobCodes;
             }
         }
 
+        private static string[] _hostJobCodes = null;
         public static string[] HostJobCodes
         {
             get
             {
-                string[] result = new string[] { };
-                switch (PosType)
+                if (_hostJobCodes == null)
                 {
-                    case POSType.AppleOne:
-                        result = new string[] { "6", "18" };
-                        break;
-                    case POSType.Aloha:
-                        result = new string[] { "15", "55" };
-                        break;
-                    case POSType.Unknown:
-                    default:
-                        break;
+                    if (ConfigHelper.HostJobCodes == null)
+                    {
+                        switch (PosType)
+                        {
+                            case POSType.AppleOne:
+                                _hostJobCodes = new string[] { "6" };
+                                break;
+                            case POSType.Aloha:
+                                _hostJobCodes = new string[] { "15", "55" };
+                                break;
+                            case POSType.Unknown:
+                            default:
+                                break;
+                        }
+                    }
+                    else _hostJobCodes = ConfigHelper.HostJobCodes;
                 }
-                return result;
+                return _hostJobCodes;
             }
         }
 
+
+        private static string[] _barHostJobCodes = null;
         public static string[] BarHostJobCodes
         {
             get
             {
-                string[] result = new string[] { };
-                switch (PosType)
+                if (_barHostJobCodes == null)
                 {
-                    case POSType.AppleOne:
-                        result = new string[] { "6", "7", "18", "19" };
-                        break;
-                    case POSType.Aloha:
-                        result = new string[] { "31", "15", "55" };
-                        break;
-                    case POSType.Unknown:
-                    default:
-                        break;
+                    List<string> barHostJobs = new List<string>();
+                    barHostJobs.AddRange(BarJobCodes);
+                    barHostJobs.AddRange(HostJobCodes);
+                    _barHostJobCodes = barHostJobs.ToArray();
                 }
-                return result;
+                return _barHostJobCodes;
             }
         }
 
+
+        private static string[] _otherJobCodes = null;
         public static string[] OtherJobCodes
         {
             get
             {
-                string[] result = new string[] { };
-                switch (PosType)
+                if (_otherJobCodes == null)
                 {
-                    case POSType.AppleOne:
-                        result = new string[] { "1", "2", "3", "4", "5", "8", "11", "12", "13", "17", "18" };
-                        break;
-                    case POSType.Aloha:
-                        result = new string[] { "19", "20", "32", "45", "90" };
-                        break;
-                    case POSType.Unknown:
-                    default:
-                        break;
+                    if (ConfigHelper.OtherJobCodes == null)
+                    {
+                        switch (PosType)
+                        {
+                            case POSType.AppleOne:
+                                _otherJobCodes = new string[] { "1", "2", "3", "4", "5", "8", "11", "12", "13", "17", "18" };
+                                break;
+                            case POSType.Aloha:
+                                _otherJobCodes = new string[] { "19", "20", "32", "45", "90" };
+                                break;
+                            case POSType.Unknown:
+                            default:
+                                break;
+                        }
+                    }
+                    else _otherJobCodes = ConfigHelper.OtherJobCodes;
                 }
-                return result;
+                return _otherJobCodes;
             }
         }
 
@@ -127,28 +146,22 @@ namespace Tipshare
             {
                 if (_serverJobCodes == null)
                 {
-                    _serverJobCodes = new string[] { };
-                    switch (PosType)
+                    if (ConfigHelper.ServerJobCodes == null)
                     {
-                        case POSType.AppleOne:
-                            _serverJobCodes = new string[] { "3", "29" };
-                            break;
-                        case POSType.Aloha:
-                            _serverJobCodes = new string[] { "19", "20" };
-                            break;
-                        case POSType.Unknown:
-                        default:
-                            break;
+                        switch (PosType)
+                        {
+                            case POSType.AppleOne:
+                                _serverJobCodes = new string[] { "3", "29" };
+                                break;
+                            case POSType.Aloha:
+                                _serverJobCodes = new string[] { "19", "20" };
+                                break;
+                            case POSType.Unknown:
+                            default:
+                                break;
+                        }
                     }
-
-                    if (ConfigHelper.AdditionalServerJobCodes != null
-                        && ConfigHelper.AdditionalServerJobCodes.Length > 0)
-                    {
-                        var temp = _serverJobCodes.ToList();
-                        temp.AddRange(ConfigHelper.AdditionalServerJobCodes);
-                        temp = temp.Distinct().ToList();
-                        _serverJobCodes = temp.ToArray();
-                    }
+                    else _serverJobCodes = ConfigHelper.ServerJobCodes;
                 }
                 return _serverJobCodes;
             }

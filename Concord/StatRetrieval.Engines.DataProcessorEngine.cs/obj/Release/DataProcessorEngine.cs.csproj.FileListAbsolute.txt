@@ -20,3 +20,14 @@ C:\workspaces\Concord\StatRetrieval.Engines.DataProcessorEngine.cs\bin\Release\S
 C:\workspaces\Concord\StatRetrieval.Engines.DataProcessorEngine.cs\obj\Release\DataProcessorEngine.cs.csprojResolveAssemblyReference.cache
 C:\workspaces\Concord\StatRetrieval.Engines.DataProcessorEngine.cs\obj\Release\StatRetrieval.Engines.DataProcessorEngine.cs.dll
 C:\workspaces\Concord\StatRetrieval.Engines.DataProcessorEngine.cs\obj\Release\StatRetrieval.Engines.DataProcessorEngine.cs.pdb
+C:\Code\Consulting\Concord\StatRetrieval.Engines.DataProcessorEngine.cs\bin\Release\StatRetrieval.Engines.DataProcessorEngine.cs.dll
+C:\Code\Consulting\Concord\StatRetrieval.Engines.DataProcessorEngine.cs\bin\Release\StatRetrieval.Engines.DataProcessorEngine.cs.pdb
+C:\Code\Consulting\Concord\StatRetrieval.Engines.DataProcessorEngine.cs\bin\Release\StatRetrieval.Accessors.DataAccessor.dll
+C:\Code\Consulting\Concord\StatRetrieval.Engines.DataProcessorEngine.cs\bin\Release\StatRetrieval.Accessors.WebAccessor.dll
+C:\Code\Consulting\Concord\StatRetrieval.Engines.DataProcessorEngine.cs\bin\Release\StatRetrieval.Shared.Common.dll
+C:\Code\Consulting\Concord\StatRetrieval.Engines.DataProcessorEngine.cs\bin\Release\StatRetrieval.Accessors.DataAccessor.pdb
+C:\Code\Consulting\Concord\StatRetrieval.Engines.DataProcessorEngine.cs\bin\Release\StatRetrieval.Accessors.WebAccessor.pdb
+C:\Code\Consulting\Concord\StatRetrieval.Engines.DataProcessorEngine.cs\bin\Release\StatRetrieval.Shared.Common.pdb
+C:\Code\Consulting\Concord\StatRetrieval.Engines.DataProcessorEngine.cs\obj\Release\DataProcessorEngine.cs.csprojResolveAssemblyReference.cache
+C:\Code\Consulting\Concord\StatRetrieval.Engines.DataProcessorEngine.cs\obj\Release\StatRetrieval.Engines.DataProcessorEngine.cs.dll
+C:\Code\Consulting\Concord\StatRetrieval.Engines.DataProcessorEngine.cs\obj\Release\StatRetrieval.Engines.DataProcessorEngine.cs.pdb

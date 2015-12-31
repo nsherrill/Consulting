@@ -18,3 +18,13 @@ C:\workspaces\Concord\SupportProfilerSvc\obj\Release\SupportProfilerSvc.csprojRe
 C:\workspaces\Concord\SupportProfilerSvc\obj\Release\SupportProfilerSvc.exe
 C:\workspaces\Concord\SupportProfilerSvc\obj\Release\SupportProfilerSvc.pdb
 C:\workspaces\Concord\SupportProfilerSvc\obj\Release\SupportProfilerSvc.XmlSerializers.dll
+C:\Code\Consulting\Concord\SupportProfilerSvc\bin\Release\SupportProfilerSvc.exe.config
+C:\Code\Consulting\Concord\SupportProfilerSvc\bin\Release\SupportProfilerSvc.exe
+C:\Code\Consulting\Concord\SupportProfilerSvc\bin\Release\SupportProfilerSvc.XmlSerializers.dll
+C:\Code\Consulting\Concord\SupportProfilerSvc\bin\Release\SupportProfilerSvc.pdb
+C:\Code\Consulting\Concord\SupportProfilerSvc\bin\Release\Common.dll
+C:\Code\Consulting\Concord\SupportProfilerSvc\bin\Release\Common.pdb
+C:\Code\Consulting\Concord\SupportProfilerSvc\obj\Release\SupportProfilerSvc.csprojResolveAssemblyReference.cache
+C:\Code\Consulting\Concord\SupportProfilerSvc\obj\Release\SupportProfilerSvc.exe
+C:\Code\Consulting\Concord\SupportProfilerSvc\obj\Release\SupportProfilerSvc.pdb
+C:\Code\Consulting\Concord\SupportProfilerSvc\obj\Release\SupportProfilerSvc.XmlSerializers.dll

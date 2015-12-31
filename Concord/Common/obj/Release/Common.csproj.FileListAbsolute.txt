@@ -8,3 +8,8 @@ C:\workspaces\Concord\Common\bin\Release\Common.pdb
 C:\workspaces\Concord\Common\obj\Release\Common.csprojResolveAssemblyReference.cache
 C:\workspaces\Concord\Common\obj\Release\Common.dll
 C:\workspaces\Concord\Common\obj\Release\Common.pdb
+C:\Code\Consulting\Concord\Common\bin\Release\Common.dll
+C:\Code\Consulting\Concord\Common\bin\Release\Common.pdb
+C:\Code\Consulting\Concord\Common\obj\Release\Common.csprojResolveAssemblyReference.cache
+C:\Code\Consulting\Concord\Common\obj\Release\Common.dll
+C:\Code\Consulting\Concord\Common\obj\Release\Common.pdb

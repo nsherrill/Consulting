@@ -9,3 +9,9 @@ C:\workspaces\Concord\OldTipshareRetriever\bin\Release\OldTipshareRetriever.pdb
 C:\workspaces\Concord\OldTipshareRetriever\obj\x86\Release\OldTipshareRetriever.exe
 C:\workspaces\Concord\OldTipshareRetriever\obj\x86\Release\OldTipshareRetriever.pdb
 C:\workspaces\Concord\OldTipshareRetriever\obj\x86\Release\OldTipshareRetriever.csprojResolveAssemblyReference.cache
+C:\Code\Consulting\Concord\OldTipshareRetriever\bin\Release\OldTipshareRetriever.exe.config
+C:\Code\Consulting\Concord\OldTipshareRetriever\bin\Release\OldTipshareRetriever.exe
+C:\Code\Consulting\Concord\OldTipshareRetriever\bin\Release\OldTipshareRetriever.pdb
+C:\Code\Consulting\Concord\OldTipshareRetriever\obj\x86\Release\OldTipshareRetriever.csprojResolveAssemblyReference.cache
+C:\Code\Consulting\Concord\OldTipshareRetriever\obj\x86\Release\OldTipshareRetriever.exe
+C:\Code\Consulting\Concord\OldTipshareRetriever\obj\x86\Release\OldTipshareRetriever.pdb

@@ -16,3 +16,12 @@ C:\workspaces\Concord\StatRetrieval.Accessors.WebAccessor\obj\Release\Fakes\srsc
 C:\workspaces\Concord\StatRetrieval.Accessors.WebAccessor\obj\Release\Fakes\srsc\o\f.csprojResolveAssemblyReference.cache
 C:\workspaces\Concord\StatRetrieval.Accessors.WebAccessor\obj\Release\Fakes\srsc\o\StatRetrieval.Shared.Common.Fakes.dll
 C:\workspaces\Concord\StatRetrieval.Accessors.WebAccessor\obj\Release\Fakes\srsc\o\StatRetrieval.Shared.Common.Fakes.pdb
+C:\Code\Consulting\Concord\StatRetrieval.Accessors.WebAccessor\obj\Release\Fakes\srsc\b\StatRetrieval.Shared.Common.Fakes.xml
+C:\Code\Consulting\Concord\StatRetrieval.Accessors.WebAccessor\obj\Release\Fakes\srsc\b\StatRetrieval.Shared.Common.Fakes.dll
+C:\Code\Consulting\Concord\StatRetrieval.Accessors.WebAccessor\obj\Release\Fakes\srsc\b\StatRetrieval.Shared.Common.Fakes.pdb
+C:\Code\Consulting\Concord\StatRetrieval.Accessors.WebAccessor\obj\Release\Fakes\srsc\b\Microsoft.QualityTools.Testing.Fakes.dll
+C:\Code\Consulting\Concord\StatRetrieval.Accessors.WebAccessor\obj\Release\Fakes\srsc\b\StatRetrieval.Shared.Common.dll
+C:\Code\Consulting\Concord\StatRetrieval.Accessors.WebAccessor\obj\Release\Fakes\srsc\b\StatRetrieval.Shared.Common.pdb
+C:\Code\Consulting\Concord\StatRetrieval.Accessors.WebAccessor\obj\Release\Fakes\srsc\o\f.csprojResolveAssemblyReference.cache
+C:\Code\Consulting\Concord\StatRetrieval.Accessors.WebAccessor\obj\Release\Fakes\srsc\o\StatRetrieval.Shared.Common.Fakes.dll
+C:\Code\Consulting\Concord\StatRetrieval.Accessors.WebAccessor\obj\Release\Fakes\srsc\o\StatRetrieval.Shared.Common.Fakes.pdb

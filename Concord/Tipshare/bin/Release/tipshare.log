@@ -2996,3 +2996,12 @@ App started.. store: howard-pc
 11/20/2014 9:05:58 PM: date okay? 11/18/2014, True
 11/20/2014 9:05:58 PM: date okay? 11/19/2014, True
 11/20/2014 9:05:58 PM: date okay? 11/20/2014, True
+12/29/2015 8:00:21 PM: 
+
+App started.. store: howard-pc
+12/29/2015 8:00:25 PM: Exit constructor
+12/29/2015 8:00:25 PM: howard-pc
+12/29/2015 8:00:25 PM: Performing full refresh
+
+12/29/2015 8:00:26 PM:  hitting db
+12/29/2015 8:00:27 PM:  hitting db
