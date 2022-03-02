@@ -1,7 +1,7 @@
-﻿using System;
+﻿using Common;
+using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
-using Common;
 
 namespace Tipshare
 {

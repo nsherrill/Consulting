@@ -567,6 +567,7 @@ gndtndr.dbf	minute
                             "where js.ijournalid=j.ijournalid  " +
                             "and j.istatus_pullback=0  " +
                             "and js.ivoidid=0  " +
+                            "and js.isource in ( select iSource from elstar.dbo.sourcedisplaycharacter where iTipable = 1 ) " +
                             "and sticketitemname!='Gift Card'  " +
                             "and js.icompid=0  " +
                             "and js.iamount!=0 " +

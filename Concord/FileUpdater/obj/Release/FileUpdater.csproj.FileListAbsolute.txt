@@ -22,3 +22,13 @@ C:\Code\Consulting\Concord\FileUpdater\obj\Release\FileUpdater.csprojResolveAsse
 C:\Code\Consulting\Concord\FileUpdater\obj\Release\FileUpdater.exe
 C:\Code\Consulting\Concord\FileUpdater\obj\Release\FileUpdater.pdb
 C:\Code\Consulting\Concord\FileUpdater\obj\Release\FileUpdater.XmlSerializers.dll
+C:\workspace\Consulting\Concord\FileUpdater\bin\Release\FileUpdater.exe.config
+C:\workspace\Consulting\Concord\FileUpdater\bin\Release\FileUpdater.exe
+C:\workspace\Consulting\Concord\FileUpdater\bin\Release\FileUpdater.XmlSerializers.dll
+C:\workspace\Consulting\Concord\FileUpdater\bin\Release\FileUpdater.pdb
+C:\workspace\Consulting\Concord\FileUpdater\obj\Release\FileUpdater.csproj.AssemblyReference.cache
+C:\workspace\Consulting\Concord\FileUpdater\obj\Release\FileUpdater.csproj.SuggestedBindingRedirects.cache
+C:\workspace\Consulting\Concord\FileUpdater\obj\Release\FileUpdater.csproj.CoreCompileInputs.cache
+C:\workspace\Consulting\Concord\FileUpdater\obj\Release\FileUpdater.exe
+C:\workspace\Consulting\Concord\FileUpdater\obj\Release\FileUpdater.pdb
+C:\workspace\Consulting\Concord\FileUpdater\obj\Release\FileUpdater.XmlSerializers.dll

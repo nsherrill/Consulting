@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "39a4e047-e254-4650-bd06-4f7d8a22e216": {
+      "ProjectGuid": "39a4e047-e254-4650-bd06-4f7d8a22e216",
+      "DisplayName": "Common",
+      "ColorIndex": 0
+    },
+    "6c92e75f-4771-479d-9fcc-5b4e0784f6d4": {
+      "ProjectGuid": "6c92e75f-4771-479d-9fcc-5b4e0784f6d4",
+      "DisplayName": "Tipshare",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}

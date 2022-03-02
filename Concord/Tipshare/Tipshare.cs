@@ -9,9 +9,9 @@ using System.Data.SqlClient;
 using System.IO;
 using System.Threading;
 using System.Drawing.Printing;
-using Common;
 using System.Configuration;
 using Tipshare.Engines;
+using Common;
 
 namespace Tipshare
 {
@@ -1027,7 +1027,7 @@ namespace Tipshare
                             leInternalToSaveAM[iStartDateIndex - i].Add(new SaveInternalData(entry.Name, entry.EmployeeID, lddDaysData[i].Date.Date, entry.SuggestedAmount, entry.AdjustedAmount));
                             if (entry.EmployeeID != "UNDIST")
                             {
-                                leUploadToSave.Add(new SaveUploadData(GetSSN(entry.Name, entry.EmployeeID), lddDaysData[i].Date.Date, entry.AdjustedAmount));
+                                leUploadToSave.Add(new SaveUploadData(entry.EmployeeID, lddDaysData[i].Date.Date, entry.AdjustedAmount));
                             }
                         }
                         foreach (Entry entry in lddDaysData[i].PMEntries)
@@ -1035,7 +1035,7 @@ namespace Tipshare
                             leInternalToSavePM[iStartDateIndex - i].Add(new SaveInternalData(entry.Name, entry.EmployeeID, lddDaysData[i].Date.Date, entry.SuggestedAmount, entry.AdjustedAmount));
                             if (entry.EmployeeID != "UNDIST")
                             {
-                                leUploadToSave.Add(new SaveUploadData(GetSSN(entry.Name, entry.EmployeeID), lddDaysData[i].Date.Date, entry.AdjustedAmount));
+                                leUploadToSave.Add(new SaveUploadData(entry.EmployeeID, lddDaysData[i].Date.Date, entry.AdjustedAmount));
                             }
                             else
                             {
@@ -1340,13 +1340,13 @@ namespace Tipshare
         {
             try
             {
-                PrintDialog pd = new PrintDialog();
-                TextPrintDocument tDoc = new TextPrintDocument();
-                tDoc.Text = GetPrintText();//.Replace("\t", "  ");
-                tDoc.Font = new Font("Serif", 12);
-                pd.Document = tDoc;
+                //PrintDialog pd = new PrintDialog();
+                //TextPrintDocument tDoc = new TextPrintDocument();
+                //tDoc.Text = GetPrintText();//.Replace("\t", "  ");
+                //tDoc.Font = new Font("Serif", 12);
+                //pd.Document = tDoc;
 
-                tDoc.Print();
+                //tDoc.Print();
             }
             catch (Exception exc)
             {
