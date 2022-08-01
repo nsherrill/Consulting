@@ -124,7 +124,7 @@ namespace StatRetrieval.Managers.CycleManager
                             resultTable.TableName = string.Format("{0}-{1}-{2}",
                                 ConfigHelper.HostName, query.Type, query.DateToUse.Ticks);
 
-                            var localResult = new LocalResult(query.UniqueKey, query, resultTable, DateTime.Now, false);
+                            var localResult = new LocalResult(query.UniqueKey, query, resultTable, ConfigHelper.DateTimeNow, false);
                             LogHelper.Log(string.Format("Posting result for query {0} with {1} rows", localResult.Request.UniqueKey, localResult.Results.Rows.Count),
                                 LogLocation.CycleManager, LogType.Generic);
                             bool posted = resultProcessorEng.PostResult(localResult);
@@ -197,12 +197,12 @@ namespace StatRetrieval.Managers.CycleManager
 
         public void RunTests()
         {
-            //var url = new QueryRequestAccessor().GetRequestUrl(DateTime.Now);
+            //var url = new QueryRequestAccessor().GetRequestUrl(ConfigHelper.DateTimeNow);
             //Console.WriteLine(url);
             //var temp = SecretKeyGenerator.GenerateKey("sap10", "sap10", 1382659979, "apos2bb");
             //// assert temp == 68482f29a572d87be26d5aff0b8d8483
 
-            //var startDate = DateTime.Now;
+            //var startDate = ConfigHelper.DateTimeNow;
             //var tempUnix = GenericExtensions.DateTimeToUnixTimeStamp(startDate);
             //var tempDate = GenericExtensions.UnixTimeStampToDateTime(tempUnix);
             //tempUnix = GenericExtensions.DateTimeToUnixTimeStamp(tempDate);

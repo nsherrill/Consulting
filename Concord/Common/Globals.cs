@@ -67,7 +67,7 @@ namespace Common
                 //}
 
                 System.IO.File.AppendAllText(Path.Combine(Directory.GetCurrentDirectory(), filename),
-                    Environment.NewLine + DateTime.Now.ToString() + ":  " + message);
+                    Environment.NewLine + ConfigHelper.DateTimeNow.ToString() + ":  " + message);
 
             }
             catch (Exception)
@@ -75,7 +75,7 @@ namespace Common
                 try
                 {
                     System.IO.File.AppendAllText(Path.Combine(Directory.GetCurrentDirectory(), filename),
-                        Environment.NewLine + DateTime.Now.ToString() + ":  " + message);
+                        Environment.NewLine + ConfigHelper.DateTimeNow.ToString() + ":  " + message);
                 }
                 catch (Exception e)
                 {

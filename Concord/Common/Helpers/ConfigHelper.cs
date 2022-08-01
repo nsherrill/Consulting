@@ -10,6 +10,7 @@ namespace Common
     public static class ConfigHelper
     {
         #region props
+        public static DateTime DateTimeNow { get { return DateTime.Now; } }
         public static bool IsTestMode { get { return GetConfigBool("IsTestMode", false); } }
         public static string StoreListPath { get { return GetConfigEntry("StoreListPath", "StoreList.txt"); } }
         public static string FTPOutputLocation { get { return GetConfigEntry("FTPOutputLocation"); } }

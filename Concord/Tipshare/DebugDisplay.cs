@@ -55,5 +55,11 @@ namespace Tipshare
         {
             this.Visible = false;
         }
+
+        private void DebugDisplay_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            HideDisplay();
+            e.Cancel = true;
+        }
     }
 }

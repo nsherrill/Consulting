@@ -57,6 +57,8 @@ namespace StatRetrieval.Shared.Common
         public static bool LogVerbose { get { return GetBool("LogVerbose", false); } }
         public static bool LogExtraVerbose { get { return GetBool("LogExtraVerbose", false); } }
 
+        public static DateTime DateTimeNow { get { return DateTime.Now; } }
+
         #region privates
         private static string GetString(string key, string dft)
         {

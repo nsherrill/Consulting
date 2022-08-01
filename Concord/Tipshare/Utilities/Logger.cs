@@ -26,7 +26,7 @@ namespace Tipshare
 
                 using (StreamWriter sw = File.AppendText(Path.Combine(Directory.GetCurrentDirectory(), logFile)))
                 {
-                    sw.WriteLine(DateTime.Now + ": " + logmessage);
+                    sw.WriteLine(ConfigHelper.DateTimeNow + ": " + logmessage);
                 }
             }
             catch (Exception)
@@ -37,7 +37,7 @@ namespace Tipshare
                 {
                     using (StreamWriter sw = File.AppendText(Path.Combine(Directory.GetCurrentDirectory(), logFile)))
                     {
-                        sw.WriteLine(DateTime.Now + ": " + logmessage);
+                        sw.WriteLine(ConfigHelper.DateTimeNow + ": " + logmessage);
                     }
                 }
                 catch (Exception)

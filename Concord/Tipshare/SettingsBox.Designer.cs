@@ -210,6 +210,7 @@
             this.Controls.Add(this.gbDistribution);
             this.Name = "SettingsBox";
             this.Text = "SettingsBox";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.SettingsBox_FormClosing);
             this.gbDistribution.ResumeLayout(false);
             this.gbDistribution.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudHostPercent)).EndInit();

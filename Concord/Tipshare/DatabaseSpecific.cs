@@ -59,7 +59,7 @@ namespace Tipshare
             emp id	    emp.dbf	usernumber  2
             SSN	        emp.dbf	ssn         3
             */
-            string dirDate = DateTime.Now.ToString("yyyyMMdd");
+            string dirDate = ConfigHelper.DateTimeNow.ToString("yyyyMMdd");
             List<Employee> temp = new List<Employee>();
             temp = (ParseEmployees(ReadFile(dirDate,
                 "select firstname, lastname, usernumber, ssn from emp.dbf order by lastname",
@@ -70,7 +70,7 @@ namespace Tipshare
 
             if (results.Count == 0)
             {
-                dirDate = DateTime.Now.AddDays(-1).ToString("yyyyMMdd");
+                dirDate = ConfigHelper.DateTimeNow.AddDays(-1).ToString("yyyyMMdd");
                 temp = (ParseEmployees(ReadFile(dirDate,
                     "select firstname, lastname, usernumber, ssn from emp.dbf order by lastname",
                     out sError2)));
@@ -89,7 +89,7 @@ namespace Tipshare
             sError = "";
             string sError1;
             Dictionary<int, Ticket> results = new Dictionary<int, Ticket>();
-            DateTime dtTemp = DateTime.Now.Date;
+            DateTime dtTemp = ConfigHelper.DateTimeNow.Date;
 
             while (dtTemp >= dtEarliestViewable.Date)
             {
@@ -142,7 +142,7 @@ gndtndr.dbf	minute
             sError = "";
             string sError1;
             Dictionary<int, Shift> results = new Dictionary<int, Shift>();
-            DateTime dtTemp = DateTime.Now.Date;
+            DateTime dtTemp = ConfigHelper.DateTimeNow.Date;
 
             while (dtTemp >= dtEarliestViewable.Date)
             {
@@ -513,12 +513,12 @@ gndtndr.dbf	minute
                     conn.Open();
 
                     SqlCommand cmd = conn.CreateCommand();
-                    cmd.CommandText = "select e.sfirstname, " +
-                        "e.slastname, timeclock.iemployeeid, timeclock.ipaydept, " +
-                        "timeclock.dttimein, timeclock.dttimeout from elstar.dbo.employee as e, timeclock " +
-                        "where e.iemployeeid=timeclock.iemployeeid " +
-                        "and timeclock.dttimein>" + earliestDay.ToShortDateString() +
-                        " order by timeclock.dttimein desc";
+                    cmd.CommandText = $@"select e.sfirstname, e.slastname, timeclock.iemployeeid, timeclock.ipaydept, 
+                            timeclock.dttimein, timeclock.dttimeout 
+                        from elstar.dbo.employee as e, timeclock 
+                        where e.iemployeeid=timeclock.iemployeeid 
+                            and timeclock.dttimein> {earliestDay.ToShortDateString()} 
+                        order by timeclock.dttimein desc";
                     SqlDataReader dr = cmd.ExecuteReader();
                     bool bContinue = true;
                     while (dr.Read() && bContinue)
@@ -531,7 +531,7 @@ gndtndr.dbf	minute
                                 dr[2].ToString(),
                                 dr[3].ToString(),
                                 temp,
-                                tempstr.Equals("") ? DateTime.Now : DateTime.Parse(tempstr)
+                                tempstr.Equals("") ? ConfigHelper.DateTimeNow : DateTime.Parse(tempstr)
                                 )));
                         else
                             bContinue = false;
@@ -559,29 +559,27 @@ gndtndr.dbf	minute
                         SqlCommand cmd = conn.CreateCommand();
                         cmd.CommandText =
 
-                            "select top 80000 j.iemployeeid, " +
-                            "js.iamount, j.dttimeclosed from  " +
-                            "journal j " +
-                            "join journalsales js on js.ijournalid=j.ijournalid " +
-                            "left join elstar.dbo.discount d on js.idiscountid = d.idiscountid " +
-                            "where js.ijournalid=j.ijournalid  " +
-                            "and j.istatus_pullback=0  " +
-                            "and js.ivoidid=0  " +
-                            "and js.isource in ( select iSource from elstar.dbo.sourcedisplaycharacter where iTipable = 1 ) " +
-                            "and sticketitemname!='Gift Card'  " +
-                            "and js.icompid=0  " +
-                            "and js.iamount!=0 " +
-                            "and j.dttimeclosed>=" + earliestDay.ToShortDateString() +
-
-                            "and ( " +
-                            "	(js.idiscountid = 0 or  " +
-                            "		(d.sname not like '%vet day%' and d.sname not like '%vets day%')) " +
-                            "	OR ( " +
-                            "		(d.sname like '%vet day%' or d.sname like '%vets day%' or d.sname like '%vets day%') " +
-                            "		AND js.iamount>0) " +
-                            "   )			" +
-
-                            "order by j.dttimeclosed desc";
+                            $@"
+select top 80000 j.iemployeeid, js.iamount, j.dttimeclosed 
+    from  journal j 
+        join journalsales js on js.ijournalid=j.ijournalid 
+        left join elstar.dbo.discount d on js.idiscountid = d.idiscountid 
+    where js.ijournalid=j.ijournalid  
+        and j.istatus_pullback=0  
+        and js.ivoidid=0  
+        and js.isource in ( select iSource from elstar.dbo.sourcedisplaycharacter where iTipable = 1)   
+        and sticketitemname!='Gift Card'  
+        and js.icompid=0   
+        and js.iamount!=0   
+        and j.dttimeclosed>= {earliestDay.ToShortDateString()}  
+        and (   
+        	(js.idiscountid = 0 or    
+        		(d.sname not like '%vet day%' and d.sname not like '%vets day%'))   
+        	OR (   
+        		(d.sname like '%vet day%' or d.sname like '%vets day%' or d.sname like '%vets day%')   
+        		AND js.iamount>0)  
+            )			  
+        order by j.dttimeclosed desc";
 
                         //"select top 80000 journal.iemployeeid, " +
                         //"journalsales.iamount, journal.dttimeclosed from journal, " +

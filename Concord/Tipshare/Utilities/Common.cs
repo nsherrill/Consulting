@@ -22,7 +22,7 @@ namespace Tipshare
 
         public static DateTime GetFirstClockIn(Dictionary<int, Shift> shifts)
         {
-            DateTime dtTemp = DateTime.Now;
+            DateTime dtTemp = ConfigHelper.DateTimeNow;
             foreach (int key in shifts.Keys)
             {
                 Shift shft = shifts[key];
@@ -246,7 +246,7 @@ namespace Tipshare
         //        //}
 
         //        System.IO.File.AppendAllText(Path.Combine(Directory.GetCurrentDirectory(), filename),
-        //            Environment.NewLine + DateTime.Now.ToString() + ":  " + message);
+        //            Environment.NewLine + ConfigHelper.DateTimeNow.ToString() + ":  " + message);
 
         //    }
         //    catch (Exception)
@@ -254,7 +254,7 @@ namespace Tipshare
         //        try
         //        {
         //            System.IO.File.AppendAllText(Path.Combine(Directory.GetCurrentDirectory(), filename),
-        //                Environment.NewLine + DateTime.Now.ToString() + ":  " + message);
+        //                Environment.NewLine + ConfigHelper.DateTimeNow.ToString() + ":  " + message);
         //        }
         //        catch (Exception e)
         //        {

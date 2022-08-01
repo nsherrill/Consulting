@@ -138,7 +138,7 @@ namespace Tipshare.Engines
         {
             Dictionary<int, Shift> lTemp = new Dictionary<int, Shift>();
             foreach (Entry ent in list)
-                lTemp.Add(lTemp.Count, new Shift(ent.Name, ent.EmployeeID, "-1", DateTime.Now, DateTime.Now));
+                lTemp.Add(lTemp.Count, new Shift(ent.Name, ent.EmployeeID, "-1", ConfigHelper.DateTimeNow, ConfigHelper.DateTimeNow));
             return GetUniqueEntries(lTemp, original, empsToUnallocate);
         }
 

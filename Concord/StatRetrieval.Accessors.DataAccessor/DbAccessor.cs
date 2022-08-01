@@ -60,7 +60,7 @@ from elstar.dbo.businessinfo b,
 
         public DataTable HitDatabase(QueryRequest request, out bool goodData, out DateTime exactQueryTime)
         {
-            exactQueryTime = DateTime.Now;
+            exactQueryTime = ConfigHelper.DateTimeNow;
             request.Query = GenericExtensions.StringReplace(request.Query, "{{lastQueryTime}}", request.DateToUse.ToString());
 
             DataTable result = new DataTable();
@@ -102,7 +102,7 @@ from elstar.dbo.businessinfo b,
         #region privates
         private DataTable HitDb(SqlConnectionStringBuilder sb, string query, out DateTime resultDateTime, string uniqueKey = null)
         {
-            resultDateTime = DateTime.Now;
+            resultDateTime = ConfigHelper.DateTimeNow;
             bool hadError = false;
             DataTable result = new DataTable();
             using (SqlConnection conn = new SqlConnection(sb.ConnectionString))
@@ -116,7 +116,7 @@ from elstar.dbo.businessinfo b,
 
                     cmd.CommandTimeout = 200;
                     SqlDataReader dr = cmd.ExecuteReader();
-                    resultDateTime = DateTime.Now;
+                    resultDateTime = ConfigHelper.DateTimeNow;
                     result.Load(dr);
                 }
                 catch (Exception e)
@@ -135,7 +135,7 @@ from elstar.dbo.businessinfo b,
 
                         cmd.CommandTimeout = 200;
                         var rdr = cmd.ExecuteReader();
-                        resultDateTime = DateTime.Now;
+                        resultDateTime = ConfigHelper.DateTimeNow;
 
                         long count = 0;
                         while (rdr.Read())

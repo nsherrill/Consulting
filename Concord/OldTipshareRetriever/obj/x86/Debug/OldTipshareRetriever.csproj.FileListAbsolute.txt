@@ -9,3 +9,10 @@ C:\workspaces\Concord\OldTipshareRetriever\bin\Debug\OldTipshareRetriever.pdb
 C:\workspaces\Concord\OldTipshareRetriever\obj\x86\Debug\OldTipshareRetriever.csprojResolveAssemblyReference.cache
 C:\workspaces\Concord\OldTipshareRetriever\obj\x86\Debug\OldTipshareRetriever.exe
 C:\workspaces\Concord\OldTipshareRetriever\obj\x86\Debug\OldTipshareRetriever.pdb
+C:\workspace\Consulting\Concord\OldTipshareRetriever\bin\Debug\OldTipshareRetriever.exe.config
+C:\workspace\Consulting\Concord\OldTipshareRetriever\bin\Debug\OldTipshareRetriever.exe
+C:\workspace\Consulting\Concord\OldTipshareRetriever\bin\Debug\OldTipshareRetriever.pdb
+C:\workspace\Consulting\Concord\OldTipshareRetriever\obj\x86\Debug\OldTipshareRetriever.csproj.SuggestedBindingRedirects.cache
+C:\workspace\Consulting\Concord\OldTipshareRetriever\obj\x86\Debug\OldTipshareRetriever.csproj.CoreCompileInputs.cache
+C:\workspace\Consulting\Concord\OldTipshareRetriever\obj\x86\Debug\OldTipshareRetriever.exe
+C:\workspace\Consulting\Concord\OldTipshareRetriever\obj\x86\Debug\OldTipshareRetriever.pdb

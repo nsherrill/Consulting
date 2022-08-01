@@ -27,3 +27,10 @@ C:\workspaces\Concord\FileUpdater\bin\Debug\FileUpdater.pdb
 C:\workspaces\Concord\FileUpdater\obj\Debug\FileUpdater.csprojResolveAssemblyReference.cache
 C:\workspaces\Concord\FileUpdater\obj\Debug\FileUpdater.exe
 C:\workspaces\Concord\FileUpdater\obj\Debug\FileUpdater.pdb
+C:\workspace\Consulting\Concord\FileUpdater\bin\Debug\FileUpdater.exe.config
+C:\workspace\Consulting\Concord\FileUpdater\bin\Debug\FileUpdater.exe
+C:\workspace\Consulting\Concord\FileUpdater\bin\Debug\FileUpdater.pdb
+C:\workspace\Consulting\Concord\FileUpdater\obj\Debug\FileUpdater.csproj.SuggestedBindingRedirects.cache
+C:\workspace\Consulting\Concord\FileUpdater\obj\Debug\FileUpdater.csproj.CoreCompileInputs.cache
+C:\workspace\Consulting\Concord\FileUpdater\obj\Debug\FileUpdater.exe
+C:\workspace\Consulting\Concord\FileUpdater\obj\Debug\FileUpdater.pdb

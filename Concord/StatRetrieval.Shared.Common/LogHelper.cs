@@ -22,7 +22,7 @@ namespace StatRetrieval.Shared.Common
                 //    ErrorFired(new object(), new ErrorEventArgs(text, logLoc));
                 //}
 
-                text = string.Format("{0}{1}:\t{2}_{3}: {4}", Environment.NewLine, DateTime.Now, logLoc.ToString(), logType.ToString(), text);
+                text = string.Format("{0}{1}:\t{2}_{3}: {4}", Environment.NewLine, ConfigHelper.DateTimeNow, logLoc.ToString(), logType.ToString(), text);
                 Console.Write(text);
                 string filePath = Path.Combine(ConfigHelper.LogPath, "StatRetrieval_log.txt");
 

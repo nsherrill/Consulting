@@ -91,7 +91,7 @@ namespace Tipshare
                 vVersion = new Version(Application.ProductVersion);
                 //new Version(
                 //System.Configuration.ConfigurationSettings.AppSettings["version"]);
-                dtLastFullRefresh = DateTime.Now;
+                dtLastFullRefresh = ConfigHelper.DateTimeNow;
                 tTimer.Interval = 1000;
                 tTimer.Start();
 
@@ -483,7 +483,7 @@ namespace Tipshare
 
         private void GetDateData()
         {
-            dtNow = DateTime.Now.Hour > StaticProps.AMPMBreakHour ? DateTime.Now : DateTime.Now.AddDays(-1);
+            dtNow = ConfigHelper.DateTimeNow.Hour > StaticProps.AMPMBreakHour ? ConfigHelper.DateTimeNow : ConfigHelper.DateTimeNow.AddDays(-1);
             //todo: get rid of date move
             //dtNow = dtNow.AddDays(-32);
             dtCurrentDay = dtNow;
@@ -629,7 +629,7 @@ namespace Tipshare
 
                     if (Reset || bRefresh)
                     {
-                        if (dtLastFullRefresh < DateTime.Now.AddMinutes(-30))
+                        if (dtLastFullRefresh < ConfigHelper.DateTimeNow.AddMinutes(-30))
                             FullRefresh();
 
                         Dictionary<int, Shift> lsCurrServerShifts = Common.GetServerShifts(currDate, lsShifts);
@@ -750,6 +750,21 @@ namespace Tipshare
                         lddDaysData[dateIndex].DataSet = true;
 
                         //DisplayDebugData(dateIndex);
+                    }
+                    else
+                    {
+                        Dictionary<int, Shift> lsCurrServerShifts = Common.GetServerShifts(currDate, lsShifts);
+                        dcDebugContainer[dateIndex].Shifts = lsCurrServerShifts;
+                        double dTotalPMSales, dTotalAMSales;
+                        double dOverrideAMTips, dOverridePMTips;
+
+                        processorEng.GetSales(lsCurrServerShifts, ltTickets, out dTotalAMSales, out dOverrideAMTips, out dTotalPMSales, out dOverridePMTips);
+
+                        dcDebugContainer[dateIndex].Tickets = GetAllTicketsForDate(ltTickets, dtCurrentDay);
+                        dcDebugContainer[dateIndex].AMSales = dTotalAMSales;
+                        dcDebugContainer[dateIndex].PMSales = dTotalPMSales;
+                        dcDebugContainer[dateIndex].AMOverrideTipsAddition = dOverrideAMTips;
+                        dcDebugContainer[dateIndex].PMOverrideTipsAddition = dOverridePMTips;
                     }
                 }
 
@@ -1206,6 +1221,11 @@ namespace Tipshare
             fDebugDisplay.Visible = true;
         }
 
+        private void fDebugDisplayClosing(object sender, EventArgs e)
+        {
+            fDebugDisplay = new DebugDisplay() { Visible = false };
+        }
+
         private void DisplayDebugData(int dayToDisplay)
         {
             if (fDebugDisplay == null)
@@ -1294,7 +1314,7 @@ namespace Tipshare
             if (fSettingsBox.bRefresh)
             {
                 fSettingsBox.bRefresh = false;
-                fSettingsBox.dtDateChanged = DateTime.Now;
+                fSettingsBox.dtDateChanged = ConfigHelper.DateTimeNow;
                 GetDataForDay(false, dtCurrentDay);
                 DisplayDay(dtCurrentDay);
             }

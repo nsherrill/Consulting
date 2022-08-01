@@ -10,7 +10,52 @@
       "ProjectGuid": "6c92e75f-4771-479d-9fcc-5b4e0784f6d4",
       "DisplayName": "Tipshare",
       "ColorIndex": 1
+    },
+    "2ffe4c78-4dd9-41b3-9e2e-f94264e8eb69": {
+      "ProjectGuid": "2ffe4c78-4dd9-41b3-9e2e-f94264e8eb69",
+      "DisplayName": "Common",
+      "ColorIndex": 2
+    },
+    "c8c952e7-bf65-427c-9b10-52d76ae9d5ac": {
+      "ProjectGuid": "c8c952e7-bf65-427c-9b10-52d76ae9d5ac",
+      "DisplayName": "DataAccessor",
+      "ColorIndex": 3
+    },
+    "a8c387af-e244-4c51-ae1e-8b67f55cdc5a": {
+      "ProjectGuid": "a8c387af-e244-4c51-ae1e-8b67f55cdc5a",
+      "DisplayName": "DataProcessorEngine.cs",
+      "ColorIndex": 4
+    },
+    "353e62c6-ced5-41e4-8c98-dc9d5b817f08": {
+      "ProjectGuid": "353e62c6-ced5-41e4-8c98-dc9d5b817f08",
+      "DisplayName": "CycleManager",
+      "ColorIndex": 5
+    },
+    "7b3e4a33-c43b-41c1-9396-91ddc00155f6": {
+      "ProjectGuid": "7b3e4a33-c43b-41c1-9396-91ddc00155f6",
+      "DisplayName": "GuestCountUploader",
+      "ColorIndex": 6
+    },
+    "494baa76-3be1-4228-8d46-84a66d114f23": {
+      "ProjectGuid": "494baa76-3be1-4228-8d46-84a66d114f23",
+      "DisplayName": "TipshareHistoryRetriever",
+      "ColorIndex": 7
+    },
+    "6e1adf04-35fe-48f0-98ee-f47bf6eb2c3b": {
+      "ProjectGuid": "6e1adf04-35fe-48f0-98ee-f47bf6eb2c3b",
+      "DisplayName": "WebAccessor",
+      "ColorIndex": 8
+    },
+    "8d1d4c41-c19e-4c40-8de9-5cb36c7ccbf2": {
+      "ProjectGuid": "8d1d4c41-c19e-4c40-8de9-5cb36c7ccbf2",
+      "DisplayName": "ScratchConsole",
+      "ColorIndex": 9
+    },
+    "c5d6075e-012b-41b1-8d0f-715963f66ef4": {
+      "ProjectGuid": "c5d6075e-012b-41b1-8d0f-715963f66ef4",
+      "DisplayName": "TipshareWS",
+      "ColorIndex": 10
     }
   },
-  "NextColorIndex": 2
+  "NextColorIndex": 11
 }

@@ -8,3 +8,9 @@ C:\workspaces\Concord\StatRetrieval.Shared.Common\bin\Debug\StatRetrieval.Shared
 C:\workspaces\Concord\StatRetrieval.Shared.Common\obj\Debug\Common.csprojResolveAssemblyReference.cache
 C:\workspaces\Concord\StatRetrieval.Shared.Common\obj\Debug\StatRetrieval.Shared.Common.dll
 C:\workspaces\Concord\StatRetrieval.Shared.Common\obj\Debug\StatRetrieval.Shared.Common.pdb
+C:\workspace\Consulting\Concord\StatRetrieval.Shared.Common\bin\Debug\StatRetrieval.Shared.Common.dll
+C:\workspace\Consulting\Concord\StatRetrieval.Shared.Common\bin\Debug\StatRetrieval.Shared.Common.pdb
+C:\workspace\Consulting\Concord\StatRetrieval.Shared.Common\obj\Debug\Common.csproj.AssemblyReference.cache
+C:\workspace\Consulting\Concord\StatRetrieval.Shared.Common\obj\Debug\Common.csproj.CoreCompileInputs.cache
+C:\workspace\Consulting\Concord\StatRetrieval.Shared.Common\obj\Debug\StatRetrieval.Shared.Common.dll
+C:\workspace\Consulting\Concord\StatRetrieval.Shared.Common\obj\Debug\StatRetrieval.Shared.Common.pdb

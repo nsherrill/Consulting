@@ -36,7 +36,7 @@ namespace GuestCountUploader.Accessors
                     {
                         Id = cId,
                         IP = splits[1].Trim(),
-                        LastFullDate = DateTime.Now.AddDays(-1).Date,
+                        LastFullDate = ConfigHelper.DateTimeNow.AddDays(-1).Date,
                     });
                 }
             }

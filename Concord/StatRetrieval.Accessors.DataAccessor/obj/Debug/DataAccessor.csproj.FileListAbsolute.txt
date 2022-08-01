@@ -12,3 +12,12 @@ C:\workspaces\Concord\StatRetrieval.Accessors.DataAccessor\bin\Debug\StatRetriev
 C:\workspaces\Concord\StatRetrieval.Accessors.DataAccessor\obj\Debug\DataAccessor.csprojResolveAssemblyReference.cache
 C:\workspaces\Concord\StatRetrieval.Accessors.DataAccessor\obj\Debug\StatRetrieval.Accessors.DataAccessor.dll
 C:\workspaces\Concord\StatRetrieval.Accessors.DataAccessor\obj\Debug\StatRetrieval.Accessors.DataAccessor.pdb
+C:\workspace\Consulting\Concord\StatRetrieval.Accessors.DataAccessor\bin\Debug\StatRetrieval.Accessors.DataAccessor.dll
+C:\workspace\Consulting\Concord\StatRetrieval.Accessors.DataAccessor\bin\Debug\StatRetrieval.Accessors.DataAccessor.pdb
+C:\workspace\Consulting\Concord\StatRetrieval.Accessors.DataAccessor\bin\Debug\StatRetrieval.Shared.Common.dll
+C:\workspace\Consulting\Concord\StatRetrieval.Accessors.DataAccessor\bin\Debug\StatRetrieval.Shared.Common.pdb
+C:\workspace\Consulting\Concord\StatRetrieval.Accessors.DataAccessor\obj\Debug\DataAccessor.csproj.AssemblyReference.cache
+C:\workspace\Consulting\Concord\StatRetrieval.Accessors.DataAccessor\obj\Debug\DataAccessor.csproj.CoreCompileInputs.cache
+C:\workspace\Consulting\Concord\StatRetrieval.Accessors.DataAccessor\obj\Debug\DataAccessor.csproj.CopyComplete
+C:\workspace\Consulting\Concord\StatRetrieval.Accessors.DataAccessor\obj\Debug\StatRetrieval.Accessors.DataAccessor.dll
+C:\workspace\Consulting\Concord\StatRetrieval.Accessors.DataAccessor\obj\Debug\StatRetrieval.Accessors.DataAccessor.pdb

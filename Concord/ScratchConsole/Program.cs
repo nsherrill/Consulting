@@ -152,7 +152,7 @@ namespace ScratchConsole
                 req.Source = ScratchConsole.ConcordEI.TipshareWS.SPSource.Manual;
                 req.Status = ScratchConsole.ConcordEI.TipshareWS.SPRequestStatus.Requested;
                 req.StoreId = st.Id;
-                req.SubmitDate = DateTime.Now;
+                req.SubmitDate = ConfigHelper.DateTimeNow;
 
                 tws.UpdateRequest(req);
             }

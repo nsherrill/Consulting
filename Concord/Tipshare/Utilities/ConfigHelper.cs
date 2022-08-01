@@ -112,6 +112,16 @@ namespace Tipshare
             }
         }
 
+        public static DateTime DateTimeNow
+        {
+            get
+            {
+                DateTime dateResult; 
+                if (DateTime.TryParse(GetString("NowDateOverride", "null"), out dateResult)) return dateResult;
+                return DateTime.Now;
+            }
+        }
+
         #region privates
         private static string[] GetStringArray(string key, string[] defaultVal)
         {

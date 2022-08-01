@@ -32,13 +32,13 @@ namespace StatRetrieval.Accessors.DataAccessor
 
                 //WriteLastLineToDisk(query.Query, lastEndLine);
                 goodData = true;
-                exactQueryTime = DateTime.Now;
+                exactQueryTime = ConfigHelper.DateTimeNow;
             }
             catch (Exception e)
             {
                 LogHelper.Log("Exception occurred hitting basic file: " + e.ToString(), LogLocation.FileAccessor, LogType.Error);
                 goodData = false;
-                exactQueryTime = DateTime.Now;
+                exactQueryTime = ConfigHelper.DateTimeNow;
             }
             return result;
         }
@@ -116,13 +116,13 @@ namespace StatRetrieval.Accessors.DataAccessor
                             LogHelper.Log("Exception caught while reading binary file: " + e.ToString(), LogLocation.FileAccessor, LogType.Error);
                         }
                     }
-                    exactQueryTime = DateTime.Now;
+                    exactQueryTime = ConfigHelper.DateTimeNow;
                 }
                 goodData = true;
             }
             catch (Exception e)
             {
-                exactQueryTime = DateTime.Now;
+                exactQueryTime = ConfigHelper.DateTimeNow;
                 LogHelper.Log("Exception occurred hitting basic file: " + e.ToString(), LogLocation.FileAccessor, LogType.Error);
                 goodData = false;
             }

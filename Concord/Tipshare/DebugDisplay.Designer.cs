@@ -155,6 +155,7 @@
             this.Controls.Add(this.lblDate);
             this.Name = "DebugDisplay";
             this.Text = "DebugDisplay";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.DebugDisplay_FormClosing);
             this.Load += new System.EventHandler(this.DebugDisplay_Load);
             this.gbGeneralInfo.ResumeLayout(false);
             this.gbGeneralInfo.PerformLayout();

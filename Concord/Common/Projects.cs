@@ -428,11 +428,11 @@ namespace Common
                     if (this.Id < 0)
                         query = "insert into Concord.dbo.projectComments (projectid, userid, comment, submitdate) values (" +
                             this.ProjId + ", " + (this.Author == null ? -1 : this.Author.Id) + ", @comment, '"+
-                            DateTime.Now.ToString()+"')";
+                            ConfigHelper.DateTimeNow.ToString()+"')";
                     else
                         query = "update Concord.dbo.projectComments set projectid=" + this.ProjId +
                             ", userid=" + (this.Author == null ? -1 : this.Author.Id) + ", comment=@comment, submitdate='"+
-                            DateTime.Now.ToString()+"' where id = " + this.Id;
+                            ConfigHelper.DateTimeNow.ToString()+"' where id = " + this.Id;
 
                     using (SqlCommand com = new SqlCommand(query, conn))
                     {

@@ -21,10 +21,10 @@ namespace StatRetrieval.Engines.DataProcessorEngine.cs
         private List<EmployeeData> GetEmployees()
         {
             if (cachedEmployees == null
-                || lastEmployeeSnag < DateTime.Now.AddMinutes(-30))
+                || lastEmployeeSnag < ConfigHelper.DateTimeNow.AddMinutes(-30))
             {
                 cachedEmployees = dbAccessor.GetEmployees();
-                lastEmployeeSnag = DateTime.Now;
+                lastEmployeeSnag = ConfigHelper.DateTimeNow;
             }
             return cachedEmployees;
         }
@@ -68,8 +68,8 @@ namespace StatRetrieval.Engines.DataProcessorEngine.cs
                 var queryTime = GenericExtensions.DateTimeToUnixTimeStamp(localResult.Time);
                 if (queryTime < 0)
                 {
-                    LogHelper.Log("Using DateTime.Now for " + localResult.Request.UniqueKey, LogLocation.ResultProcessorEng, LogType.Verbose);
-                    queryTime = GenericExtensions.DateTimeToUnixTimeStamp(DateTime.Now);
+                    LogHelper.Log("Using ConfigHelper.DateTimeNow for " + localResult.Request.UniqueKey, LogLocation.ResultProcessorEng, LogType.Verbose);
+                    queryTime = GenericExtensions.DateTimeToUnixTimeStamp(ConfigHelper.DateTimeNow);
                 }
 
                 RemoteResultObject obj = new RemoteResultObject()

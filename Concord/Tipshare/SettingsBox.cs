@@ -11,7 +11,7 @@ namespace Tipshare
     public partial class SettingsBox : Form
     {
         public bool bRefresh = false;
-        public DateTime dtDateChanged = DateTime.Now;
+        public DateTime dtDateChanged = ConfigHelper.DateTimeNow;
 
         public Button btnSave;
         public Button btnShowDebug;
@@ -56,7 +56,7 @@ namespace Tipshare
         {
             if (nudHostPercent.Value != 100 - nudBarPercent.Value)
                 nudHostPercent.Value = 100 - nudBarPercent.Value;
-            if (dtDateChanged < DateTime.Now.AddSeconds(-10))
+            if (dtDateChanged < ConfigHelper.DateTimeNow.AddSeconds(-10))
                 bRefresh = true;
         }
 
@@ -88,6 +88,12 @@ namespace Tipshare
         private void btnShowDebug_Click(object sender, EventArgs e)
         {
             this.Visible = false;
+        }
+
+        private void SettingsBox_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            this.Visible = false;
+            e.Cancel = true;
         }
     }
 }

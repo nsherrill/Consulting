@@ -44,8 +44,8 @@ namespace StatRetrieval.Accessors.WebAccessor
 
                     if (dateToUseLn < 0)
                     {
-                        LogHelper.Log("negative.. using DateTime.Now for " + sourceObj.ID, LogLocation.QueryRequestAccessor, LogType.Verbose);
-                        dateToUse = DateTime.Now;
+                        LogHelper.Log("negative.. using ConfigHelper.DateTimeNow for " + sourceObj.ID, LogLocation.QueryRequestAccessor, LogType.Verbose);
+                        dateToUse = ConfigHelper.DateTimeNow;
                     }
                     else
                         dateToUse = GenericExtensions.UnixTimeStampToDateTime(dateToUseLn);

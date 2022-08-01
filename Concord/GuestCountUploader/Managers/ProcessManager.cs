@@ -19,11 +19,11 @@ namespace GuestCountUploader.Managers
             List<CustomerDefinition> results = new List<CustomerDefinition>();
             foreach (var def in sourceDefs)
             {
-                def.LastGuestCount = guestCountAcc.GetGuestCount(def.IP, DateTime.Now.AddDays(-1).Date);
+                def.LastGuestCount = guestCountAcc.GetGuestCount(def.IP, ConfigHelper.DateTimeNow.AddDays(-1).Date);
             }
 
             var dataConversionEng = new DataConversionEngine();
-            var fileContents = dataConversionEng.FormatDefinitions(sourceDefs, DateTime.Now.AddDays(-1).Date);
+            var fileContents = dataConversionEng.FormatDefinitions(sourceDefs, ConfigHelper.DateTimeNow.AddDays(-1).Date);
 
             var ftpAcc = new FTPAccessor();
             ftpAcc.UploadFile(fileContents, "file.txt", "");

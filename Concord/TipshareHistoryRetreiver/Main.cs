@@ -26,7 +26,7 @@ namespace TipshareHistoryRetreiver
             pbBar.Minimum = 0;
             pbBar.Maximum = 4;
 
-            dtpTo.Value = DateTime.Now;
+            dtpTo.Value = ConfigHelper.DateTimeNow;
             dtpFrom.Value = GetLastSOWD();
 
             cbStore.Items.Clear();
@@ -65,7 +65,7 @@ namespace TipshareHistoryRetreiver
 
         private DateTime GetLastSOWD()
         {
-            DateTime temp = DateTime.Now.AddDays(-1);
+            DateTime temp = ConfigHelper.DateTimeNow.AddDays(-1);
             while (temp.DayOfWeek != ConfigHelper.StartOfWeekDay)            
                 temp = temp.AddDays(-1);
             return temp;
@@ -130,7 +130,7 @@ namespace TipshareHistoryRetreiver
             if (bLogging)
             {
                 File.WriteAllLines(LogFile.FullName, new string[] { "","",
-                    DateTime.Now.ToString() +":  "+ label, "", message });
+                    ConfigHelper.DateTimeNow.ToString() +":  "+ label, "", message });
             }
         }
 

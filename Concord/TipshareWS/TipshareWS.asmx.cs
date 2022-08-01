@@ -85,7 +85,7 @@ namespace TipshareWS
                 }
 
                 File.AppendAllText(fi.FullName,
-                    startText + DateTime.Now.ToString() + "," + StoreName);
+                    startText + ConfigHelper.DateTimeNow.ToString() + "," + StoreName);
 
                 return "Success";
             }

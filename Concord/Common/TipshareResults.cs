@@ -23,7 +23,7 @@ namespace Common
 
         public static DateTime GetLastSOWD()
         {
-            DateTime temp = DateTime.Now.AddDays(-1);
+            DateTime temp = ConfigHelper.DateTimeNow.AddDays(-1);
             while (temp.DayOfWeek != ConfigHelper.StartOfWeekDay)
                 temp = temp.AddDays(-1);
             return temp;

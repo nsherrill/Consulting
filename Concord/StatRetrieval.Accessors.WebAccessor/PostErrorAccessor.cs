@@ -24,7 +24,7 @@ namespace StatRetrieval.Accessors.WebAccessor
 
             try
             {
-                var timeStamp = GenericExtensions.DateTimeToUnixTimeStamp(DateTime.Now);
+                var timeStamp = GenericExtensions.DateTimeToUnixTimeStamp(ConfigHelper.DateTimeNow);
                 var signature = SecretKeyGenerator.GenerateKey(timeStamp);
                 string url = string.Empty;
 
@@ -43,7 +43,7 @@ namespace StatRetrieval.Accessors.WebAccessor
                         timeStamp, signature);
                 }
 
-                string data = String.Format("{0}:\t{1}:\t{2}:\t{3}", DateTime.Now, ConfigHelper.StoreId, logLoc, text);
+                string data = String.Format("{0}:\t{1}:\t{2}:\t{3}", ConfigHelper.DateTimeNow, ConfigHelper.StoreId, logLoc, text);
 
                 bool result = PhpHelper.PostToService(url, data);
                 return result;

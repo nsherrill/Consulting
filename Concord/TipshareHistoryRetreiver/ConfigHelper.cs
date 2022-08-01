@@ -34,5 +34,7 @@ namespace TipshareHistoryRetreiver
                 result = defaultVal;
             return result;
         }
+
+        public static DateTime DateTimeNow { get { return DateTime.Now; } }
     }
 }

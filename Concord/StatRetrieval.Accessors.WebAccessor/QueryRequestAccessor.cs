@@ -46,7 +46,7 @@ namespace StatRetrieval.Accessors.WebAccessor
             string resultStr;
             try
             {
-                var timeStamp = GenericExtensions.DateTimeToUnixTimeStamp(DateTime.Now);
+                var timeStamp = GenericExtensions.DateTimeToUnixTimeStamp(ConfigHelper.DateTimeNow);
                 string url = GetRequestUrl(timeStamp);
                
                 LogHelper.Log("Hitting url for requests: " + url, LogLocation.QueryRequestAccessor, LogType.Generic);
