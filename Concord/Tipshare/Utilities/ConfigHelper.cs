@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Configuration;
 
 namespace Tipshare
@@ -10,10 +7,11 @@ namespace Tipshare
     {
         public static string[] ServerJobCodes { get { return GetStringArray("ServerJobCodes", null); } }
         public static string[] HostJobCodes { get { return GetStringArray("HostJobCodes", null); } }
-        public static string[] BarJobCodes { get { return GetStringArray("BarJobCodes", null); } } 
-        public static string[] OtherJobCodes { get { return GetStringArray("OtherJobCodes", null); } } 
+        public static string[] BarJobCodes { get { return GetStringArray("BarJobCodes", null); } }
+        public static string[] OtherJobCodes { get { return GetStringArray("OtherJobCodes", null); } }
 
-        public static bool AllowUndistributed { get; set; }
+        private static bool _allowUndistributed = GetBool("AllowUndistributed", true);
+        public static bool AllowUndistributed { get { return _allowUndistributed; } set { _allowUndistributed = value; } }
 
         public static bool bTest = ConfigurationManager.AppSettings["setting"].Contains("test");
 
@@ -116,7 +114,7 @@ namespace Tipshare
         {
             get
             {
-                DateTime dateResult; 
+                DateTime dateResult;
                 if (DateTime.TryParse(GetString("NowDateOverride", "null"), out dateResult)) return dateResult;
                 return DateTime.Now;
             }
@@ -132,6 +130,34 @@ namespace Tipshare
                 return result;
             }
             return defaultVal;
+        }
+
+        private static bool GetBool(string key, bool defaultVal = false)
+        {
+            bool result = defaultVal;
+            string tempResult = ConfigurationManager.AppSettings[key];
+
+            if (!string.IsNullOrEmpty(tempResult))
+            {
+                tempResult = tempResult.Trim().ToLower();
+
+                if (bool.TryParse(tempResult, out result))
+                {
+                }
+                else if (int.TryParse(tempResult, out var intResult))
+                {
+                    result = intResult > 0;
+                }
+                else if (tempResult == "yes")
+                    result = true;
+                else if (tempResult == "no")
+                    result = false;
+                else if (tempResult.StartsWith("t"))
+                    result = true;
+                else if (tempResult.StartsWith("f"))
+                    result = false;
+            }
+            return result;
         }
 
         private static int GetInt(string key, int defaultVal = -1)

@@ -1,17 +1,13 @@
-﻿using System;
+﻿using Common;
+using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Text;
-using System.Windows.Forms;
-using System.Data.SqlClient;
-using System.IO;
-using System.Threading;
-using System.Drawing.Printing;
 using System.Configuration;
+using System.Drawing;
+using System.IO;
+using System.Text;
+using System.Threading;
+using System.Windows.Forms;
 using Tipshare.Engines;
-using Common;
 
 namespace Tipshare
 {
@@ -111,32 +107,32 @@ namespace Tipshare
                 Globals.Log("didn't exit first part...: \r\n" + e.ToString());
             }
 
-            string[] temp = null;
-            try
-            {
-                WebServiceCaller wsc = new WebServiceCaller();
+            //string[] temp = null;
+            //try
+            //{
+            //    WebServiceCaller wsc = new WebServiceCaller();
 
-                if (sStoreName.Equals("Vinny", StringComparison.InvariantCultureIgnoreCase))
-                    ConfigHelper.AllowUndistributed = true;
-                else
-                {
-                    temp = wsc.GetUndistributedStores().ToLowerInvariant().Split(',');
-                    ConfigHelper.AllowUndistributed = temp != null && Globals.ArrayContains(temp, sStoreName.ToLowerInvariant());
-                }
+            //    if (sStoreName.Equals("Vinny", StringComparison.InvariantCultureIgnoreCase))
+            //        ConfigHelper.AllowUndistributed = true;
+            //    else
+            //    {
+            //        temp = wsc.GetUndistributedStores().ToLowerInvariant().Split(',');
+            //        ConfigHelper.AllowUndistributed = temp != null && Globals.ArrayContains(temp, sStoreName.ToLowerInvariant());
+            //    }
 
-                saEmployeeNamesToAddToUnallocated = wsc.GetListOfCardsToSetAsUnallocated();
-                if (saEmployeeNamesToAddToUnallocated != null)
-                    for (int i = 0; i < saEmployeeNamesToAddToUnallocated.Length; i++)
-                        saEmployeeNamesToAddToUnallocated[i] = saEmployeeNamesToAddToUnallocated[i].ToUpperInvariant();
+            //    saEmployeeNamesToAddToUnallocated = wsc.GetListOfCardsToSetAsUnallocated();
+            //    if (saEmployeeNamesToAddToUnallocated != null)
+            //        for (int i = 0; i < saEmployeeNamesToAddToUnallocated.Length; i++)
+            //            saEmployeeNamesToAddToUnallocated[i] = saEmployeeNamesToAddToUnallocated[i].ToUpperInvariant();
 
-            }
-            catch (Exception e)
-            {
-                dcDebugContainer[iCurrDay].ErrorStrings.Add("Exception in constructor: " + e.ToString());
-                Logger.Log("Exception thrown getting undistributed stores... " + e.ToString());
-                ConfigHelper.AllowUndistributed = false;
-                saEmployeeNamesToAddToUnallocated = new string[] { };
-            }
+            //}
+            //catch (Exception e)
+            //{
+            //    dcDebugContainer[iCurrDay].ErrorStrings.Add("Exception in constructor: " + e.ToString());
+            //    Logger.Log("Exception thrown getting undistributed stores... " + e.ToString());
+            //    ConfigHelper.AllowUndistributed = false;
+            //    saEmployeeNamesToAddToUnallocated = new string[] { };
+            //}
 
             Logger.Log("Exit constructor");
         }
@@ -153,6 +149,7 @@ namespace Tipshare
                 Thread.Sleep(1000);
             DisplayDay(dtCurrentDay);
         }
+
         #endregion
 
         #region ManipulatingDisplay
@@ -1348,7 +1345,7 @@ namespace Tipshare
                 "This Tipshare program was written by Nick Sherrill and " +
                 "distributed to Concord Enterprises for the exclusive use " +
                 "of their stores.  Any questions need to be directed to " +
-                "solutioncenter@concordei.com.");
+                "ungusc73@gmail.com.");
         }
 
         private void miExit_Click(object sender, EventArgs e)
