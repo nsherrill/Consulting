@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Configuration;
 
 namespace Tipshare
@@ -23,26 +20,26 @@ namespace Tipshare
                 hasAccessToRealWS = false;
         }
 
-        public string GetUndistributedStores()
-        {
-            string result = null;
-            if (hasAccessToRealWS)
-            {
-                try
-                {
-                    TipshareWS.TipshareWS tws = new TipshareWS.TipshareWS();
-                    result = tws.GetUndistributedStores();
-                }
-                catch (Exception)
-                {
-                    result = "AB05,AB08,AB18,ab21,AB28,AB32";
-                }
-            }
-            else
-                result = "AB05,AB08,AB18,ab21,AB28,AB32";
+        //public string GetUndistributedStores()
+        //{
+        //    string result = null;
+        //    if (hasAccessToRealWS)
+        //    {
+        //        try
+        //        {
+        //            TipshareWS.TipshareWS tws = new TipshareWS.TipshareWS();
+        //            result = tws.GetUndistributedStores();
+        //        }
+        //        catch (Exception)
+        //        {
+        //            result = "AB05,AB08,AB18,ab21,AB28,AB32";
+        //        }
+        //    }
+        //    else
+        //        result = "AB05,AB08,AB18,ab21,AB28,AB32";
 
-            return result;
-        }
+        //    return result;
+        //}
 
         public string[] GetListOfCardsToSetAsUnallocated()
         {
@@ -65,7 +62,7 @@ namespace Tipshare
                 }
             }
             else
-                result = new string[] 
+                result = new string[]
                     {
                         "PM BAR",
                         "AM BAR",
