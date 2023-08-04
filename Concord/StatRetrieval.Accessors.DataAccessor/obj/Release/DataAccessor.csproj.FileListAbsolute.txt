@@ -28,3 +28,12 @@ C:\workspace\Consulting\Concord\StatRetrieval.Accessors.DataAccessor\obj\Release
 C:\workspace\Consulting\Concord\StatRetrieval.Accessors.DataAccessor\obj\Release\DataAccessor.csproj.CopyComplete
 C:\workspace\Consulting\Concord\StatRetrieval.Accessors.DataAccessor\obj\Release\StatRetrieval.Accessors.DataAccessor.dll
 C:\workspace\Consulting\Concord\StatRetrieval.Accessors.DataAccessor\obj\Release\StatRetrieval.Accessors.DataAccessor.pdb
+C:\workspaces\Consulting\Concord\StatRetrieval.Accessors.DataAccessor\bin\Release\StatRetrieval.Accessors.DataAccessor.dll
+C:\workspaces\Consulting\Concord\StatRetrieval.Accessors.DataAccessor\bin\Release\StatRetrieval.Accessors.DataAccessor.pdb
+C:\workspaces\Consulting\Concord\StatRetrieval.Accessors.DataAccessor\bin\Release\StatRetrieval.Shared.Common.dll
+C:\workspaces\Consulting\Concord\StatRetrieval.Accessors.DataAccessor\bin\Release\StatRetrieval.Shared.Common.pdb
+C:\workspaces\Consulting\Concord\StatRetrieval.Accessors.DataAccessor\obj\Release\DataAccessor.csproj.AssemblyReference.cache
+C:\workspaces\Consulting\Concord\StatRetrieval.Accessors.DataAccessor\obj\Release\DataAccessor.csproj.CoreCompileInputs.cache
+C:\workspaces\Consulting\Concord\StatRetrieval.Accessors.DataAccessor\obj\Release\DataAccessor.csproj.CopyComplete
+C:\workspaces\Consulting\Concord\StatRetrieval.Accessors.DataAccessor\obj\Release\StatRetrieval.Accessors.DataAccessor.dll
+C:\workspaces\Consulting\Concord\StatRetrieval.Accessors.DataAccessor\obj\Release\StatRetrieval.Accessors.DataAccessor.pdb

@@ -44,3 +44,16 @@ C:\workspace\Consulting\Concord\StatRetrieval.Engines.DataProcessorEngine.cs\obj
 C:\workspace\Consulting\Concord\StatRetrieval.Engines.DataProcessorEngine.cs\obj\Release\DataProcessorEngine.cs.csproj.CopyComplete
 C:\workspace\Consulting\Concord\StatRetrieval.Engines.DataProcessorEngine.cs\obj\Release\StatRetrieval.Engines.DataProcessorEngine.cs.dll
 C:\workspace\Consulting\Concord\StatRetrieval.Engines.DataProcessorEngine.cs\obj\Release\StatRetrieval.Engines.DataProcessorEngine.cs.pdb
+C:\workspaces\Consulting\Concord\StatRetrieval.Engines.DataProcessorEngine.cs\obj\Release\DataProcessorEngine.cs.csproj.AssemblyReference.cache
+C:\workspaces\Consulting\Concord\StatRetrieval.Engines.DataProcessorEngine.cs\obj\Release\DataProcessorEngine.cs.csproj.CoreCompileInputs.cache
+C:\workspaces\Consulting\Concord\StatRetrieval.Engines.DataProcessorEngine.cs\obj\Release\StatRetrieval.Engines.DataProcessorEngine.cs.dll
+C:\workspaces\Consulting\Concord\StatRetrieval.Engines.DataProcessorEngine.cs\obj\Release\StatRetrieval.Engines.DataProcessorEngine.cs.pdb
+C:\workspaces\Consulting\Concord\StatRetrieval.Engines.DataProcessorEngine.cs\bin\Release\StatRetrieval.Engines.DataProcessorEngine.cs.dll
+C:\workspaces\Consulting\Concord\StatRetrieval.Engines.DataProcessorEngine.cs\bin\Release\StatRetrieval.Engines.DataProcessorEngine.cs.pdb
+C:\workspaces\Consulting\Concord\StatRetrieval.Engines.DataProcessorEngine.cs\bin\Release\StatRetrieval.Accessors.DataAccessor.dll
+C:\workspaces\Consulting\Concord\StatRetrieval.Engines.DataProcessorEngine.cs\bin\Release\StatRetrieval.Accessors.WebAccessor.dll
+C:\workspaces\Consulting\Concord\StatRetrieval.Engines.DataProcessorEngine.cs\bin\Release\StatRetrieval.Shared.Common.dll
+C:\workspaces\Consulting\Concord\StatRetrieval.Engines.DataProcessorEngine.cs\bin\Release\StatRetrieval.Accessors.DataAccessor.pdb
+C:\workspaces\Consulting\Concord\StatRetrieval.Engines.DataProcessorEngine.cs\bin\Release\StatRetrieval.Accessors.WebAccessor.pdb
+C:\workspaces\Consulting\Concord\StatRetrieval.Engines.DataProcessorEngine.cs\bin\Release\StatRetrieval.Shared.Common.pdb
+C:\workspaces\Consulting\Concord\StatRetrieval.Engines.DataProcessorEngine.cs\obj\Release\DataProcessorEngine.cs.csproj.CopyComplete
