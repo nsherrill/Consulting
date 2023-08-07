@@ -1,13 +1,11 @@
-﻿using System;
+﻿using Common;
+using System;
 using System.Collections.Generic;
-using System.Text;
-using System.IO;
-using System.Data.SqlClient;
-using System.Data.OleDb;
 using System.Data;
-using System.Collections;
+using System.Data.OleDb;
+using System.Data.SqlClient;
+using System.IO;
 using System.Windows.Forms;
-using Common;
 
 namespace Tipshare
 {
@@ -366,7 +364,7 @@ gndtndr.dbf	minute
 
             SqlConnectionStringBuilder sb = new SqlConnectionStringBuilder();
             sb.InitialCatalog = "elstar";
-            sb.DataSource = dbAddy;
+            sb.DataSource = "localhost";// dbAddy;
             sb.UserID = DB_USER;
             sb.Password = DB_PASSWORD;
             sb.MultipleActiveResultSets = true;

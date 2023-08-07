@@ -86,7 +86,6 @@ C:\workspaces\Consulting\Concord\Tipshare\bin\Release\System.Web.WebPages.xml
 C:\workspaces\Consulting\Concord\Tipshare\bin\Release\System.Web.Razor.xml
 C:\workspaces\Consulting\Concord\Tipshare\bin\Release\System.Web.WebPages.Deployment.xml
 C:\workspaces\Consulting\Concord\Tipshare\obj\Release\Tipshare.csproj.AssemblyReference.cache
-C:\workspaces\Consulting\Concord\Tipshare\obj\Release\Tipshare.csproj.SuggestedBindingRedirects.cache
 C:\workspaces\Consulting\Concord\Tipshare\obj\Release\Tipshare.DebugDisplay.resources
 C:\workspaces\Consulting\Concord\Tipshare\obj\Release\Tipshare.ProgressBox.resources
 C:\workspaces\Consulting\Concord\Tipshare\obj\Release\Tipshare.SettingsBox.resources

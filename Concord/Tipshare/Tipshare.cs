@@ -43,7 +43,12 @@ namespace Tipshare
         List<DaysData> lddDaysData;
         List<Thread> ltThreads;
 
-        string[] saEmployeeNamesToAddToUnallocated;
+        string[] saEmployeeNamesToAddToUnallocated = new string[]
+            {
+                "PM BAR",
+                "AM BAR",
+                "TOGO CARD",
+            };
 
         //System.Configuration.ConfigurationSettings.AppSettings["setting"].Contains("test");
         //bool bAllowUndistributed = false;
