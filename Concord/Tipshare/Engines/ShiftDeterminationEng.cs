@@ -1,8 +1,6 @@
 ﻿using Common;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace Tipshare.Engines
 {
@@ -24,14 +22,14 @@ namespace Tipshare.Engines
             {
                 if (!shifts.ContainsKey(i))
                 {
-                    Logger.Log("shifts doesnt contain index: " + i + "... going to log'em all!");
+                    Globals.Log("shifts doesnt contain index: " + i + "... going to log'em all!", true);
                     bLog = true;
                 }
             }
             if (bLog)
                 foreach (var i in shifts.Keys)
                 {
-                    Logger.Log("shift exists: " + shifts[i].Name + ", " + shifts[i].ClockIn);
+                    Globals.Log("shift exists: " + shifts[i].Name + ", " + shifts[i].ClockIn, true);
                 }
 
             foreach (var i in shifts.Keys)

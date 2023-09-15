@@ -16,3 +16,11 @@ C:\workspace\Consulting\Concord\OldTipshareRetriever\obj\x86\Debug\OldTipshareRe
 C:\workspace\Consulting\Concord\OldTipshareRetriever\obj\x86\Debug\OldTipshareRetriever.csproj.CoreCompileInputs.cache
 C:\workspace\Consulting\Concord\OldTipshareRetriever\obj\x86\Debug\OldTipshareRetriever.exe
 C:\workspace\Consulting\Concord\OldTipshareRetriever\obj\x86\Debug\OldTipshareRetriever.pdb
+C:\workspaces\Consulting\Concord\OldTipshareRetriever\bin\Debug\OldTipshareRetriever.exe.config
+C:\workspaces\Consulting\Concord\OldTipshareRetriever\bin\Debug\OldTipshareRetriever.exe
+C:\workspaces\Consulting\Concord\OldTipshareRetriever\bin\Debug\OldTipshareRetriever.pdb
+C:\workspaces\Consulting\Concord\OldTipshareRetriever\obj\x86\Debug\OldTipshareRetriever.csproj.AssemblyReference.cache
+C:\workspaces\Consulting\Concord\OldTipshareRetriever\obj\x86\Debug\OldTipshareRetriever.csproj.SuggestedBindingRedirects.cache
+C:\workspaces\Consulting\Concord\OldTipshareRetriever\obj\x86\Debug\OldTipshareRetriever.csproj.CoreCompileInputs.cache
+C:\workspaces\Consulting\Concord\OldTipshareRetriever\obj\x86\Debug\OldTipshareRetriever.exe
+C:\workspaces\Consulting\Concord\OldTipshareRetriever\obj\x86\Debug\OldTipshareRetriever.pdb

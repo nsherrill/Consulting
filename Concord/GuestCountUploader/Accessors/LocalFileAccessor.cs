@@ -1,10 +1,8 @@
-﻿using System;
+﻿using Common;
+using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Reflection;
-using System.Text;
-using Common;
 
 namespace GuestCountUploader.Accessors
 {
@@ -42,7 +40,7 @@ namespace GuestCountUploader.Accessors
             }
             catch (Exception e)
             {
-                Globals.Log("exception caught while uploading to parsing custs from file: " + e.ToString(), "CustomerFileAccessor.log");
+                Globals.Log("exception caught while uploading to parsing custs from file: " + e.ToString(), fileName: "CustomerFileAccessor.log");
             }
 
             return results.ToArray();

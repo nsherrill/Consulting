@@ -364,7 +364,7 @@ gndtndr.dbf	minute
 
             SqlConnectionStringBuilder sb = new SqlConnectionStringBuilder();
             sb.InitialCatalog = "elstar";
-            sb.DataSource = "localhost";// dbAddy;
+            sb.DataSource = dbAddy;
             sb.UserID = DB_USER;
             sb.Password = DB_PASSWORD;
             sb.MultipleActiveResultSets = true;
@@ -378,9 +378,9 @@ gndtndr.dbf	minute
                     SqlCommand cmd = conn.CreateCommand();
                     cmd.CommandText = "select svalue from configsystem " +
                         "where iconfigurationvaluesid=67";
-                    SqlDataReader dr = cmd.ExecuteReader();
-                    dr.Read();
-                    result = double.Parse(dr[0].ToString());
+                    var queryResult = cmd.ExecuteScalar();
+                    Globals.Log($"GetPercent:{queryResult}", true);
+                    result = double.Parse(queryResult.ToString());
                 }
             }
             catch (Exception e)
@@ -551,7 +551,7 @@ gndtndr.dbf	minute
                 using (SqlConnection conn = new SqlConnection(sqlstring))
                 {
                     conn.Open();
-                    Globals.Log("hitting db");
+                    Globals.Log("hitting db", true);
                     try
                     {
                         SqlCommand cmd = conn.CreateCommand();
@@ -673,7 +673,7 @@ select top 80000 j.iemployeeid, js.iamount, j.dttimeclosed
                 using (SqlConnection conn = new SqlConnection(sqlstring))
                 {
                     conn.Open();
-                    Globals.Log("hitting db");
+                    Globals.Log("hitting db", true);
                     try
                     {
                         SqlCommand cmd = conn.CreateCommand();
@@ -683,16 +683,16 @@ select top 80000 j.iemployeeid, js.iamount, j.dttimeclosed
 SELECT TOP 1000 
       sum([iTip]) as 'amtips', 
       [dtTime] as 'date',
-      iEmployeeId
+      j.iEmployeeId
   FROM [dbo].[JournalPayment] jp
 	join dbo.Journal j on jp.ijournalid = j.ijournalid
   WHERE 
 	[dtTime] = '" + dateToFind.ToShortDateString() + @"'
-	AND iEmployeeID = " + employeeId + @"
+	AND j.iEmployeeID = " + employeeId + @"
 	and [dtTimeClosed] - [dtTime] < '" + StaticProps.AMPMBreakAsTimeString + @"'
   GROUP BY 	
     [dtTime], 
-	iEmployeeId
+	j.iEmployeeId
   order by 'date'";
 
                         cmd.CommandTimeout = 200;
@@ -711,16 +711,16 @@ SELECT TOP 1000
 SELECT TOP 1000 
       sum([iTip]) as 'pmtips', 
       [dtTime] as 'date',
-      iEmployeeId
+      j.iEmployeeId
   FROM [dbo].[JournalPayment] jp
 	join dbo.Journal j on jp.ijournalid = j.ijournalid
   WHERE 
 	[dtTime] = '" + dateToFind.ToShortDateString() + @"'
-	AND iEmployeeID = " + employeeId + @"
+	AND j.iEmployeeID = " + employeeId + @"
 	and [dtTimeClosed] - [dtTime] >= '" + StaticProps.AMPMBreakAsTimeString + @"'
   GROUP BY 	
     [dtTime], 
-	iEmployeeId
+	j.iEmployeeId
   order by 'date'";
 
                         cmd.CommandTimeout = 200;

@@ -1,10 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using Common;
+using System;
 using System.IO;
-using System.Linq;
 using System.Net;
 using System.Text;
-using Common;
 
 namespace GuestCountUploader.Accessors
 {
@@ -37,7 +35,7 @@ namespace GuestCountUploader.Accessors
             }
             catch (Exception e)
             {
-                Globals.Log("exception caught while uploading to FTP loc: " + e.ToString(), "FTPAccessor.log");
+                Globals.Log("exception caught while uploading to FTP loc: " + e.ToString(), fileName: "FTPAccessor.log");
             }
         }
     }

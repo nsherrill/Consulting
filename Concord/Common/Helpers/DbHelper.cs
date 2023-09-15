@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
 
 namespace Common
 {
@@ -16,7 +14,7 @@ namespace Common
                 using (SqlConnection conn = new SqlConnection(connectionString))
                 {
                     conn.Open();
-                    Globals.Log("hitting db");
+                    Globals.Log("hitting db", true);
                     try
                     {
                         SqlCommand cmd = conn.CreateCommand();

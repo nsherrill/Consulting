@@ -60,3 +60,15 @@ C:\workspace\Consulting\Concord\TipshareHistoryRetreiver\obj\Debug\TipshareHisto
 C:\workspace\Consulting\Concord\TipshareHistoryRetreiver\obj\Debug\TipshareHistoryRetriever.csproj.CoreCompileInputs.cache
 C:\workspace\Consulting\Concord\TipshareHistoryRetreiver\obj\Debug\TipshareHistoryRetreiver.exe
 C:\workspace\Consulting\Concord\TipshareHistoryRetreiver\obj\Debug\TipshareHistoryRetreiver.pdb
+C:\workspaces\Consulting\Concord\TipshareHistoryRetreiver\bin\Debug\Stores.txt
+C:\workspaces\Consulting\Concord\TipshareHistoryRetreiver\bin\Debug\TipshareHistoryRetreiver.exe.config
+C:\workspaces\Consulting\Concord\TipshareHistoryRetreiver\bin\Debug\TipshareHistoryRetreiver.exe
+C:\workspaces\Consulting\Concord\TipshareHistoryRetreiver\bin\Debug\TipshareHistoryRetreiver.pdb
+C:\workspaces\Consulting\Concord\TipshareHistoryRetreiver\obj\Debug\TipshareHistoryRetriever.csproj.AssemblyReference.cache
+C:\workspaces\Consulting\Concord\TipshareHistoryRetreiver\obj\Debug\TipshareHistoryRetriever.csproj.SuggestedBindingRedirects.cache
+C:\workspaces\Consulting\Concord\TipshareHistoryRetreiver\obj\Debug\TipshareHistoryRetreiver.Main.resources
+C:\workspaces\Consulting\Concord\TipshareHistoryRetreiver\obj\Debug\TipshareHistoryRetreiver.Properties.Resources.resources
+C:\workspaces\Consulting\Concord\TipshareHistoryRetreiver\obj\Debug\TipshareHistoryRetriever.csproj.GenerateResource.cache
+C:\workspaces\Consulting\Concord\TipshareHistoryRetreiver\obj\Debug\TipshareHistoryRetriever.csproj.CoreCompileInputs.cache
+C:\workspaces\Consulting\Concord\TipshareHistoryRetreiver\obj\Debug\TipshareHistoryRetreiver.exe
+C:\workspaces\Consulting\Concord\TipshareHistoryRetreiver\obj\Debug\TipshareHistoryRetreiver.pdb

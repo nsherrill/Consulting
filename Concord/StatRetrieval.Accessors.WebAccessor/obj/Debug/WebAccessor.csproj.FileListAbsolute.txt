@@ -61,3 +61,12 @@ C:\workspace\Consulting\Concord\StatRetrieval.Accessors.WebAccessor\obj\Debug\We
 C:\workspace\Consulting\Concord\StatRetrieval.Accessors.WebAccessor\obj\Debug\WebAccessor.csproj.CopyComplete
 C:\workspace\Consulting\Concord\StatRetrieval.Accessors.WebAccessor\obj\Debug\StatRetrieval.Accessors.WebAccessor.dll
 C:\workspace\Consulting\Concord\StatRetrieval.Accessors.WebAccessor\obj\Debug\StatRetrieval.Accessors.WebAccessor.pdb
+C:\workspaces\Consulting\Concord\StatRetrieval.Accessors.WebAccessor\bin\Debug\StatRetrieval.Accessors.WebAccessor.dll
+C:\workspaces\Consulting\Concord\StatRetrieval.Accessors.WebAccessor\bin\Debug\StatRetrieval.Accessors.WebAccessor.pdb
+C:\workspaces\Consulting\Concord\StatRetrieval.Accessors.WebAccessor\bin\Debug\StatRetrieval.Shared.Common.dll
+C:\workspaces\Consulting\Concord\StatRetrieval.Accessors.WebAccessor\bin\Debug\StatRetrieval.Shared.Common.pdb
+C:\workspaces\Consulting\Concord\StatRetrieval.Accessors.WebAccessor\obj\Debug\WebAccessor.csproj.AssemblyReference.cache
+C:\workspaces\Consulting\Concord\StatRetrieval.Accessors.WebAccessor\obj\Debug\WebAccessor.csproj.CoreCompileInputs.cache
+C:\workspaces\Consulting\Concord\StatRetrieval.Accessors.WebAccessor\obj\Debug\WebAccessor.csproj.CopyComplete
+C:\workspaces\Consulting\Concord\StatRetrieval.Accessors.WebAccessor\obj\Debug\StatRetrieval.Accessors.WebAccessor.dll
+C:\workspaces\Consulting\Concord\StatRetrieval.Accessors.WebAccessor\obj\Debug\StatRetrieval.Accessors.WebAccessor.pdb

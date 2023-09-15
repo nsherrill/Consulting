@@ -1,12 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Data.SqlClient;
-using System.Diagnostics;
-using System.Net.Mail;
-using System.Net;
 using System.IO;
+using System.Net;
+using System.Net.Mail;
 
 namespace Common
 {
@@ -17,8 +13,12 @@ namespace Common
             get
             {
                 string temp = System.Configuration.ConfigurationManager.AppSettings["Mode"];
-                if (!string.IsNullOrEmpty(temp) && temp.ToLowerInvariant().Contains("test"))
+                string temp2 = System.Configuration.ConfigurationManager.AppSettings["setting"];
+                if ((!string.IsNullOrEmpty(temp) && temp.ToLowerInvariant().Contains("test"))
+                    || (!string.IsNullOrEmpty(temp2) && temp2.ToLowerInvariant().Contains("test")))
+                {
                     return true;
+                }
                 return false;
             }
         }
@@ -38,35 +38,20 @@ namespace Common
                 }
                 catch (Exception e)
                 {
-                    Log("Couldn't hit DB\r\n"+e.ToString());
+                    Log("Couldn't hit DB\r\n" + e.ToString());
                     return false;
                 }
             }
         }
 
-        public static void Log(string message, string filename = "tipshare.log")
+        public static void Log(string message, bool isTest = false, string fileName = "tipshare.log")
         {
+            if (isTest && !Testing) return;
+
             try
             {
-                //if (!EventLog.SourceExists("ConcordWeb"))
-                //{
-                //    EventLog.CreateEventSource("ConcordWeb", "ConcordWeb");
-                //    while (!EventLog.SourceExists("ConcordWeb"))
-                //    {
-                //        System.Threading.Thread.Sleep(1000);
-                //    }
-                //}
-                //if (EventLog.SourceExists("ConcordWeb"))
-                //{
-                //    // Create an EventLog instance and assign its source.
-                //    EventLog myLog = new EventLog();
-                //    myLog.Source = "ConcordWeb";
 
-                //    // Write an informational entry to the event log.    
-                //    myLog.WriteEntry(message);
-                //}
-
-                System.IO.File.AppendAllText(Path.Combine(Directory.GetCurrentDirectory(), filename),
+                System.IO.File.AppendAllText(Path.Combine(Directory.GetCurrentDirectory(), fileName),
                     Environment.NewLine + ConfigHelper.DateTimeNow.ToString() + ":  " + message);
 
             }
@@ -74,7 +59,7 @@ namespace Common
             {
                 try
                 {
-                    System.IO.File.AppendAllText(Path.Combine(Directory.GetCurrentDirectory(), filename),
+                    System.IO.File.AppendAllText(Path.Combine(Directory.GetCurrentDirectory(), fileName),
                         Environment.NewLine + ConfigHelper.DateTimeNow.ToString() + ":  " + message);
                 }
                 catch (Exception e)
@@ -123,7 +108,7 @@ namespace Common
                 var newList = list as string[];
                 foreach (string obj in newList)
                 {
-                    if(obj.Equals(searchItem as string, StringComparison.InvariantCultureIgnoreCase))
+                    if (obj.Equals(searchItem as string, StringComparison.InvariantCultureIgnoreCase))
                         return true;
                 }
             }
@@ -133,7 +118,7 @@ namespace Common
                     if (obj.Equals(searchItem))
                         return true;
             }
-            return false;        
+            return false;
         }
     }
 }

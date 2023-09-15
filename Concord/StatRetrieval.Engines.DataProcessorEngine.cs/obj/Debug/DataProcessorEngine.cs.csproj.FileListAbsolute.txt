@@ -33,3 +33,16 @@ C:\workspace\Consulting\Concord\StatRetrieval.Engines.DataProcessorEngine.cs\obj
 C:\workspace\Consulting\Concord\StatRetrieval.Engines.DataProcessorEngine.cs\obj\Debug\DataProcessorEngine.cs.csproj.CopyComplete
 C:\workspace\Consulting\Concord\StatRetrieval.Engines.DataProcessorEngine.cs\obj\Debug\StatRetrieval.Engines.DataProcessorEngine.cs.dll
 C:\workspace\Consulting\Concord\StatRetrieval.Engines.DataProcessorEngine.cs\obj\Debug\StatRetrieval.Engines.DataProcessorEngine.cs.pdb
+C:\workspaces\Consulting\Concord\StatRetrieval.Engines.DataProcessorEngine.cs\bin\Debug\StatRetrieval.Engines.DataProcessorEngine.cs.dll
+C:\workspaces\Consulting\Concord\StatRetrieval.Engines.DataProcessorEngine.cs\bin\Debug\StatRetrieval.Engines.DataProcessorEngine.cs.pdb
+C:\workspaces\Consulting\Concord\StatRetrieval.Engines.DataProcessorEngine.cs\bin\Debug\StatRetrieval.Accessors.DataAccessor.dll
+C:\workspaces\Consulting\Concord\StatRetrieval.Engines.DataProcessorEngine.cs\bin\Debug\StatRetrieval.Accessors.WebAccessor.dll
+C:\workspaces\Consulting\Concord\StatRetrieval.Engines.DataProcessorEngine.cs\bin\Debug\StatRetrieval.Shared.Common.dll
+C:\workspaces\Consulting\Concord\StatRetrieval.Engines.DataProcessorEngine.cs\bin\Debug\StatRetrieval.Accessors.DataAccessor.pdb
+C:\workspaces\Consulting\Concord\StatRetrieval.Engines.DataProcessorEngine.cs\bin\Debug\StatRetrieval.Accessors.WebAccessor.pdb
+C:\workspaces\Consulting\Concord\StatRetrieval.Engines.DataProcessorEngine.cs\bin\Debug\StatRetrieval.Shared.Common.pdb
+C:\workspaces\Consulting\Concord\StatRetrieval.Engines.DataProcessorEngine.cs\obj\Debug\DataProcessorEngine.cs.csproj.AssemblyReference.cache
+C:\workspaces\Consulting\Concord\StatRetrieval.Engines.DataProcessorEngine.cs\obj\Debug\DataProcessorEngine.cs.csproj.CoreCompileInputs.cache
+C:\workspaces\Consulting\Concord\StatRetrieval.Engines.DataProcessorEngine.cs\obj\Debug\DataProcessorEngine.cs.csproj.CopyComplete
+C:\workspaces\Consulting\Concord\StatRetrieval.Engines.DataProcessorEngine.cs\obj\Debug\StatRetrieval.Engines.DataProcessorEngine.cs.dll
+C:\workspaces\Consulting\Concord\StatRetrieval.Engines.DataProcessorEngine.cs\obj\Debug\StatRetrieval.Engines.DataProcessorEngine.cs.pdb

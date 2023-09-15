@@ -1,7 +1,6 @@
-﻿using System;
+﻿using Common;
+using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
 
 namespace Tipshare.Engines
@@ -42,12 +41,12 @@ namespace Tipshare.Engines
                 }
                 catch (Exception e)
                 {
-                    Logger.Log("SaveDaysData A exception thrown: i = " + i +
+                    Globals.Log("SaveDaysData A exception thrown: i = " + i +
                         "\r\n  ltbAMAdj.Count=" + ltbAMAdj.Count +
                         "\r\n  ltbAMHours.Count=" + ltbAMHours.Count +
                         "\r\n  ltbAMIDs.Count=" + ltbAMIDs.Count +
                         "\r\n  ltbAMSugg.Count=" + ltbAMSugg.Count +
-                        "\r\n  ltbAMNames.Count=" + ltbAMNames.Count + 
+                        "\r\n  ltbAMNames.Count=" + ltbAMNames.Count +
                         Environment.NewLine + e.ToString());
                 }
             }
@@ -89,8 +88,8 @@ namespace Tipshare.Engines
                 }
                 catch (Exception e)
                 {
-                    Logger.Log("SaveDaysData B exception thrown: i = " + i +
-                        "\r\n  lcbAMNames.Count=" + lcbAMNames.Count + 
+                    Globals.Log("SaveDaysData B exception thrown: i = " + i +
+                        "\r\n  lcbAMNames.Count=" + lcbAMNames.Count +
                         Environment.NewLine + e.ToString());
                 }
             }
@@ -112,7 +111,7 @@ namespace Tipshare.Engines
                 }
                 catch (Exception e)
                 {
-                    Logger.Log("SaveDaysData C exception thrown: i = " + i +
+                    Globals.Log("SaveDaysData C exception thrown: i = " + i +
                         "\r\n  ltbPMAdj.Count=" + ltbPMAdj.Count +
                         "\r\n  ltbPMHours.Count=" + ltbPMHours.Count +
                         "\r\n  ltbPMIDs.Count=" + ltbPMIDs.Count +
@@ -120,8 +119,8 @@ namespace Tipshare.Engines
                         "\r\n  ltbPMNames.Count=" + ltbPMNames.Count +
                         "\r\n  ltbPMIDs.Count=" + ltbPMIDs.Count +
                         "\r\n  ltbPMSugg.Count=" + ltbPMSugg.Count +
-                        "\r\n  ltbPMHours.Count=" + ltbPMHours.Count + 
-                        Environment.NewLine+ e.ToString());
+                        "\r\n  ltbPMHours.Count=" + ltbPMHours.Count +
+                        Environment.NewLine + e.ToString());
                 }
             }
 
@@ -159,8 +158,8 @@ namespace Tipshare.Engines
                 }
                 catch (Exception e)
                 {
-                    Logger.Log("SaveDaysData D exception thrown: i = " + i +
-                        "\r\n  lcbPMNames.Count=" + lcbPMNames.Count + 
+                    Globals.Log("SaveDaysData D exception thrown: i = " + i +
+                        "\r\n  lcbPMNames.Count=" + lcbPMNames.Count +
                         Environment.NewLine + e.ToString());
                 }
             }

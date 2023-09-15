@@ -4,8 +4,10 @@ using System.Collections.Generic;
 using System.Configuration;
 using System.Drawing;
 using System.IO;
+using System.Linq;
 using System.Text;
 using System.Threading;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 using Tipshare.Engines;
 
@@ -19,6 +21,8 @@ namespace Tipshare
         BasicCalculationEng basicCalcEng = new BasicCalculationEng();
         SaveDataEng saveDataEng = new SaveDataEng();
         ShiftDeterminationEng shiftDeterEng = new ShiftDeterminationEng();
+
+        object lockobj = new object();
 
         string sStoreName;
         string sUploadFilename;
@@ -41,7 +45,7 @@ namespace Tipshare
         List<ComboBox> lcbAMNames, lcbPMNames;
         List<bool> lbDaysViewed, lbTotalsOkay;
         List<DaysData> lddDaysData;
-        List<Thread> ltThreads;
+        //List<Thread> ltThreads;
 
         string[] saEmployeeNamesToAddToUnallocated = new string[]
             {
@@ -70,28 +74,26 @@ namespace Tipshare
             try
             {
                 string errorString;
-                InitializeComponent();
-                sStoreName = Common.GetStoreName();
-                Logger.Log("App started.. store: " + sStoreName, true);
-                StaticProps.dbAddy = ConfigurationManager.AppSettings["dbAddy"];
-                GetDateData();
-
                 iBarPercent = int.Parse(ConfigurationManager.AppSettings["bar_percent"]);
                 iHostPercent = int.Parse(ConfigurationManager.AppSettings["host_percent"]);
+                InitializeComponent();
+                sStoreName = Common.GetStoreName();
+                vVersion = new Version(Application.ProductVersion);
+                Globals.Log($"App started.. store: {sStoreName} / {vVersion.ToString(3)}");
+                StaticProps.dbAddy = ConfigurationManager.AppSettings["dbAddy"];
+                InitializeData();
 
                 dLowerDifferenceAllowed = ConfigHelper.LowerAmountAllowed;
                 dUpperDifferenceAllowed = ConfigHelper.UpperAmountAllowed;
 
                 dCollectionPercent = GenericDBMethods.HitDBForPercent(StaticProps.PosType, StaticProps.dbAddy, out errorString);
                 if (errorString.Length > 0)
-                    Logger.Log("Error getting percent: " + errorString);
+                    Globals.Log("Error getting percent: " + errorString);
                 errorString = "";
                 leEmployees = GenericDBMethods.HitDBForEmployees(StaticProps.PosType, StaticProps.dbAddy, out errorString);
                 if (errorString.Length > 0)
-                    Logger.Log("Error getting employees: " + errorString);
-                vVersion = new Version(Application.ProductVersion);
-                //new Version(
-                //System.Configuration.ConfigurationSettings.AppSettings["version"]);
+                    Globals.Log("Error getting employees: " + errorString);
+
                 dtLastFullRefresh = ConfigHelper.DateTimeNow;
                 tTimer.Interval = 1000;
                 tTimer.Start();
@@ -112,46 +114,20 @@ namespace Tipshare
                 Globals.Log("didn't exit first part...: \r\n" + e.ToString());
             }
 
-            //string[] temp = null;
-            //try
-            //{
-            //    WebServiceCaller wsc = new WebServiceCaller();
-
-            //    if (sStoreName.Equals("Vinny", StringComparison.InvariantCultureIgnoreCase))
-            //        ConfigHelper.AllowUndistributed = true;
-            //    else
-            //    {
-            //        temp = wsc.GetUndistributedStores().ToLowerInvariant().Split(',');
-            //        ConfigHelper.AllowUndistributed = temp != null && Globals.ArrayContains(temp, sStoreName.ToLowerInvariant());
-            //    }
-
-            //    saEmployeeNamesToAddToUnallocated = wsc.GetListOfCardsToSetAsUnallocated();
-            //    if (saEmployeeNamesToAddToUnallocated != null)
-            //        for (int i = 0; i < saEmployeeNamesToAddToUnallocated.Length; i++)
-            //            saEmployeeNamesToAddToUnallocated[i] = saEmployeeNamesToAddToUnallocated[i].ToUpperInvariant();
-
-            //}
-            //catch (Exception e)
-            //{
-            //    dcDebugContainer[iCurrDay].ErrorStrings.Add("Exception in constructor: " + e.ToString());
-            //    Logger.Log("Exception thrown getting undistributed stores... " + e.ToString());
-            //    ConfigHelper.AllowUndistributed = false;
-            //    saEmployeeNamesToAddToUnallocated = new string[] { };
-            //}
-
-            Logger.Log("Exit constructor");
+            Globals.Log("Exit constructor");
         }
 
         private void Tipshare_Load(object sender, EventArgs e)
         {
-            Logger.Log(sStoreName);
+            Globals.Log(sStoreName);
             FullRefresh();
             SetUpDateButtons();
-            GetDateData();
-            for (int i = 0; i < ltThreads.Count; i++)
-                ltThreads[i].Start(new ThreadArgs(lddDaysData[i].Date, true));
-            while (ltThreads[iCurrDay].IsAlive)
-                Thread.Sleep(1000);
+
+            Parallel.ForEach(lddDaysData, ((tt =>
+            {
+                GetDataForDayByThreadObject(new ThreadArgs(tt.Date, true));
+            })));
+
             DisplayDay(dtCurrentDay);
         }
 
@@ -160,9 +136,11 @@ namespace Tipshare
         #region ManipulatingDisplay
         private void DisplayDay(DateTime currDate)
         {
-            Logger.Log("Displaying day: " + currDate.ToShortDateString());
+            Globals.Log("Displaying day: " + currDate.ToShortDateString(), true);
             DisplayDebugData(iCurrDay);
-            //          int i = GetDateIndex(currDate);
+
+            Globals.Log($@"{currDate.ToShortDateString()} : DisplayDay({lddDaysData[iCurrDay].AMEntries.Count}, {lddDaysData[iCurrDay].PMEntries.Count}, {lddDaysData[iCurrDay].OtherEntries.Count}, {lddDaysData[iCurrDay].AMUnallocatedSugg}, {lddDaysData[iCurrDay].PMUnallocatedSugg}, {lddDaysData[iCurrDay].AMUnallocatedAdj}, {lddDaysData[iCurrDay].PMUnallocatedAdj})", true);
+
             DisplayDay(lddDaysData[iCurrDay].AMEntries, lddDaysData[iCurrDay].PMEntries, lddDaysData[iCurrDay].OtherEntries,
                 lddDaysData[iCurrDay].AMUnallocatedSugg, lddDaysData[iCurrDay].PMUnallocatedSugg,
                 lddDaysData[iCurrDay].AMUnallocatedAdj, lddDaysData[iCurrDay].PMUnallocatedAdj);
@@ -226,6 +204,8 @@ namespace Tipshare
             double dAMUnallocatedSugg, double dPMUnallocatedSugg, double dAMUnallocatedAdj, double dPMUnallocatedAdj)
         {
             RemoveDisplay();
+
+            Globals.Log($"DisplayDay({string.Join("+", eAM.Select(e => $"{e.EmployeeID}(${e.SuggestedAmount})"))}, {string.Join("+", ePM.Select(e => $"{e.EmployeeID}(${e.SuggestedAmount})"))}, {string.Join("+", eOther.Select(e => $"{e.EmployeeID}(${e.SuggestedAmount})"))}, {dAMUnallocatedSugg}, {dPMUnallocatedSugg}, {dAMUnallocatedAdj}, {dPMUnallocatedAdj})", true);
 
             string[] others = new string[eOther.Count];
             for (int i = 0; i < others.Length; i++)
@@ -475,19 +455,24 @@ namespace Tipshare
         #endregion
 
         #region GettingData
-        private void GetDataForDayByThread(object o)
+        //private void GetDataForDayByThread(object o)
+        //{
+        //    ThreadArgs ta = (ThreadArgs)o;
+        //    int i = Common.GetDateIndex(ta.DateToCheck, dtNow);
+        //    Thread.Sleep((ltThreads.Count - i) * 2000);
+        //    GetDataForDay(ta.CheckForSavedData, ta.DateToCheck, i, false);
+        //}
+
+        private void GetDataForDayByThreadObject(ThreadArgs ta)
         {
-            ThreadArgs ta = (ThreadArgs)o;
             int i = Common.GetDateIndex(ta.DateToCheck, dtNow);
-            Thread.Sleep((ltThreads.Count - i) * 2000);
+            //Thread.Sleep((ltThreads.Count - i) * 2000);
             GetDataForDay(ta.CheckForSavedData, ta.DateToCheck, i, false);
         }
 
-        private void GetDateData()
+        private void InitializeData()
         {
             dtNow = ConfigHelper.DateTimeNow.Hour > StaticProps.AMPMBreakHour ? ConfigHelper.DateTimeNow : ConfigHelper.DateTimeNow.AddDays(-1);
-            //todo: get rid of date move
-            //dtNow = dtNow.AddDays(-32);
             dtCurrentDay = dtNow;
             dcDebugContainer = new List<DebugContainer>();
             DateTime dtTemp = dtCurrentDay;
@@ -495,21 +480,20 @@ namespace Tipshare
             lbDaysViewed = new List<bool>();
             lbTotalsOkay = new List<bool>();
             lddDaysData = new List<DaysData>();
-            ltThreads = new List<Thread>();
             while (dtTemp.DayOfWeek != ConfigHelper.StartOfWeekDay)
             {
                 i++;
                 lbDaysViewed.Add(false);
                 lbTotalsOkay.Add(true);
                 lddDaysData.Add(new DaysData(dtTemp, null, null, null));
-                ltThreads.Add(new Thread(new ParameterizedThreadStart(GetDataForDayByThread)));
+                //ltThreads.Add(new Thread(new ParameterizedThreadStart(GetDataForDayByThread)));
                 dcDebugContainer.Add(new DebugContainer(dtTemp));
                 dtTemp = dtTemp.AddDays(-1);
             }
             lbDaysViewed.Add(false);
             lbTotalsOkay.Add(true);
             lddDaysData.Add(new DaysData(dtTemp, null, null, null));
-            ltThreads.Add(new Thread(new ParameterizedThreadStart(GetDataForDayByThread)));
+            //ltThreads.Add(new Thread(new ParameterizedThreadStart(GetDataForDayByThread)));
             dcDebugContainer.Add(new DebugContainer(dtTemp));
 
             dtEarliestViewable = dtTemp.Date;
@@ -535,20 +519,20 @@ namespace Tipshare
         private void GetMoreData()
         {
             int iDaysTilSDOW = FindHowManyDaysToAdd();
-            Logger.Log("getting more data:  " + iDaysTilSDOW + " more days");
+            Globals.Log("getting more data:  " + iDaysTilSDOW + " more days", true);
             for (int i = 0; i < iDaysTilSDOW; i++)
             {
                 int index = lddDaysData.Count;
                 lbDaysViewed.Add(false);
                 lbTotalsOkay.Add(true);
                 lddDaysData.Add(new DaysData(lddDaysData[index - 1].Date.AddDays(-1), null, null, null));
-                ltThreads.Add(new Thread(new ParameterizedThreadStart(GetDataForDayByThread)));
-                ltThreads[ltThreads.Count - 1].Start(new ThreadArgs(lddDaysData[index].Date, true));
+                //ltThreads.Add(new Thread(new ParameterizedThreadStart(GetDataForDayByThread)));
+                //ltThreads[ltThreads.Count - 1].Start(new ThreadArgs(lddDaysData[index].Date, true));
                 dcDebugContainer.Add(new DebugContainer(lddDaysData[index].Date));
             }
             DateTime dtold = dtEarliestViewable;
             dtEarliestViewable = lddDaysData[lddDaysData.Count - 1].Date;
-            Logger.Log("new currently earliest viewable: " + dtEarliestViewable.ToShortDateString() + ", and total day count: " + lddDaysData.Count);
+            Globals.Log("new currently earliest viewable: " + dtEarliestViewable.ToShortDateString() + ", and total day count: " + lddDaysData.Count);
             if (dtold.Date > dtEarliestViewable.Date)
                 FullRefresh();
         }
@@ -579,10 +563,12 @@ namespace Tipshare
         {
             try
             {
-                Logger.Log("Getting data for: " + currDate.ToShortDateString() + "(" + dateIndex + ")");
+                Globals.Log("Getting data for: " + currDate.ToShortDateString() + "(" + dateIndex + ")", true);
                 //           DaysData dd = new DaysData(currDate, null, null, null);
-                while (lddDaysData.Count <= dateIndex)
-                    lddDaysData.Add(new DaysData(currDate, null, null, null));
+
+                lock (lockobj)
+                    while (lddDaysData.Count <= dateIndex)
+                        lddDaysData.Add(new DaysData(currDate, null, null, null));
 
                 if (!lddDaysData[dateIndex].DataSet || Reset)
                 {
@@ -635,6 +621,8 @@ namespace Tipshare
                             FullRefresh();
 
                         Dictionary<int, Shift> lsCurrServerShifts = Common.GetServerShifts(currDate, lsShifts);
+                        Globals.Log($"curr date:{currDate.ToShortDateString()} / lsCurrServerShifts.Count:{lsCurrServerShifts.Count}", true);
+
                         foreach (int key in lsCurrServerShifts.Keys)
                         {
                             string currId = lsCurrServerShifts[key].EmployeeID;
@@ -647,9 +635,13 @@ namespace Tipshare
                         double dTotalPMSales, dTotalAMSales;
                         double dOverrideAMTips, dOverridePMTips;
 
-                        processorEng.GetSales(lsCurrServerShifts, ltTickets, out dTotalAMSales, out dOverrideAMTips, out dTotalPMSales, out dOverridePMTips);
-
-                        dcDebugContainer[dateIndex].Tickets = GetAllTicketsForDate(ltTickets, dtCurrentDay);
+                        lock (lockobj)
+                        {
+                            processorEng.GetSales(currDate, lsCurrServerShifts, ltTickets, out dTotalAMSales, out dOverrideAMTips, out dTotalPMSales, out dOverridePMTips);
+                            dcDebugContainer[dateIndex].Tickets = GetAllTicketsForDate(ltTickets, dtCurrentDay);
+                            Globals.Log($"{dtCurrentDay.ToShortDateString()} / ltTickets.Count:{ltTickets.Count} / dTotalAMSales:{dTotalAMSales} / dTotalPMSales:{dTotalPMSales}", true);
+                        }
+                        Globals.Log($"{dtCurrentDay.ToShortDateString()} / dcDebugContainer[dateIndex].Tickets.Count:{dcDebugContainer[dateIndex].Tickets.Count}", true);
                         dcDebugContainer[dateIndex].AMSales = dTotalAMSales;
                         dcDebugContainer[dateIndex].PMSales = dTotalPMSales;
                         dcDebugContainer[dateIndex].AMOverrideTipsAddition = dOverrideAMTips;
@@ -670,6 +662,10 @@ namespace Tipshare
                             lsCurrAMBarShifts, lsCurrAMHostShifts,
                             lsCurrPMBarShifts, lsCurrPMHostShifts,
                             saEmployeeNamesToAddToUnallocated);
+
+                        Globals.Log($"{currDate.ToShortDateString()} / lsCurrAMBarShifts.Count:{lsCurrAMBarShifts.Count} / lsCurrPMBarShifts:{lsCurrPMBarShifts.Count}", true);
+                        Globals.Log($"{currDate.ToShortDateString()} / lsCurrAMHostShifts.Count:{lsCurrAMHostShifts.Count} / lsCurrPMHostShifts:{lsCurrPMHostShifts.Count}", true);
+                        Globals.Log($"{currDate.ToShortDateString()} / leOthers.Count:{leOthers.Count}", true);
 
                         Dictionary<int, Shift> shiftsToAddTo = dcDebugContainer[dateIndex].Shifts;
 
@@ -702,6 +698,9 @@ namespace Tipshare
 
                         if (ConfigHelper.EnableBarHostSplit)
                         {
+                            Globals.Log($"{currDate.ToShortDateString()} / dTotalAMSales:{dTotalAMSales}, dCollectionPercent:{dCollectionPercent}, dTotalAMShare:{dTotalAMShare}, iBarPercent:{iBarPercent}, iHostPercent:{iHostPercent}", true);
+                            Globals.Log($"{currDate.ToShortDateString()} / GetEntries({dTotalAMShare * ((double)iBarPercent) / 100.0}, {lsCurrAMBarShifts.Count}, {dTotalAMBarHours}, {dTotalAMShare * ((double)iHostPercent) / 100.0}, {lsCurrAMHostShifts.Count}, {dTotalAMHostHours}, {saEmployeeNamesToAddToUnallocated.Count()}, out lddDaysData[dateIndex].AMUnallocatedSugg)", true);
+
                             lddDaysData[dateIndex].AMEntries = entryCalcEng.GetEntries(
                                 dTotalAMShare * ((double)iBarPercent) / 100.0, lsCurrAMBarShifts, dTotalAMBarHours,
                                 dTotalAMShare * ((double)iHostPercent) / 100.0, lsCurrAMHostShifts, dTotalAMHostHours,
@@ -760,9 +759,13 @@ namespace Tipshare
                         double dTotalPMSales, dTotalAMSales;
                         double dOverrideAMTips, dOverridePMTips;
 
-                        processorEng.GetSales(lsCurrServerShifts, ltTickets, out dTotalAMSales, out dOverrideAMTips, out dTotalPMSales, out dOverridePMTips);
-
-                        dcDebugContainer[dateIndex].Tickets = GetAllTicketsForDate(ltTickets, dtCurrentDay);
+                        lock (lockobj)
+                        {
+                            processorEng.GetSales(currDate, lsCurrServerShifts, ltTickets, out dTotalAMSales, out dOverrideAMTips, out dTotalPMSales, out dOverridePMTips);
+                            dcDebugContainer[dateIndex].Tickets = GetAllTicketsForDate(ltTickets, dtCurrentDay);
+                            Globals.Log($"{dtCurrentDay.ToShortDateString()} / ltTickets.Count:{ltTickets.Count} / dTotalAMSales:{dTotalAMSales} / dTotalPMSales:{dTotalPMSales}", true);
+                        }
+                        Globals.Log($"{dtCurrentDay.ToShortDateString()} / dcDebugContainer[dateIndex].Tickets.Count:{dcDebugContainer[dateIndex].Tickets.Count}", true);
                         dcDebugContainer[dateIndex].AMSales = dTotalAMSales;
                         dcDebugContainer[dateIndex].PMSales = dTotalPMSales;
                         dcDebugContainer[dateIndex].AMOverrideTipsAddition = dOverrideAMTips;
@@ -774,7 +777,7 @@ namespace Tipshare
             catch (Exception except)
             {
                 dcDebugContainer[dateIndex].ErrorStrings.Add("Exception getting data for day: " + except.ToString());
-                Logger.Log("Exception caught getting data for " + currDate.ToShortDateString() + ", " + except.ToString());
+                Globals.Log("Exception caught getting data for " + currDate.ToShortDateString() + ", " + except.ToString());
             }
         }
 
@@ -878,15 +881,15 @@ namespace Tipshare
 
         private void FullRefresh()
         {
-            Logger.Log("Performing full refresh");
+            Globals.Log("Performing full refresh");
             string errorString;
             lsShifts = GenericDBMethods.HitDBForShifts(StaticProps.PosType, StaticProps.dbAddy, dtEarliestViewable, out errorString);
             if (errorString.Length > 0)
-                Logger.Log("Error getting shifts: " + errorString);
+                Globals.Log("Error getting shifts: " + errorString);
             errorString = "";
             ltTickets = GenericDBMethods.HitDBForTickets(StaticProps.PosType, StaticProps.dbAddy, dtEarliestViewable, out errorString);
             if (errorString.Length > 0)
-                Logger.Log("Error getting tickets: " + errorString);
+                Globals.Log("Error getting tickets: " + errorString);
         }
 
         //private int isTicketInShifts(Ticket ticket, Dictionary<int, Shift> shifts)
@@ -1011,7 +1014,7 @@ namespace Tipshare
 
                 for (int i = iStartDateIndex; i >= iEndDateIndex && !bEndLoop; i--)
                 {
-                    Logger.Log("date okay? " + lddDaysData[i].Date.ToShortDateString() + ", " + lbTotalsOkay[i].ToString());
+                    Globals.Log("date okay? " + lddDaysData[i].Date.ToShortDateString() + ", " + lbTotalsOkay[i].ToString(), true);
                     if (lbTotalsOkay.Count > i)// && i >0)
                     {
                         bContinue = lbTotalsOkay[i] && bContinue;
@@ -1019,7 +1022,7 @@ namespace Tipshare
                     }
                     else
                     {
-                        Logger.Log("trying to save " + i + " (between " + iStartDateIndex + " & " + iEndDateIndex + "), total okay count: " + lbTotalsOkay.Count);
+                        Globals.Log("trying to save " + i + " (between " + iStartDateIndex + " & " + iEndDateIndex + "), total okay count: " + lbTotalsOkay.Count, true);
                         bContinue = false;
                         bEndLoop = true;
                     }
@@ -1091,7 +1094,7 @@ namespace Tipshare
                     }
                     catch (Exception e)
                     {
-                        Logger.Log("Exception thrown while hitting ws during save: " + e.ToString());
+                        Globals.Log("Exception thrown while hitting ws during save: " + e.ToString());
                         dcDebugContainer[iCurrDay].ErrorStrings.Add("Exception hitting webservice: " + e.ToString());
                         result = "fail";
                     }
